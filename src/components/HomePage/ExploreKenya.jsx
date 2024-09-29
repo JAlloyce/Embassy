@@ -1,8 +1,8 @@
-import images from "../../assets/images"
+import images from "../../assets/images";
 
 const ExploreKenya = () => {
     return (
-        <div className="bg-black min-h-screen"> {/* Set the background to black */}
+        <div className="bg-black min-h-screen"> {/* Setting a black bg */}
             <div className="relative isolate px-6 pt-14 lg:px-8">
                 <div className="mx-auto max-w-8xl py-4 sm:py-8 lg:py-4">
                     <h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl text-center">
@@ -13,34 +13,42 @@ const ExploreKenya = () => {
                             {
                                 name: 'Tourism',
                                 image: images.Tourism2,
+                                link: '/explore/tourism' 
                             },
                             {
                                 name: 'Agriculture',
                                 image: images.Tea,
+                                link: '/explore/agriculture' 
                             },
                             {
                                 name: 'Education',
                                 image: images.Lion,
+                                link: '/explore/education' 
                             },
                             {
                                 name: 'CBD',
                                 image: images.CBD,
+                                link: '/explore/nairobi' 
                             },
                             {
                                 name: 'Trade',
                                 image: images.Sunflower,
+                                link: '/explore/trade' 
                             },
                             {
                                 name: 'Foreign Affairs',
                                 image: images.Flag,
+                                link: '/explore/foreign-affairs' 
                             },
                             {
                                 name: 'Culture',
                                 image: images.Culture,
+                                link: '/explore/culture' 
                             },
                             {
                                 name: 'Sports',
                                 image: images.Kipchoge,
+                                link: '/explore/sports' 
                             },
                         ].map((item) => (
                             <div key={item.name} className="relative overflow-hidden rounded-lg border border-gray-200 shadow-lg transition-transform transform hover:scale-105">
@@ -58,8 +66,8 @@ const ExploreKenya = () => {
                                     
                                     {/* Learn More Button at bottom right */}
                                     <a
-                                        href="#"
-                                        className="inline-block text-white text-sm font-semibold underline hover:text-gray-300 transition duration-200"
+                                        href={item.link} // Link to the specific page
+                                        className="inline-block text-white text-base font-semibold underline hover:text-gray-300 transition duration-200"
                                     >
                                         Learn More
                                     </a>
@@ -70,7 +78,7 @@ const ExploreKenya = () => {
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
 export default ExploreKenya;

@@ -1,17 +1,17 @@
 // src/assets/images.js
 
-import Buffalo from '../assets/Buffalo.jpg';
+import Buffalo from '../assets/Buffalo.jpeg';
 import CBD from '../assets/CBD.jpg'
-import Coffee from '../assets/Coffee.jpg'
+import Coffee from '../assets/Coffee.jpeg'
 import Culture from '../assets/Culture.jpg'
 import Elephant from '../assets/Elephant.jpg'
 import Flag from '../assets/Flag.jpg'
-import Giraffe from '../assets/Giraffe.jpg'
-import Kipchoge from '../assets/Kipchoge.jpg'
-import Lion from '../assets/Lion.jpg'
+import Giraffe from '../assets/Giraffe.jpeg'
+import Kipchoge from '../assets/Kipchoge.jpeg'
+import Lion from '../assets/Lion.jpeg'
 import Logo from '../assets/Logo.png'
 import MtKenya from '../assets/MtKenya.jpg'
-import Sunflower from '../assets/Sunflower.jpg'
+import Sunflower from '../assets/Sunflower.jpeg'
 import Tea from '../assets/Tea.jpg'
 import Tourism from '../assets/Tourism.jpg'
 import Tourism2 from '../assets/Tourism2.jpg'
@@ -111,6 +111,3 @@ const images = {
 };
 
 export default images;
-
-// Alternatively, you can export them individually
-// export { Image1, Image2, Image3 };

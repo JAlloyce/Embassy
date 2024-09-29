@@ -1,33 +1,89 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomePage from './components/HomePage/HomePage';
-///import Explore from './components/Explore/Explore';
-///import MagicalKenya from './components/MagicalKenya/MagicalKenya'
 
-//import Embassy from './components/Embassy'; // Ensure these components exist
-//import ConsularServices from './components/ConsularServices'; // Ensure these components exist
-//import News from './components/News'; // Ensure these components exist
+import News from './components/News/News'; 
+import Embassy from './components/Embassy/Embassy'; 
+
+{/* Consular */}
+import ConsularList from './components/Consular/ConsularList';
+import Visa from './components/Consular/Visa';
+import Passports from './components/Consular/Passports';
+import GoodConduct from './components/Consular/GoodConduct';
+import Marriage from './components/Consular/Marriage';
+import Pets from './components/Consular/Pets';
+import Birth from './components/Consular/Birth';
+import DocAuth from './components/Consular/DocAuth';
+import DocLeg from './components/Consular/DocLeg';
+import Downloads from './components/Consular/Downloads';
+
+{/* Explore */}
+import Agriculture from './components/Explore/Agriculture'
+import Culture from './components/Explore/Culture'
+import Nairobi from './components/Explore/Nairobi'
+import Education from './components/Explore/Education'
+import ForeignAffairs from './components/Explore/ForeignAffairs'
+import Sports from './components/Explore/Sports'
+import Tourism from './components/Explore/Tourism'
+import Trade from './components/Explore/Trade'
+
+{/* MagicalKenya */}
+import MagicList from './components/MagicalKenya/MagicList';
+import Intro from './components/MagicalKenya/Intro';
+import NairobiKenya from './components/MagicalKenya/NairobiKenya';
+import CoastKenya from './components/MagicalKenya/CoastKenya';
+import CentralKenya from './components/MagicalKenya/CentralRiftKenya';
+import MountKenya from './components/MagicalKenya/MountKenya';
+import NorthernKenya from './components/MagicalKenya/NorthernKenya';
+import NorthRiftKenya from './components/MagicalKenya/NorthRiftKenya';
+import SouthernKenya from './components/MagicalKenya/SouthernKenya';
+import WesternKenya from './components/MagicalKenya/WesternKenya';
+
+
 
 function App() {
   return (
     <Router>
       <div>
         <Routes>
-          {/*
-          
-          <Route path="/" element={<Explore />} />
-          <Route path="/" element={<MagicalKenya />} />
-          */}
+        <Route path="/" element={<HomePage />} />
 
-            <Route path="/" element={<HomePage />} />
+        {/*Consular Services*/}
+        <Route path="/consular" element={<ConsularList />} />
+        <Route path="/consular/visa" element={<Visa />} />
+        <Route path="/consular/passports" element={<Passports />} />
+        <Route path="/consular/good-conduct" element={<GoodConduct />} />
+        <Route path="/consular/marriage" element={<Marriage />} />
+        <Route path="/consular/pets" element={<Pets />} />
+        <Route path="/consular/birth" element={<Birth />} />
+        <Route path="/consular/doc-auth" element={<DocAuth />} />
+        <Route path="/consular/doc-leg" element={<DocLeg />} />
+        <Route path="/consular/downloads" element={<Downloads />} />
 
-          {/* 
-          <Route path="/magical-kenya" element={<MagicalKenya />} />
-          <Route path="/embassy" element={<Embassy />} />
-          <Route path="/consular-services" element={<ConsularServices />} />
-          <Route path="/news" element={<News />} /> 
+        {/*Explore*/}
+        <Route path="/explore/agriculture" element={<Agriculture />} />
+        <Route path="/explore/culture" element={<Culture />} />
+        <Route path="/explore/nairobi" element={<Nairobi />} />
+        <Route path="/explore/education" element={<Education />} />
+        <Route path="/explore/foreign-affairs" element={<ForeignAffairs />} />
+        <Route path="/explore/sports" element={<Sports />} />
+        <Route path="/explore/tourism" element={<Tourism />} />
+        <Route path="/explore/trade" element={<Trade />} />
 
-          
-          */}
+        {/*Magical Kenya*/}
+        <Route path="/magical-kenya" element={<MagicList />} />
+        <Route path="/magical-kenya/intro" element={<Intro />} />
+        <Route path="/magical-kenya/nairobi" element={<NairobiKenya />} />
+        <Route path="/magical-kenya/coast" element={<CoastKenya />} />
+        <Route path="/magical-kenya/central-rift" element={<CentralKenya />} />
+        <Route path="/magical-kenya/mount-kenya" element={<MountKenya />} />
+        <Route path="/magical-kenya/northern-kenya" element={<NorthernKenya />} />
+        <Route path="/magical-kenya/north-rift" element={<NorthRiftKenya />} />
+        <Route path="/magical-kenya/southern-kenya" element={<SouthernKenya />} />
+        <Route path="/magical-kenya/western-kenya" element={<WesternKenya />} />
+
+        {/*Other*/}
+        <Route path="/news" element={<News />} />
+        <Route path="/embassy" element={<Embassy />} />
         </Routes>
       </div>
     </Router>
