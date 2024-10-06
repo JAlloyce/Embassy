@@ -13,42 +13,42 @@ const ExploreKenya = () => {
                             {
                                 name: 'Tourism',
                                 image: images.Lion,
-                                link: '/explore/tourism' 
+                                href: '/explore/tourism' 
                             },
                             {
                                 name: 'Agriculture',
                                 image: images.Tea,
-                                link: '/explore/agriculture' 
+                                href: '/explore/agriculture' 
                             },
                             {
                                 name: 'Education',
                                 image: images.Classroom,
-                                link: '/explore/education' 
+                                href: '/explore/education' 
                             },
                             {
                                 name: 'CBD',
                                 image: images.AerialCBD,
-                                link: '/explore/nairobi' 
+                                href: '/explore/nairobi' 
                             },
                             {
                                 name: 'Trade',
                                 image: images.Sunflower,
-                                link: '/explore/trade' 
+                                href: '/explore/trade' 
                             },
                             {
                                 name: 'Foreign Affairs',
                                 image: images.Flag,
-                                link: '/explore/foreign-affairs' 
+                                href: '/explore/foreign-affairs' 
                             },
                             {
                                 name: 'Culture',
                                 image: images.Culture,
-                                link: '/explore/culture' 
+                                href: '/explore/culture' 
                             },
                             {
                                 name: 'Sports',
                                 image: images.Kipchoge,
-                                link: '/explore/sports' 
+                                href: '/explore/sports' 
                             },
                         ].map((item) => (
                             <div key={item.name} className="relative overflow-hidden rounded-lg border border-gray-200 shadow-lg transition-transform transform hover:scale-105">
