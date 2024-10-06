@@ -37,6 +37,7 @@ import NorthernKenya from './components/MagicalKenya/NorthernKenya';
 import NorthRiftKenya from './components/MagicalKenya/NorthRiftKenya';
 import SouthernKenya from './components/MagicalKenya/SouthernKenya';
 import WesternKenya from './components/MagicalKenya/WesternKenya';
+import ThingsToDo from './components/MagicalKenya/ThingsToDo'
 
 
 
@@ -80,6 +81,7 @@ function App() {
         <Route path="/magical-kenya/north-rift" element={<NorthRiftKenya />} />
         <Route path="/magical-kenya/southern-kenya" element={<SouthernKenya />} />
         <Route path="/magical-kenya/western-kenya" element={<WesternKenya />} />
+        <Route path="/magical-kenya/things-to-do" element={<ThingsToDo />} />
 
         {/*Other*/}
         <Route path="/news" element={<News />} />

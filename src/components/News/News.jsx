@@ -7,7 +7,7 @@ const News = () => {
             title: "Exploring the Maasai Mara: A Safari Experience",
             category: "Tourism",
             description: "Discover the breathtaking landscapes and wildlife of the Maasai Mara. It is one of the most famous wildlife reserves in the world, known for its exceptional population of lions, leopards, cheetahs, and elephants. The annual migration of wildebeest and zebra is a spectacular event that draws thousands of tourists each year.",
-            imageUrl: "https://unsplash.com/photos/a-bathroom-with-a-large-window-and-a-sink--02BtfthXCw",
+            imageUrl: "https://plus.unsplash.com/premium_photo-1720380988344-1fce88bc53a6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8",
             date: "January 1, 2023",
             link: "#"
         },
@@ -15,7 +15,7 @@ const News = () => {
             title: "The Beauty of Lake Nakuru National Park",
             category: "Tourism",
             description: "A guide to the stunning views and diverse wildlife at Lake Nakuru. This park is famous for its flamingos and offers a variety of habitats including grasslands, forests, and wetlands.",
-            imageUrl: "https://unsplash.com/photos/a-person-using-a-laptop-computer-on-a-table-AoDMssi2UOU",
+            imageUrl: "https://plus.unsplash.com/premium_photo-1720380988344-1fce88bc53a6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8",
             date: "January 5, 2023",
             link: "#"
         },
@@ -23,7 +23,7 @@ const News = () => {
             title: "Adventure Awaits in Amboseli National Park",
             category: "Tourism",
             description: "Experience close encounters with elephants and breathtaking views of Mount Kilimanjaro. Amboseli is renowned for its large elephant herds and stunning landscapes.",
-            imageUrl: "https://plus.unsplash.com/premium_photo-1721092495872-5cac43ff3f47?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyfHx8ZW58MHx8fHx8",
+            imageUrl: "https://plus.unsplash.com/premium_photo-1720380988344-1fce88bc53a6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8",
             date: "January 10, 2023",
             link: "#"
         },
@@ -39,7 +39,7 @@ const News = () => {
             title: "Relaxing on Diani Beach",
             category: "Tourism",
             description: "Enjoy sun-soaked days and vibrant nightlife on one of Kenya's most beautiful beaches. Diani Beach is known for its white sandy shores and crystal-clear waters.",
-            imageUrl: "https://images.unsplash.com/photo-1727455113671-ef73f638b87f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw4fHx8ZW58MHx8fHx8",
+            imageUrl: "https://plus.unsplash.com/premium_photo-1720380988344-1fce88bc53a6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8",
             date: "January 20, 2023",
             link: "#"
         },
@@ -48,7 +48,7 @@ const News = () => {
             title: "Visiting Tsavo National Park",
             category: "Tourism",
             description: "Experience one of Kenya's largest national parks with diverse wildlife and stunning landscapes.",
-            imageUrl: "https://images.unsplash.com/photo-1600579011579-dc7e7c5e2e4e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw4fHx8ZW58MHx8fHx8",
+            imageUrl: "https://plus.unsplash.com/premium_photo-1720380988344-1fce88bc53a6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8",
             date: "February 1, 2023",
             link: "#"
         },
@@ -56,7 +56,7 @@ const News = () => {
             title: "Exploring Nairobi National Park",
             category: "Tourism",
             description: "A unique experience where you can see wildlife against the backdrop of Nairobi's skyline.",
-            imageUrl: "https://images.unsplash.com/photo-1531592068525-bc7d6b6c9c9e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw4fHx8ZW58MHx8fHx8",
+            imageUrl: "https://plus.unsplash.com/premium_photo-1720380988344-1fce88bc53a6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8",
             date: "February 5, 2023",
             link: "#"
         },
@@ -64,7 +64,7 @@ const News = () => {
             title: "Discovering the Culture of Maasai People",
             category: "Tourism",
             description: "Learn about the rich culture and traditions of the Maasai people while visiting their villages.",
-            imageUrl: "https://images.unsplash.com/photo-1521747116042-5a810fda9664?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw4fHx8ZW58MHx8fHx8",
+            imageUrl: "https://plus.unsplash.com/premium_photo-1720380988344-1fce88bc53a6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8",
             date: "February 10, 2023",
             link: "#"
         },
@@ -72,15 +72,14 @@ const News = () => {
             title:"Bird Watching in Lake Naivasha",
             category:"Tourism",
             description:"Lake Naivasha is a birdwatcher's paradise with over 400 species to observe.",
-            imageUrl:"https://images.unsplash.com/photo-1556742031-c6961e96c6b9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw4fHx8ZW58MHx8fHx8", 
-            date:"February 15, 2023 ",
+            imageUrl: "https://plus.unsplash.com/premium_photo-1720380988344-1fce88bc53a6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8",
             link:"#"
         },
         {
             title:"The Great Rift Valley Experience ",
             category:"Tourism ",
             description:"Explore one of Africa's most stunning geological features along with its unique wildlife.",
-            imageUrl:"https://images.unsplash.com/photo-1568605111626-e6a7e5c9ac82?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw4fHx8ZW58MHx8fHx8", 
+            imageUrl: "https://plus.unsplash.com/premium_photo-1720380988344-1fce88bc53a6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8",
             date:"February 20, 2023 ", 
             link:"#"
         },
@@ -88,7 +87,7 @@ const News = () => {
             title:"Exploring Lamu Island ",
             category:"Tourism ",
             description:"Experience the rich Swahili culture and stunning beaches on Lamu Island.",
-            imageUrl:"https://images.unsplash.com/photo-1545098257-ea9e11d2c7a2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw4fHx8ZW58MHx8fHx8", 
+            imageUrl: "https://plus.unsplash.com/premium_photo-1720380988344-1fce88bc53a6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8",
             date:"March 1, 2023 ", 
             link:"#"
         },
@@ -96,7 +95,7 @@ const News = () => {
             title:"Safari in Meru National Park ",
             category:"Tourism ",
             description:"Meru National Park offers a unique safari experience away from the crowds.",
-            imageUrl:"https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw4fHx8ZW58MHx8fHx8", 
+            imageUrl: "https://plus.unsplash.com/premium_photo-1720380988344-1fce88bc53a6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8",
             date:"March 5, 2023 ", 
             link:"#"
         },

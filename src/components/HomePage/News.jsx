@@ -1,4 +1,5 @@
 
+import { Link } from 'react-router-dom';
     import images from '../../assets/images'; // Ensure this imports your images correctly
 
     const News = () => {
@@ -12,11 +13,11 @@
             The news, events and communication from the embassy of Republic of Kenya in Russia Federation.
             </p>
         </div>
-        <a href="/news" className="absolute right-6 bottom-6 flex items-center">
+        <Link to="/news" className="absolute right-6 bottom-6 flex items-center">
             <span className="inline-block w-16 h-16 border border-white rounded-full flex items-center justify-center text-white text-lg font-bold hover:bg-white hover:text-gray-900 transition duration-200">
             ➔
             </span>
-        </a>
+        </Link>
         </div>
     );
     }

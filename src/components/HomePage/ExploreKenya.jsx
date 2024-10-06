@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import images from "../../assets/images";
 
 const ExploreKenya = () => {
@@ -65,12 +66,12 @@ const ExploreKenya = () => {
                                     <h3 className="text-xl font-bold text-white">{item.name}</h3>
                                     
                                     {/* Learn More Button at bottom right */}
-                                    <a
-                                        href={item.link} // Link to the specific page
+                                    <Link
+                                        to={item.href} // Link to the specific page
                                         className="inline-block text-white text-base font-semibold underline hover:text-gray-300 transition duration-200"
                                     >
                                         Learn More
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         ))}
