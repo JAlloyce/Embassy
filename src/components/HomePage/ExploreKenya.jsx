@@ -12,7 +12,7 @@ const ExploreKenya = () => {
                         {[
                             {
                                 name: 'Tourism',
-                                image: images.Tourism2,
+                                image: images.Lion,
                                 link: '/explore/tourism' 
                             },
                             {
@@ -22,12 +22,12 @@ const ExploreKenya = () => {
                             },
                             {
                                 name: 'Education',
-                                image: images.Lion,
+                                image: images.Classroom,
                                 link: '/explore/education' 
                             },
                             {
                                 name: 'CBD',
-                                image: images.CBD,
+                                image: images.AerialCBD,
                                 link: '/explore/nairobi' 
                             },
                             {

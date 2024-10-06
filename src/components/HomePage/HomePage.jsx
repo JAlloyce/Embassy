@@ -3,6 +3,7 @@ import ExploreKenya from "./ExploreKenya";
 import News from "./News";
 import Contact from "./Contact";
 import Vision from './Vision';
+//import Quicklinks from './Quicklinks';
 
 const HomePage = () => {
   return (
@@ -10,8 +11,12 @@ const HomePage = () => {
         <Hero />               
         <News />               
         <ExploreKenya />      
-        <Vision />              
-        <Contact />            
+        <Vision /> 
+        <Contact />   
+
+        {/* 
+        <Quicklinks />             
+        */}
     </div>
   );
 }

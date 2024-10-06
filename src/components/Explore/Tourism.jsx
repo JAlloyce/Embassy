@@ -45,7 +45,7 @@ const Tourism = () => {
         <div className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
           <img
             alt="Tourism in Kenya"
-            src={images.Tourism} // Ensure you have an image representing tourism here
+            src={images.Giraffe2} // Ensure you have an image representing tourism here
             className="w-full max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
           />
         </div>

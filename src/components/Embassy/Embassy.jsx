@@ -60,8 +60,8 @@ return (
             <div className="flex items-center gap-x-4 mt-4">
             <img
                 alt="Ambassador Peter Mathuki"
-                src={images.Flag} // Replace with Ambassador's image if available
-                className="h-16 w-16 rounded-full"
+                src={images.AmbPeter} // Replace with Ambassador's image if available
+                className="h-20 w-20 rounded-full"
             />
             <div>
                 <p className="text-lg font-semibold text-white">Amb. (Dr). Peter Mutuku Mathuki, PhD</p>
@@ -94,8 +94,8 @@ return (
             <div className="flex items-center gap-x-4 mt-4">
             <img
                 alt="Ambassador Peter Mathuki"
-                src={images.Flag} // Replace with Ambassador's image if available
-                className="h-16 w-16 rounded-full"
+                src={images.AmbIrene} // Replace with Ambassador's image if available
+                className="h-20 w-20 rounded-full"
             />
             <div>
                 <p className="text-lg font-semibold text-white">Amb. Irene K. Maswan, OGW</p>
