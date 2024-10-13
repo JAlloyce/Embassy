@@ -66,8 +66,10 @@ import KenyaExportLogo from '../assets/KenyaExportlogo.png'
 import Vision2030logo from '../assets/Vision2030logo.png'
 import Keninvestlogo from '../assets/Keninvestlogo.png'
 import MagicalKenyalogo from '../assets/MagicalKenyalogo.png'
+import Uon from '../assets/uon.jpg'
+import prez1 from '../assets/prez1.jpg'
 
-// Add more images as needed
+
 
 const images = {
     AmbPeter,
@@ -100,6 +102,7 @@ const images = {
     Tourism,
     Tourism2,
     Zebra,
+    Uon,
     Slide1,
     Slide2,
     Slide3,
@@ -136,6 +139,7 @@ const images = {
     Slide34,
     Slide35,
     Slide36,
+    prez1,
 };
 
 export default images;

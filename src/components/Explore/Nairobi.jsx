@@ -1,10 +1,24 @@
-import { ArrowRightIcon } from '@heroicons/react/20/solid'; // Import an arrow icon for points
-import images from '../../assets/images'; // Ensure this imports your images correctly
+import { ArrowRightIcon } from '@heroicons/react/20/solid';
+import images from '../../assets/images'; 
 
 export default function Nairobi() {
   return (
     <div className="relative isolate overflow-hidden bg-black px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
       <div className="absolute inset-0 -z-10 overflow-hidden">
+      <header className="relative z-50 mb-2">
+                <nav aria-label="Global" className="flex items-center justify-center">
+                    <div className="flex lg:flex-1">
+                        <a href="/" className="m-1.5 p-1.5">
+                            <span className="sr-only">Home</span>
+                            <img
+                                alt="Your Company Logo"
+                                src={images.Logo}
+                                className="h-28 w-auto"
+                            />
+                        </a>
+                    </div>
+                </nav>
+            </header>
         <svg
           aria-hidden="true"
           className="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-700 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
@@ -45,7 +59,7 @@ export default function Nairobi() {
         <div className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
           <img
             alt="Nairobi City CBD"
-            src={images.CBD} // Ensure you have an image of Nairobi CBD here
+            src={images.CBD} 
             className="w-full max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
           />
         </div>

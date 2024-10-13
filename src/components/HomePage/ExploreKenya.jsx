@@ -3,10 +3,11 @@ import images from "../../assets/images";
 
 const ExploreKenya = () => {
     return (
-        <div className="bg-black min-h-screen"> {/* Setting a black bg */}
+        <div className="bg-black min-h-screen"> 
             <div className="relative isolate px-6 pt-14 lg:px-8">
                 <div className="mx-auto max-w-8xl py-4 sm:py-8 lg:py-4">
-                    <h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl text-center">
+                    <h2
+                    className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl text-center">
                         Explore Kenya
                     </h2>
                     <div className="grid grid-cols-1 gap-y-10 mt-10 sm:grid-cols-2 sm:gap-x-6 sm:gap-y-10 lg:grid-cols-4">
@@ -23,7 +24,7 @@ const ExploreKenya = () => {
                             },
                             {
                                 name: 'Education',
-                                image: images.Classroom,
+                                image: images.Uon,
                                 href: '/explore/education' 
                             },
                             {
@@ -38,7 +39,7 @@ const ExploreKenya = () => {
                             },
                             {
                                 name: 'Foreign Affairs',
-                                image: images.Flag,
+                                image: images.Logo,
                                 href: '/explore/foreign-affairs' 
                             },
                             {
@@ -57,17 +58,16 @@ const ExploreKenya = () => {
                                     src={item.image}
                                     alt={item.name}
                                     className="object-cover w-full h-64 sm:h-80 lg:h-96 transition-opacity duration-300 ease-in-out"
-                                    style={{ filter: "brightness(0.7)" }} // Matte effect
+                                    style={{ filter: "brightness(0.7)" }} 
                                 />
                                 
-                                {/* Overlay for text */}
+                                
                                 <div className="absolute inset-0 flex justify-between items-end p-4">
-                                    {/* Name at bottom left */}
                                     <h3 className="text-xl font-bold text-white">{item.name}</h3>
                                     
-                                    {/* Learn More Button at bottom right */}
+                                    
                                     <Link
-                                        to={item.href} // Link to the specific page
+                                        to={item.href}
                                         className="inline-block text-white text-base font-semibold underline hover:text-gray-300 transition duration-200"
                                     >
                                         Learn More

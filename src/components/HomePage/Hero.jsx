@@ -1,8 +1,9 @@
     import { useState, useEffect } from 'react';
     import { Dialog, DialogPanel } from '@headlessui/react';
     import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
-    import { Link } from 'react-router-dom'; // Import Link for routing
+    import { Link } from 'react-router-dom';
     import images from '../../assets/images';
+    import {motion} from 'framer-motion'
 
     const navigation = [
     { name: 'Magical Kenya', href: '/magical-kenya', dropdown: true },
@@ -30,11 +31,11 @@
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const [dropdownOpen, setDropdownOpen] = useState({});
 
-    // Array of images in the desired order
+    // Background images for hero section
     const imageOrder = [
+        images.prez1,
         images.Flag,
         images.CBD,
-        images.Culture,
         images.Lion,
     ];
 
@@ -74,7 +75,7 @@
         <header className="absolute inset-x-0 top-0 z-50">
             <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
             <div className="flex lg:flex-1">
-                <a href="#" className="-m-1.5 p-1.5">
+                <a href="/" className="-m-1.5 p-1.5">
                 <span className="sr-only">Embassy of Kenya in Russia</span>
                 <img
                     alt="Embassy Logo"
@@ -121,7 +122,7 @@
                         <Link
                             key={subItem.name}
                             to={subItem.href}
-                            onClick={() => setDropdownOpen({})} // Close dropdown on click
+                            onClick={() => setDropdownOpen({})} // Close dropdown when click
                             className="block px-4 py-2 text-sm font-bold text-slate-400 hover:bg-gray-500 hover:text-white"
                         >
                             {subItem.name}
@@ -132,7 +133,7 @@
         </div>
     ))}
     <button
-        onClick={scrollToBottom} // Scroll to bottom when clicked
+        onClick={scrollToBottom} 
         className="rounded-md bg-indigo-500 px-3.5 py-2.5 text-lg font-bold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
     >
         Contact Us
@@ -163,7 +164,7 @@
                 </button>
                 </div>
 
-                {/* Mobile Navigation */}
+                {/* Mobile Navigation // Very complex please minimize alterations  */}
                 <div className="mt-[10px] flow-root">
                 <div className="-my-[10px] divide-y divide-gray-10/10">
                     <div className="space-y-[10px] py-[12px]">
@@ -185,7 +186,7 @@
                                     <Link 
                                     key={subItem.name} 
                                     to={subItem.href} 
-                                    onClick={() => setMobileMenuOpen(false)} // Close menu on click
+                                    onClick={() => setMobileMenuOpen(false)}
                                     className="-mx-[12px] block rounded-lg px-[12px] py-[8px] text-base font-bold leading-[22px] text-gray-400 hover:bg-gray-800 hover:text-white"
                                     >
                                     {subItem.name}
@@ -197,7 +198,7 @@
                         ) : (
                             <Link 
                             to={item.href} 
-                            onClick={() => setMobileMenuOpen(false)} // Close menu on click
+                            onClick={() => setMobileMenuOpen(false)} // Close menu when clicked
                             className="-mx-[12px] block rounded-lg px-[12px] py-[8px] text-base font-bold leading-[22px] text-gray-400 hover:bg-gray-800 hover:text-white"
                             >
                             {item.name}
@@ -225,26 +226,30 @@
         </header>
 
         {/* Hero Section */}
-        <div className="relative isolate px-6 pt-[100px] lg:px-[20%]"> {/* Adjusted padding to avoid overlap */}
+        <div className="relative isolate px-6 pt-[100px] lg:px-[20%]"> 
             <div className="mx-auto max-w-xl py-[100px] sm:max-w-xl lg:max-w-xl lg:py-[150px]"> {/* Adjusted padding for hero section */}
-            <h1 className="text-center text-white text-[36px] sm:text-[48px] font-extrabold tracking-tight">
+            <motion.h1
+            initial={{x:-100, opacity:0}}
+            animate={{x:0, opacity:1}}
+            transition={{duration:1, delay:0.5}}
+            className="text-center text-white text-[36px] sm:text-[48px] font-extrabold tracking-tight">
                 Welcome to the Embassy of the Republic of Kenya in the Russian Federation
-            </h1>
+            </motion.h1>
             <p className="mt-[20px] text-center text-lg font-bold leading-tight text-gray-400">
                 Your gateway to Kenya's culture, tourism, and consular services. We are here to assist you with all your needs.
             </p>
             {/* Call-to-action buttons */}
             <div className="mt-[30px] flex items-center justify-center gap-x-[20px]">
-                {/* Modify these links as needed */}
+                
                 <Link
-                to="/magical-kenya" // Update with actual route if needed
+                to="/consular" 
                 className="rounded-md bg-indigo-600 px-[20px] py-[10px] text-lg font-extrabold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-offset focus-visible:outline-indigo-600"
                 >
                 Learn More
                 </Link>
                 <Link
-                to="#contact-us" // Update with actual route if needed
-                onClick={scrollToBottom} // Scroll to bottom when clicked
+                to="#contact-us" 
+                onClick={scrollToBottom}
                 className="rounded-md bg-gray-800 px-[20px] py-[10px] text-lg font-extrabold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-offset focus-visible:outline-gray-800"
                 >
                 Contact Us
@@ -252,9 +257,6 @@
             </div>
             </div>
         </div>
-
-        {/* Contact Section (for scrolling) */}
-
         </div>
     );
     }

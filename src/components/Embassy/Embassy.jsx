@@ -39,8 +39,8 @@ return (
             <span className="sr-only">Home</span>
             <img
                 alt="Kenya Embassy Logo"
-                src={images.Logo} // Ensure you have a logo image here
-                className="h-28 w-auto" // Logo size
+                src={images.Logo} // logo image 
+                className="h-28 w-auto" 
             />
             </a>
         </div>
@@ -60,8 +60,8 @@ return (
             <div className="flex items-center gap-x-4 mt-4">
             <img
                 alt="Ambassador Peter Mathuki"
-                src={images.AmbPeter} // Replace with Ambassador's image if available
-                className="h-20 w-20 rounded-full"
+                src={images.AmbPeter} //Ambassador's image 
+                className="h-36 w-auto rounded-lg"
             />
             <div>
                 <p className="text-lg font-semibold text-white">Amb. (Dr). Peter Mutuku Mathuki, PhD</p>
@@ -94,8 +94,8 @@ return (
             <div className="flex items-center gap-x-4 mt-4">
             <img
                 alt="Ambassador Peter Mathuki"
-                src={images.AmbIrene} // Replace with Ambassador's image if available
-                className="h-20 w-20 rounded-full"
+                src={images.AmbIrene} // Ambassador's image 
+                className="h-36 w-auto rounded-lg"
             />
             <div>
                 <p className="text-lg font-semibold text-white">Amb. Irene K. Maswan, OGW</p>

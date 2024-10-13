@@ -1,6 +1,6 @@
-    import { ArrowRightIcon } from '@heroicons/react/20/solid'; // Import an arrow icon for points
-    import images from '../../assets/images'; // Ensure this imports your images correctly
-    import { Link } from 'react-router-dom'; // Import Link for routing
+    import { ArrowRightIcon } from '@heroicons/react/20/solid'; 
+    import images from '../../assets/images'; 
+    import { Link } from 'react-router-dom'; 
 
     const MagicList = () => {
     return (
@@ -8,7 +8,7 @@
         <div className="absolute inset-0 -z-10 overflow-hidden">
             <img
             alt="Magical Kenya"
-            src={images.Slide33} // Ensure you have an image representing Magical Kenya here
+            src={images.Slide33} // Background Image
             className="object-cover w-full h-full opacity-30"
             />
         </div>
@@ -17,12 +17,12 @@
     <header className="relative z-50 mb-2">
         <nav aria-label="Global" className="flex items-center justify-center">
         <div className="flex lg:flex-1">
-            <a href="/" className="-m-1.5 p-1.5">
+            <a href="https://magicalkenya.com/" className="-m-1.5 p-1.5">
             <span className="sr-only">Home</span>
             <img
                 alt="Magical Kenya"
-                src={images.MagicalKenyalogo} // Ensure you have a logo image here
-                className="h-28 w-auto" // Logo size
+                src={images.MagicalKenyalogo} // Magical Kenya logo
+                className="h-28 w-auto" 
             />
             </a>
         </div>
@@ -49,7 +49,7 @@
                     <div className="flex min-w-0 gap-x-4">
                         <div className="min-w-0 flex-auto">
                         <Link to="/magical-kenya/intro" className="text-4xl font-bold leading-6 text-gray-400 hover:text-white">
-                            <span className="rounded-full bg-indigo-600 px-3 py-2 text-2xl font-bold text-white">1.</span> Intro
+                            <span className="rounded-full bg-indigo-600 px-3 py-2 text-2xl font-bold text-white">1.</span> Why Kenya ?
                         </Link>
                         </div>
                     </div>
@@ -64,7 +64,7 @@
                     <div className="flex min-w-0 gap-x-4">
                         <div className="min-w-0 flex-auto">
                         <Link to="/magical-kenya/nairobi" className="text-4xl font-bold leading-6 text-gray-400 hover:text-white">
-                            <span className="rounded-full bg-indigo-600 px-3 py-2 text-2xl font-bold text-white">2.</span> Nairobi City
+                            <span className="rounded-full bg-indigo-600 px-3 py-2 text-2xl font-bold text-white">2.</span> Capital City
                         </Link>
                         </div>
                     </div>
@@ -199,9 +199,6 @@
             </div>
             </div>
         </div>
-
-        {/* Additional Information Section */}
-        {/* You can add more sections or information as needed */}
         </div>
     );
     }
