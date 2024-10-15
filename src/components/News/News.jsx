@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
-import images from '../../assets/images'; // Adjust the path as necessary
+import images from '../../assets/images'; 
+import {motion} from 'framer-motion'
 
 const News = () => {
     const articles = [
@@ -114,13 +115,13 @@ const News = () => {
             setDisplayedArticles((prev) => [
                 ...prev,
                 ...articles.slice(prev.length, prev.length + 20)
-            ]); // Load 20 more articles
+            ]); // this Loads 20 articles at time
             setLoading(false);
             
             if (displayedArticles.length >= articles.length) {
                 setHasMore(false);
             }
-        }, 1000); // Simulate network delay
+        }, 1000); // This will Simulate network delay, more like a fetch funnctionality
     };
 
     // Infinite scroll detection
@@ -154,7 +155,11 @@ const News = () => {
                 </nav>
             </header>
 
-            <h1 className="text-3xl font-bold tracking-tight  text-indigo-600 sm:text-4xl">News Update</h1>
+            <motion.h1
+            initial={{x:-100, opacity:0}}
+            animate={{x:0, opacity:1}}
+            transition={{duration:1, delay:0.5}}
+            className="text-3xl font-bold tracking-tight  text-indigo-600 sm:text-4xl">News Update</motion.h1>
 
 
         <div className="absolute inset-0 -z-10 overflow-hidden">

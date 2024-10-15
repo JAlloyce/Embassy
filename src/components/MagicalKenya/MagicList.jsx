@@ -1,6 +1,7 @@
     import { ArrowRightIcon } from '@heroicons/react/20/solid'; 
     import images from '../../assets/images'; 
     import { Link } from 'react-router-dom'; 
+    import {motion} from 'framer-motion'
 
     const MagicList = () => {
     return (
@@ -8,7 +9,7 @@
         <div className="absolute inset-0 -z-10 overflow-hidden">
             <img
             alt="Magical Kenya"
-            src={images.Slide33} // Background Image
+            src={images.Slide33} // Background Image of Mount Kenya
             className="object-cover w-full h-full opacity-30"
             />
         </div>
@@ -32,13 +33,17 @@
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
             <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
             <div className="lg:pr-4">
-                <div className="lg:max-w-lg">
+                <motion.div
+                initial={{x:-100, opacity:0}}
+                animate={{x:0, opacity:1}}
+                transition={{duration:1, delay:0.5}}
+                className="lg:max-w-lg">
                 <p className="text-base font-semibold leading-7 text-indigo-600">Explore Magical Kenya</p>
                 <h1 className="mt-2 text-5xl font-bold tracking-tight text-white sm:text-6xl">Discover the Wonders of Kenya</h1>
                 <p className="mt-6 text-2xl leading-8 text-gray-400">
                     Kenya is a land of diverse landscapes, rich culture, and endless possibilities. From the bustling city of Nairobi to the stunning beaches of the coast, there is something for everyone to explore.
                 </p>
-                </div>
+                </motion.div>
             </div>
             </div>
             <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">

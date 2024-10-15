@@ -1,5 +1,6 @@
 
-import images from '../../assets/images'; // Ensure this imports your images correctly
+import images from '../../assets/images';
+import {motion} from 'framer-motion'
 
 const Embassy = () => {
 return (
@@ -39,7 +40,7 @@ return (
             <span className="sr-only">Home</span>
             <img
                 alt="Kenya Embassy Logo"
-                src={images.Logo} // logo image 
+                src={images.Logo} 
                 className="h-28 w-auto" 
             />
             </a>
@@ -57,10 +58,14 @@ return (
         {/* Ambassador Information */}
         <div className="mt-6">
             <h3 className="text-lg font-semibold text-indigo-600">AMBASSADOR EXTRAORDINARY AND PLENIPOTENTIARY / HEAD OF MISSION</h3>
-            <div className="flex items-center gap-x-4 mt-4">
+            <motion.div
+            initial={{x:-100, opacity:0}}
+            animate={{x:0, opacity:1}}
+            transition={{duration:1, delay:0.5}}
+            className="flex items-center gap-x-4 mt-4">
             <img
                 alt="Ambassador Peter Mathuki"
-                src={images.AmbPeter} //Ambassador's image 
+                src={images.AmbPeter} 
                 className="h-36 w-auto rounded-lg"
             />
             <div>
@@ -68,7 +73,7 @@ return (
                 <p className="text-gray-400">Arrived in Moscow on 22nd August 2024.</p>
                 
             </div>
-            </div>
+            </motion.div>
             <p className="mt-2 text-gray-400">
             Amb. (Dr). Peter Mutuku Mathuki arrived in Moscow on 22nd August 2024 to commence his tour of duty as the Ambassador Extraordinary and Plenipotentiary of the Republic of Kenya to the Russian Federation with accreditation to Belarus and Kazakhstan.<br/>
             </p>
@@ -91,10 +96,14 @@ return (
           {/* Deputy Ambassador Information */}
         <div className="mt-6">
             <h3 className="text-lg font-semibold text-indigo-600">DEPUTY HEAD OF MISSION</h3>
-            <div className="flex items-center gap-x-4 mt-4">
+            <motion.div
+            initial={{x:-100, opacity:0}}
+            animate={{x:0, opacity:1}}
+            transition={{duration:1, delay:1}}
+            className="flex items-center gap-x-4 mt-4">
             <img
                 alt="Ambassador Peter Mathuki"
-                src={images.AmbIrene} // Ambassador's image 
+                src={images.AmbIrene}
                 className="h-36 w-auto rounded-lg"
             />
             <div>
@@ -102,7 +111,7 @@ return (
                 <p className="text-gray-400">Arrived in Moscow on 26th April 2024.</p>
                 
             </div>
-            </div>
+            </motion.div>
             <p className="mt-2 text-gray-400">
                 Ambassador Irene Maswan arrived in Moscow on 26th April 2024. She assumed her position as the Deputy Head of Mission of the Republic of Kenya to the Russian Federation with accreditation to Belarus and Kazakhstan.
                 </p>

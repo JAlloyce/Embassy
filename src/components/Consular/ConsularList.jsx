@@ -1,6 +1,7 @@
-import { ArrowRightIcon } from '@heroicons/react/20/solid'; // Import an arrow icon for points
-import images from '../../assets/images'; // Ensure this imports your images correctly
-import { Link } from 'react-router-dom'; // Import Link for routing
+import { ArrowRightIcon } from '@heroicons/react/20/solid'; 
+import images from '../../assets/images'; 
+import { Link } from 'react-router-dom';
+import {motion} from 'framer-motion'
 
 const ConsularList = () => {
 return (
@@ -29,7 +30,11 @@ return (
             </header>
     <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
-        <div className="lg:pr-4">
+        <motion.div
+        initial={{x:-100, opacity:0}}
+        animate={{x:0, opacity:1}}
+        transition={{duration:1, delay:0.5}}
+        lassName="lg:pr-4">
             <div className="lg:max-w-lg">
             <p className="text-base font-semibold leading-7 text-indigo-600">Consular Services</p>
             <h1 className="mt-2 text-5xl font-bold tracking-tight text-white sm:text-6xl">Consular Services</h1>
@@ -37,7 +42,7 @@ return (
             Kenyan consular services provide essential support to Kenyan citizens living abroad and foreigners visiting Kenya. These services include:
             </p>
             </div>
-        </div>
+        </motion.div>
         </div>
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
         <div className="lg:pr-4">

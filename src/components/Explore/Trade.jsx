@@ -59,7 +59,7 @@ const Trade = () => {
         <div className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
           <img
             alt="Coffee Production in Kenya"
-            src={images.Coffee} // Ensure you have an image representing coffee or relevant image here
+            src={images.Sunflower} 
             className="w-full max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
           />
         </div>
