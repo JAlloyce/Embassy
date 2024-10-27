@@ -13,6 +13,16 @@ const ExploreKenya = () => {
                     <div className="grid grid-cols-1 gap-y-10 mt-10 sm:grid-cols-2 sm:gap-x-6 sm:gap-y-10 lg:grid-cols-4">
                         {[
                             {
+                                name: 'Foreign Affairs',
+                                image: images.Logo,
+                                href: '/explore/foreign-affairs' 
+                            },
+                            {
+                                name: 'Education',
+                                image: images.Uon,
+                                href: '/explore/education' 
+                            },
+                            {
                                 name: 'Tourism',
                                 image: images.Lion,
                                 href: '/explore/tourism' 
@@ -23,9 +33,9 @@ const ExploreKenya = () => {
                                 href: '/explore/agriculture' 
                             },
                             {
-                                name: 'Education',
-                                image: images.Uon,
-                                href: '/explore/education' 
+                                name: 'Trade',
+                                image: images.Sunflower,
+                                href: '/explore/trade' 
                             },
                             {
                                 name: 'CBD',
@@ -33,24 +43,14 @@ const ExploreKenya = () => {
                                 href: '/explore/nairobi' 
                             },
                             {
-                                name: 'Trade',
-                                image: images.Sunflower,
-                                href: '/explore/trade' 
-                            },
-                            {
-                                name: 'Foreign Affairs',
-                                image: images.Logo,
-                                href: '/explore/foreign-affairs' 
+                                name: 'Sports',
+                                image: images.Kipchoge,
+                                href: '/explore/sports' 
                             },
                             {
                                 name: 'Culture',
                                 image: images.Culture,
                                 href: '/explore/culture' 
-                            },
-                            {
-                                name: 'Sports',
-                                image: images.Kipchoge,
-                                href: '/explore/sports' 
                             },
                         ].map((item) => (
                             <div key={item.name} className="relative overflow-hidden rounded-lg border border-gray-200 shadow-lg transition-transform transform hover:scale-105">

@@ -49,9 +49,9 @@ export default function Education() {
           <div className="lg:pr-4">
             <div className="lg:max-w-lg">
               <p className="text-base font-semibold leading-7 text-indigo-600">Empowering Through Education</p>
-              <h1 className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Educational Opportunities in Kenya</h1>
+              <h1 className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Education in Kenya</h1>
               <p className="mt-6 text-xl leading-8 text-gray-400">
-                The Government of the Russian Federation provides a limited number of scholarships towards the development of human resources in Kenya, covering undergraduate, master's, and doctoral programs.
+              In Kenya, Education  is considered a basic right that should be offered to every individual.
               </p>
             </div>
           </div>
@@ -67,52 +67,53 @@ export default function Education() {
           <div className="lg:pr-4">
             <div className="max-w-xl text-base leading-7 text-gray-400 lg:max-w-lg">
               <p>
-                The scholarships offered are partial, covering tuition and accommodation. However, students or their sponsors must cover medical insurance, food, and other requirements including books and travel.
+              The Competency-Based Curriculum was rolled out in 2017 to replace the 8-4-4 Curriculum that has been in practice since 1987.
               </p>
               <ul role="list" className="mt-[20px] space-y-[10px]">
                 <li className="flex gap-x-[10px]">
                   <ArrowRightIcon aria-hidden="true" className="mt-[6px] h-[20px] w-[20px] flex-none text-indigo-600" />
                   <span>
-                    <strong className="font-semibold text-white">Scholarship Selection.</strong> Candidates are selected by the Ministry of Higher Education in collaboration with the Russian Ministry of Education.
+                    <strong className="font-semibold text-white">CBC Rating.</strong> In 2017, Kenyan education system was rated as the strongest among other forty three mainland countries on the African continent by the World Economic Forum
+                    -Competency Based Curriculum (CBC), 2-6-3-3-3
                   </span>
                 </li>
                 <li className="flex gap-x-[10px]">
                   <ArrowRightIcon aria-hidden="true" className="mt-[6px] h-[20px] w-[20px] flex-none text-indigo-600" />
                   <span>
-                    <strong className="font-semibold text-white">Postgraduate Opportunities.</strong> Undergraduate scholarship recipients may qualify for master's sponsorship based on academic performance.
+                    <strong className="font-semibold text-white">CBC Emphasis.</strong> The Competency-Based Curriculum puts emphasis on seven core competences namely; communication and collaboration, critical thinking and problem-solving, creativity and imagination, citizenship, digital literacy, learning to learn and self-efficacy.
                   </span>
                 </li>
                 <li className="flex gap-x-[10px]">
                   <ArrowRightIcon aria-hidden="true" className="mt-[6px] h-[20px] w-[20px] flex-none text-indigo-600" />
                   <span>
-                    <strong className="font-semibold text-white">Russian Education System.</strong> The education system in Russia is highly developed, offering various levels of education from general to professional.
+                    <strong className="font-semibold text-white">Technical and Vocational Education and Training Institutions.</strong> These institutions operate under the state department of vocational and technical training under the helm of a Principal Secretary. They award artisan, craft and diploma and higher national diploma certificates after successful completion of relevant courses.
+
+                  </span>
+                </li>
+                <li className="flex gap-x-[10px]">
+                  <ArrowRightIcon aria-hidden="true" className="mt-[6px] h-[20px] w-[20px] flex-none text-indigo-600" />
+                  <span>
+                    <strong className="font-semibold text-white">Government TVET institutions</strong> There are three types of government TVET institutions in Kenya. these are National Polytechnics, Technical Institutions and Vocational Education Centers (formerly Youth Polytechnics)University education.
+                  </span>
+                </li>
+                <li className="flex gap-x-[10px]">
+                  <ArrowRightIcon aria-hidden="true" className="mt-[6px] h-[20px] w-[20px] flex-none text-indigo-600" />
+                  <span>
+                    <strong className="font-semibold text-white">Higher Education Financing</strong> In 2023, the Government of Kenya launched the Higher Education Financing portal to ensure equality in the access to education for University and TVET students. The HEF portal is based on the New Funding Model (NFM) launched by the President of Kenya on 3 May 2023.
                   </span>
                 </li>
               </ul>
-              <p className="mt-[20px]">
-                The Russian government offers up to 10,000 places for foreign students annually, including around 60 scholarships for Kenyan students each year.
-                <hr></hr><br/>Russian government scholarship means that a student gets:
-
-                  - free education
-                  - monthly stipend (around 40 USD)
-                  - subsidized accommodation at the university’s dormitory
-                  - assistance in getting Russian student visa
-                  <hr></hr><br />
-                  Russian government scholarship student is expected to pay for:
-
-                  - a ticket to the city of studies
-                  - insurance fee (250 USD)
-                  - his/her monthly upkeep
-              </p>
               {/* Links to relevant websites */}
               <div className="mt-[30px]">
-                <a href='https://russia.study/en' target="_blank" rel="noopener noreferrer" className='text-indigo-600 hover:text-indigo-500'>
-                  Apply for Russian Government Scholarship
-                </a><br />
                 <a href='https://www.education.go.ke' target="_blank" rel="noopener noreferrer" className='text-indigo-600 hover:text-indigo-500'>
                   Visit Ministry of Education
                 </a><br />
-              
+                <a href='https://en.m.wikipedia.org/wiki/Education_in_Kenya' target="_blank" rel="noopener noreferrer" className='text-indigo-600 hover:text-indigo-500'>
+                  Education in Kenya
+                </a><br />
+                <a href='https://russia.study/en' target="_blank" rel="noopener noreferrer" className='text-indigo-600 hover:text-indigo-500'>
+                  Apply for Russian Government Scholarship
+                </a>
               </div>
             </div>
           </div>

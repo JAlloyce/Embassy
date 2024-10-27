@@ -41,7 +41,7 @@ return (
             <img
                 alt="Kenya Embassy Logo"
                 src={images.Logo} 
-                className="h-28 w-auto" 
+                className="h-36 w-auto" 
             />
             </a>
         </div>
@@ -104,7 +104,7 @@ return (
             <img
                 alt="Ambassador Peter Mathuki"
                 src={images.AmbIrene}
-                className="h-36 w-auto rounded-lg"
+                className="h-32 w-auto rounded-lg"
             />
             <div>
                 <p className="text-lg font-semibold text-white">Amb. Irene K. Maswan, OGW</p>

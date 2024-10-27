@@ -9,6 +9,7 @@ import NorthRiftKenya from './NorthRiftKenya'
 import SouthernKenya from './SouthernKenya'
 import WesternKenya from './WesternKenya'
 import ThingsToDo from './ThingsToDo'
+import GettingAround from "./GettingAround"
 
 
 const MagicalKenya = () => {
@@ -25,6 +26,7 @@ const MagicalKenya = () => {
       <SouthernKenya />
       <WesternKenya />
       <ThingsToDo />
+      <GettingAround />
     </div>
   )
 }

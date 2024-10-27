@@ -52,7 +52,7 @@ import Slide33 from '../assets/Slide33.jpg'
 import Slide34 from '../assets/Slide34.jpg'
 import Slide35 from '../assets/Slide35.jpg'
 import Slide36 from '../assets/Slide36.jpg'
-import AmbPeter from '../assets/Peter.jpg'
+import AmbPeter from '../assets/AmbPeter.jpg'
 import AmbIrene from '../assets/Irene.jpg'
 import MaasaiMan from '../assets/MaasaiMan.jpg'
 import Zebra2 from '../assets/Zebra2.jpg'
@@ -68,6 +68,11 @@ import Keninvestlogo from '../assets/Keninvestlogo.png'
 import MagicalKenyalogo from '../assets/MagicalKenyalogo.png'
 import Uon from '../assets/uon.jpg'
 import prez1 from '../assets/prez1.jpg'
+import Get1 from '../assets/Get1.jpg'
+import Get2 from '../assets/Get2.jpg'
+import Get3 from '../assets/Get3.jpg'
+import Get4 from '../assets/Get4.jpg'
+import Get5 from '../assets/Get5.jpg'
 
 
 
@@ -140,6 +145,11 @@ const images = {
     Slide35,
     Slide36,
     prez1,
+    Get1,
+    Get2,
+    Get3,
+    Get4,
+    Get5
 };
 
 export default images;

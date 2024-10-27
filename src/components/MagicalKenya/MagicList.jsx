@@ -50,11 +50,25 @@
             <div className="lg:pr-4">
                 <div className="max-w-xl text-base leading-7 text-gray400 lg:max-w-lg">
                 <ul role="list" className="mt-[20px] space-y-[10px]">
+                <li className="flex justify-between gap-x-6 py-5">
+                    <div className="flex min-w-0 gap-x-4">
+                        <div className="min-w-0 flex-auto">
+                        <Link to="/magical-kenya/getting-around" className="text-4xl font-bold leading-6 text-gray-400 hover:text-white">
+                            <span className="rounded-full bg-indigo-600 px-3 py-2 text-2xl font-bold text-white">1.</span> Getting Around Kenya
+                        </Link>
+                        </div>
+                    </div>
+                    <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-start">
+                        <Link to="/magical-kenya/things-to-do">
+                        <ArrowRightIcon aria-hidden="true" className="mt-1 h-10 w-10 flex-none text-indigo-600 hover:text-white" />
+                        </Link>
+                    </div>
+                    </li>
                     <li className="flex justify-between gap-x-6 py-5">
                     <div className="flex min-w-0 gap-x-4">
                         <div className="min-w-0 flex-auto">
                         <Link to="/magical-kenya/intro" className="text-4xl font-bold leading-6 text-gray-400 hover:text-white">
-                            <span className="rounded-full bg-indigo-600 px-3 py-2 text-2xl font-bold text-white">1.</span> Why Kenya ?
+                            <span className="rounded-full bg-indigo-600 px-3 py-2 text-2xl font-bold text-white">2.</span> Why Kenya ?
                         </Link>
                         </div>
                     </div>
@@ -69,7 +83,7 @@
                     <div className="flex min-w-0 gap-x-4">
                         <div className="min-w-0 flex-auto">
                         <Link to="/magical-kenya/nairobi" className="text-4xl font-bold leading-6 text-gray-400 hover:text-white">
-                            <span className="rounded-full bg-indigo-600 px-3 py-2 text-2xl font-bold text-white">2.</span> Capital City
+                            <span className="rounded-full bg-indigo-600 px-3 py-2 text-2xl font-bold text-white">3.</span> Capital City
                         </Link>
                         </div>
                     </div>
@@ -84,7 +98,7 @@
                     <div className="flex min-w-0 gap-x-4">
                         <div className="min-w-0 flex-auto">
                         <Link to="/magical-kenya/coast" className="text-4xl font-bold leading-6 text-gray-400 hover:text-white">
-                            <span className="rounded-full bg-indigo-600 px-3 py-2 text-2xl font-bold text-white">3.</span> Coast Region
+                            <span className="rounded-full bg-indigo-600 px-3 py-2 text-2xl font-bold text-white">4.</span> Coast Region
                         </Link>
                         </div>
                     </div>
@@ -99,7 +113,7 @@
                     <div className="flex min-w-0 gap-x-4">
                         <div className="min-w-0 flex-auto">
                         <Link to="/magical-kenya/central-rift" className="text-4xl font-bold leading-6 text-gray-400 hover:text-white">
-                            <span className="rounded-full bg-indigo-600 px-3 py-2 text-2xl font-bold text-white">4.</span> Central Rift Region
+                            <span className="rounded-full bg-indigo-600 px-3 py-2 text-2xl font-bold text-white">5.</span> Central Rift Region
                         </Link>
                         </div>
                     </div>
@@ -114,7 +128,7 @@
                     <div className="flex min-w-0 gap-x-4">
                         <div className="min-w-0 flex-auto">
                         <Link to="/magical-kenya/mount-kenya" className="text-4xl font-bold leading-6 text-gray-400 hover:text-white">
-                            <span className="rounded-full bg-indigo-600 px-3 py-2 text-2xl font-bold text-white">5.</span> Mount Kenya
+                            <span className="rounded-full bg-indigo-600 px-3 py-2 text-2xl font-bold text-white">6.</span> Mount Kenya
                         </Link>
                         </div>
                     </div>
@@ -129,7 +143,7 @@
                     <div className="flex min-w-0 gap-x-4">
                         <div className="min-w-0 flex-auto">
                         <Link to="/magical-kenya/northern-kenya" className="text-4xl font-bold leading-6 text-gray-400 hover:text-white">
-                            <span className="rounded-full bg-indigo-600 px-3 py-2 text-2xl font-bold text-white">6.</span> Northern Region
+                            <span className="rounded-full bg-indigo-600 px-3 py-2 text-2xl font-bold text-white">7.</span> Northern Region
                         </Link>
                         </div>
                     </div>
@@ -144,7 +158,7 @@
                     <div className="flex min-w-0 gap-x-4">
                         <div className="min-w-0 flex-auto">
                         <Link to="/magical-kenya/north-rift" className="text-4xl font-bold leading-6 text-gray-400 hover:text-white">
-                            <span className="rounded-full bg-indigo-600 px-3 py-2 text-2xl font-bold text-white">7.</span> North Rift Region
+                            <span className="rounded-full bg-indigo-600 px-3 py-2 text-2xl font-bold text-white">8.</span> North Rift Region
                         </Link>
                         </div>
                     </div>
@@ -159,7 +173,7 @@
                     <div className="flex min-w-0 gap-x-4">
                         <div className="min-w-0 flex-auto">
                         <Link to="/magical-kenya/southern-kenya" className="text-4xl font-bold leading-6 text-gray-400 hover:text-white">
-                            <span className="rounded-full bg-indigo-600 px-3 py-2 text-2xl font-bold text-white">8.</span> Southern Region
+                            <span className="rounded-full bg-indigo-600 px-3 py-2 text-2xl font-bold text-white">9.</span> Southern Region
                         </Link>
                         </div>
                     </div>
@@ -174,7 +188,7 @@
                     <div className="flex min-w-0 gap-x-4">
                         <div className="min-w-0 flex-auto">
                         <Link to="/magical-kenya/western-kenya" className="text-4xl font-bold leading-6 text-gray-400 hover:text-white">
-                            <span className="rounded-full bg-indigo-600 px-3 py-2 text-2xl font-bold text-white">9.</span> Western Region
+                            <span className="rounded-full bg-indigo-600 px-3 py-2 text-2xl font-bold text-white">10.</span> Western Region
                         </Link>
                         </div>
                     </div>
@@ -189,7 +203,7 @@
                     <div className="flex min-w-0 gap-x-4">
                         <div className="min-w-0 flex-auto">
                         <Link to="/magical-kenya/things-to-do" className="text-4xl font-bold leading-6 text-gray-400 hover:text-white">
-                            <span className="rounded-full bg-indigo-600 px-3 py-2 text-2xl font-bold text-white">10.</span> Things To Do
+                            <span className="rounded-full bg-indigo-600 px-3 py-2 text-2xl font-bold text-white">11.</span> Things To Do
                         </Link>
                         </div>
                     </div>

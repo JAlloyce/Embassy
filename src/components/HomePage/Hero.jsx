@@ -30,6 +30,7 @@
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const [dropdownOpen, setDropdownOpen] = useState({});
+    const [language, setLanguage] = useState('en');
 
     // Background images for hero section
     const imageOrder = [
@@ -60,6 +61,35 @@
         behavior: 'smooth',
         });
     };
+
+     // Language change effect
+    useEffect(() => {
+        const languageInterval = setInterval(() => {
+            setLanguage((prev) => {
+                if (prev === 'en') return 'ru'; // Change to Russian
+                if (prev === 'ru') return 'sw'; // Change to Swahili
+                return 'en'; // Change back to English
+            });
+        }, 10000); // Change language every 10 seconds
+
+        return () => clearInterval(languageInterval); // Cleanup interval on component unmount
+    }, []);
+
+    const texts = {
+        en: {
+            title: "Welcome to the Embassy of the Republic of Kenya in the Russian Federation",
+            description: "Your gateway to Kenya's culture, tourism, and consular services. We are here to assist you with all your needs."
+        },
+        ru: {
+            title: "Добро пожаловать в Посольство Республики Кения в Российской Федерации",
+            description: "Ваш путь к культуре Кении, туризму и консульским услугам. Мы здесь, чтобы помочь вам со всеми вашими потребностями."
+        },
+        sw: {
+            title: "Karibu kwenye Ubalozi wa Jamhuri ya Kenya katika Shirikisho la Urusi",
+            description: "Langoni mwako kwa utamaduni wa Kenya, utalii, na huduma za konsula. Tuko hapa kukusaidia na mahitaji yako yote."
+        }
+    };
+
 
     return (
         <div className="relative bg-gray-900">
@@ -227,17 +257,17 @@
 
         {/* Hero Section */}
         <div className="relative isolate px-6 pt-[100px] lg:px-[20%]"> 
-            <div className="mx-auto max-w-xl py-[100px] sm:max-w-xl lg:max-w-xl lg:py-[150px]"> {/* Adjusted padding for hero section */}
-            <motion.h1
-            initial={{x:-100, opacity:0}}
-            animate={{x:0, opacity:1}}
-            transition={{duration:1, delay:0.5}}
-            className="text-center text-white text-[36px] sm:text-[48px] font-extrabold tracking-tight">
-                Welcome to the Embassy of the Republic of Kenya in the Russian Federation
-            </motion.h1>
-            <p className="mt-[20px] text-center text-lg font-bold leading-tight text-gray-400">
-                Your gateway to Kenya's culture, tourism, and consular services. We are here to assist you with all your needs.
-            </p>
+                <div className="mx-auto max-w-xl py-[100px] sm:max-w-xl lg:max-w-xl lg:py-[150px]">
+                    <motion.h1
+                        initial={{x:-100, opacity:0}}
+                        animate={{x:0, opacity:1}}
+                        transition={{duration:1, delay:0.5}}
+                        className="text-center text-white text-[36px] sm:text-[48px] font-extrabold tracking-tight">
+                        {texts[language].title}
+                    </motion.h1>
+                    <p className="mt-[20px] text-center text-lg font-bold leading-tight text-gray-400">
+                        {texts[language].description}
+                    </p>
             {/* Call-to-action buttons */}
             <div className="mt-[30px] flex items-center justify-center gap-x-[20px]">
                 
