@@ -73,6 +73,14 @@ import Get2 from '../assets/Get2.jpg'
 import Get3 from '../assets/Get3.jpg'
 import Get4 from '../assets/Get4.jpg'
 import Get5 from '../assets/Get5.jpg'
+import Stadium from '../assets/Stadium.jpg'
+import Cul from '../assets/Cul.jpg'
+import Agric from '../assets/Agric.jpg'
+import Tour from '../assets/Tour.jpg'
+import Foreign from '../assets/Foreign.jpg'
+
+
+//import Edu4 from '../assets/Edu4.'
 
 
 
@@ -149,7 +157,13 @@ const images = {
     Get2,
     Get3,
     Get4,
-    Get5
+    Get5,
+    Stadium,
+    Cul,
+    Agric,
+    Tour,
+    Foreign
+    //Edu4
 };
 
 export default images;

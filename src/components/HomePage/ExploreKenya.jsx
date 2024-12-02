@@ -34,7 +34,7 @@ const ExploreKenya = () => {
                             },
                             {
                                 name: 'Trade',
-                                image: images.Sunflower,
+                                image: images.Agric,
                                 href: '/explore/trade' 
                             },
                             {
@@ -49,7 +49,7 @@ const ExploreKenya = () => {
                             },
                             {
                                 name: 'Culture',
-                                image: images.Culture,
+                                image: images.Cul,
                                 href: '/explore/culture' 
                             },
                         ].map((item) => (

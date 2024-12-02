@@ -35,7 +35,6 @@
     // Background images for hero section
     const imageOrder = [
         images.prez1,
-        images.Flag,
         images.CBD,
         images.Lion,
     ];

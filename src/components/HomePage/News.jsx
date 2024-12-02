@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
         <div className="relative bg-cover bg-center h-80 sm:h-96 lg:h-[400px]" style={{ backgroundImage: `url(${images.Flag})` }}>
         <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center p-6">
             <h1 className="text-4xl font-extrabold text-white sm:text-5xl">
-            Latest News & Notices
+            Latest News
             </h1>
             <p className="mt-2 text-lg text-gray-300">
             The news, events and communication from the embassy of Republic of Kenya in Russia Federation.

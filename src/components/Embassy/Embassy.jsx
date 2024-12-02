@@ -104,7 +104,7 @@ return (
             <img
                 alt="Ambassador Peter Mathuki"
                 src={images.AmbIrene}
-                className="h-32 w-auto rounded-lg"
+                className="h-36 w-auto rounded-lg"
             />
             <div>
                 <p className="text-lg font-semibold text-white">Amb. Irene K. Maswan, OGW</p>

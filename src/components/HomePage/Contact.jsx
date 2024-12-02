@@ -26,6 +26,15 @@
                 </button>
             </div>
             <div className="mt-4">
+                <h3 className="text-xl font-bold">Email</h3>
+                <button
+                onClick={handleEmailClick}
+                className="text-blue-500 hover:text-blue-400 focus:outline-none focus:underline"
+                >
+                moscow@mfa.go.ke
+                </button>
+            </div>
+            <div className="mt-4">
                 <h3 className="text-xl font-bold">Phone</h3>
                 <button
                 onClick={handlePhoneClick}

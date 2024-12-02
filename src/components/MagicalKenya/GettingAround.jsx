@@ -47,15 +47,9 @@ const GettingAround = () => {
         </nav>
     </header>
 
-    <p className="mt-6 text-xl leading-8 text-gray-400">
-    Hey there! 🌟 So, you are looking for a quick guide on getting around Kenya? Let’s dive right in! 
-    </p>
+    
     <h1 className="text-3xl font-bold tracking-tight text-indigo-600 sm:text-4xl">Getting Around</h1>
-    <p className="mt-6 text-xl leading-8 text-gray-400">
-        Welcome to the Embassy of the Republic of Kenya in the Russian Federation.
-    </p>
-
-
+    
     <div className="mt-10">
         {/* Getting Around */}
         <div className="mt-6">
