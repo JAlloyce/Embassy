@@ -1,112 +1,44 @@
-import { useState, useEffect } from 'react';
+import React, { useState } from 'react';
+import ImageGallery from 'react-image-gallery';
+import "react-image-gallery/styles/css/image-gallery.css";
 import images from '../../assets/images'; 
-import {motion} from 'framer-motion'
+import news from '../../assets/news'; // Import the news images
+import {motion} from 'framer-motion';
 
 const News = () => {
     const articles = [
         {
-            title: "Exploring the Maasai Mara: A Safari Experience",
-            category: "Tourism",
-            description: "Discover the breathtaking landscapes and wildlife of the Maasai Mara. It is one of the most famous wildlife reserves in the world, known for its exceptional population of lions, leopards, cheetahs, and elephants. The annual migration of wildebeest and zebra is a spectacular event that draws thousands of tourists each year.",
-            imageUrl: "https://plus.unsplash.com/premium_photo-1720380988344-1fce88bc53a6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8",
-            date: "January 1, 2023",
+            title: "Ambassador pays courtesy call to Embassy of Belarus",
+            category: "Diplomacy",
+            description: "On 18th November 2024, H.E. Dr. Peter Mutuku Mathuki, PhD, paid a courtesy call on H.E. Alexander N. Rogozhnik, Ambassador of the Republic of Belarus to the Russian Federation. The Parties exchanged opinions on the issues of mutual interest and promised to explore opportunities of cooperation between the two countries.",
+            images: [news.News1image1, news.News1image2],
+            date: "November 18, 2024",
             link: "#"
         },
         {
-            title: "The Beauty of Lake Nakuru National Park",
-            category: "Tourism",
-            description: "A guide to the stunning views and diverse wildlife at Lake Nakuru. This park is famous for its flamingos and offers a variety of habitats including grasslands, forests, and wetlands.",
-            imageUrl: "https://plus.unsplash.com/premium_photo-1720380988344-1fce88bc53a6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8",
-            date: "January 5, 2023",
+            title: "1ST MINISTERIAL CONFERENCE OF THE RUSSIA–AFRICA PARTNERSHIP FORUM",
+            category: "Diplomacy",
+            description: "H. E. Dr. Peter Mutuku Mathuki, PhD, headed the Republic of Kenya delegation at the FIRST MINISTERIAL CONFERENCE OF THE RUSSIA–AFRICA PARTNERSHIP FORUM on behalf of H.E. Musalia Mudavadi, Prime Cabinet Secretary and Minister of Foreign Affairs. The forum took place in the Sirius Federal Territory on 9th and 10th November, 2024. H.E. the Ambassador delivered the country’s message at the Plenary Session, which was chaired by H.E. Sergey V. Lavrov, Minister of Foreign Affairs of the Russian Federation. The delegation also participated in the events of the business program and held bilateral meetings with Russian stakeholders interested in cooperating with Kenyan companies.",
+            images: [news.News2image1, news.News2image2, news.News2image3, news.News2image4, news.News2image5],
+            date: "November 9-10, 2024",
             link: "#"
         },
         {
-            title: "Adventure Awaits in Amboseli National Park",
-            category: "Tourism",
-            description: "Experience close encounters with elephants and breathtaking views of Mount Kilimanjaro. Amboseli is renowned for its large elephant herds and stunning landscapes.",
-            imageUrl: "https://plus.unsplash.com/premium_photo-1720380988344-1fce88bc53a6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8",
-            date: "January 10, 2023",
+            title: "Presentation of Letters of Credence",
+            category: "Diplomacy",
+            description: "H.E. Dr. Peter Mutuki Mthuki (PhD) presented letters of credence to H.E. Vladimir Putin, President of the Russian Federation, on 5th November 2024 at the Kremlin.",
+            images: [news.News3image1, news.News3image2, news.News3image3, news.News3image4],
+            date: "November 5, 2024",
             link: "#"
         },
-        {
-            title: "Cultural Heritage at the Gede Ruins",
-            category: "Tourism",
-            description: "Explore the fascinating history and architecture of the Gede Ruins. These ancient ruins provide insights into the Swahili civilization that thrived along the coast.",
-            imageUrl: "https://plus.unsplash.com/premium_photo-1720380988344-1fce88bc53a6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8",
-            date: "January 15, 2023",
-            link: "#"
-        },
-        {
-            title: "Relaxing on Diani Beach",
-            category: "Tourism",
-            description: "Enjoy sun-soaked days and vibrant nightlife on one of Kenya's most beautiful beaches. Diani Beach is known for its white sandy shores and crystal-clear waters.",
-            imageUrl: "https://plus.unsplash.com/premium_photo-1720380988344-1fce88bc53a6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8",
-            date: "January 20, 2023",
-            link: "#"
-        },
-        // Additional articles
-        {
-            title: "Visiting Tsavo National Park",
-            category: "Tourism",
-            description: "Experience one of Kenya's largest national parks with diverse wildlife and stunning landscapes.",
-            imageUrl: "https://plus.unsplash.com/premium_photo-1720380988344-1fce88bc53a6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8",
-            date: "February 1, 2023",
-            link: "#"
-        },
-        {
-            title: "Exploring Nairobi National Park",
-            category: "Tourism",
-            description: "A unique experience where you can see wildlife against the backdrop of Nairobi's skyline.",
-            imageUrl: "https://plus.unsplash.com/premium_photo-1720380988344-1fce88bc53a6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8",
-            date: "February 5, 2023",
-            link: "#"
-        },
-        {
-            title: "Discovering the Culture of Maasai People",
-            category: "Tourism",
-            description: "Learn about the rich culture and traditions of the Maasai people while visiting their villages.",
-            imageUrl: "https://plus.unsplash.com/premium_photo-1720380988344-1fce88bc53a6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8",
-            date: "February 10, 2023",
-            link: "#"
-        },
-        {
-            title:"Bird Watching in Lake Naivasha",
-            category:"Tourism",
-            description:"Lake Naivasha is a birdwatcher's paradise with over 400 species to observe.",
-            imageUrl: "https://plus.unsplash.com/premium_photo-1720380988344-1fce88bc53a6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8",
-            link:"#"
-        },
-        {
-            title:"The Great Rift Valley Experience ",
-            category:"Tourism ",
-            description:"Explore one of Africa's most stunning geological features along with its unique wildlife.",
-            imageUrl: "https://plus.unsplash.com/premium_photo-1720380988344-1fce88bc53a6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8",
-            date:"February 20, 2023 ", 
-            link:"#"
-        },
-        {
-            title:"Exploring Lamu Island ",
-            category:"Tourism ",
-            description:"Experience the rich Swahili culture and stunning beaches on Lamu Island.",
-            imageUrl: "https://plus.unsplash.com/premium_photo-1720380988344-1fce88bc53a6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8",
-            date:"March 1, 2023 ", 
-            link:"#"
-        },
-        {
-            title:"Safari in Meru National Park ",
-            category:"Tourism ",
-            description:"Meru National Park offers a unique safari experience away from the crowds.",
-            imageUrl: "https://plus.unsplash.com/premium_photo-1720380988344-1fce88bc53a6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8",
-            date:"March 5, 2023 ", 
-            link:"#"
-        },
-       // Continue adding more articles up to a total of 40...
     ];
 
     const [displayedArticles, setDisplayedArticles] = useState(articles.slice(0, 20)); // Initial load of 20 articles
     const [loading, setLoading] = useState(false);
     const [hasMore, setHasMore] = useState(true);
-    
+    const [showGallery, setShowGallery] = useState(false);
+    const [galleryImages, setGalleryImages] = useState([]);
+
     const loadMoreArticles = () => {
         if (loading || !hasMore) return;
 
@@ -124,17 +56,14 @@ const News = () => {
         }, 1000); // This will Simulate network delay, more like a fetch funnctionality
     };
 
-    // Infinite scroll detection
-    useEffect(() => {
-        const handleScroll = () => {
-            if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 500) {
-                loadMoreArticles();
-            }
-        };
+    const openGallery = (images) => {
+        setGalleryImages(images.map(img => ({ original: img, thumbnail: img })));
+        setShowGallery(true);
+    };
 
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, [loading]);
+    const closeGallery = () => {
+        setShowGallery(false);
+    };
 
     return (
         <div className="bg-black">
@@ -202,13 +131,39 @@ const News = () => {
                                 <ReadMoreLess text={article.description} />
                             </div>
                         </div>
-                        <img src={article.imageUrl} alt="" className="mb-6 m-4 shadow-md rounded-lg bg-slate-50 w-full sm:w-[17rem] sm:mb-0 lg:mb-4  xl:w-full" width="1216" height="640"/>
+                        <div className="relative w-64 h-64 sm:w-[17rem] sm:h-[17rem] xl:w-64 xl:h-64 mb-6 m-4 shadow-md rounded-lg bg-slate-50 cursor-pointer">
+                            <img 
+                                src={article.images[0]} 
+                                alt="" 
+                                className="w-full h-full object-cover rounded-lg" 
+                                onClick={() => openGallery(article.images)}
+                            />
+                        </div>
                     </li>
                 ))}
             </ul>
 
             {loading && (
                 <div className="text-center mt-4">Loading more News...</div>
+            )}
+
+            {showGallery && (
+                <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-75 flex items-center justify-center z-50">
+                    <div className="relative">
+                        <ImageGallery 
+                            items={galleryImages} 
+                            showThumbnails={false} 
+                            showFullscreenButton={false} 
+                            showPlayButton={false} 
+                        />
+                        <button 
+                            onClick={closeGallery} 
+                            className="absolute top-2 right-2 bg-black text-white rounded-full p-2 shadow-lg"
+                        >
+                            X
+                        </button>
+                    </div>
+                </div>
             )}
         </div>
     </div>
