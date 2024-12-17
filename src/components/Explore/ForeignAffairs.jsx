@@ -36,10 +36,7 @@ const ForeignAffairs = () => {
             </pattern>
           </defs>
           <svg x="50%" y={-1} className="overflow-visible fill-gray-700">
-            <path
-              d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z"
-              strokeWidth={0}
-            />
+            
           </svg>
           <rect fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)" width="100%" height="100%" strokeWidth={0} />
         </svg>
@@ -49,7 +46,7 @@ const ForeignAffairs = () => {
           <div className="lg:pr-4">
             <div className="lg:max-w-lg">
               <p className="text-base font-semibold leading-7 text-indigo-600">Empowering Diplomacy</p>
-              <h1 className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Ministry of Foreign Affairs</h1>
+              <h1 className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Ministry of Foreign and Diaspora Affairs</h1>
               <p className="mt-6 text-xl leading-8 text-gray-400">
                 The Ministry of Foreign Affairs of Kenya plays a crucial role in managing Kenya's international relations and promoting the country's interests abroad.
               </p>

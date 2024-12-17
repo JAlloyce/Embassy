@@ -13,7 +13,7 @@ const ExploreKenya = () => {
                     <div className="grid grid-cols-1 gap-y-10 mt-10 sm:grid-cols-2 sm:gap-x-6 sm:gap-y-10 lg:grid-cols-4">
                         {[
                             {
-                                name: 'Foreign Affairs',
+                                name: 'Foreign and Diaspora Affairs',
                                 image: images.Logo,
                                 href: '/explore/foreign-affairs' 
                             },

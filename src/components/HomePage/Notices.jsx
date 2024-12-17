@@ -21,10 +21,10 @@ const noticesData = [
     link: 'https://www.etakenya.go.ke',
 },
 {
-    title: 'Leglization of Documents',
+    title: 'Legalization of Documents',
     description: 'Check Document Authentification and legalization requirements.',
     type: 'link',
-    link: 'https://www.kenyaembassyru.ru',
+    link: '/consular/doc-leg',
 },
 ];
 
