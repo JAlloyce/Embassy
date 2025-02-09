@@ -21,7 +21,7 @@ const Sports = () => {
             </header>
         <svg
           aria-hidden="true"
-          className="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-700 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
+          className="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-black [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
         >
           <defs>
             <pattern
@@ -35,7 +35,7 @@ const Sports = () => {
               <path d="M100 200V.5M.5 .5H200" fill="none" />
             </pattern>
           </defs>
-          <svg x="50%" y={-1} className="overflow-visible fill-gray-700">
+          <svg x="50%" y={-1} className="overflow-visible fill-black">
             
           </svg>
           <rect fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)" width="100%" height="100%" strokeWidth={0} />
@@ -44,10 +44,10 @@ const Sports = () => {
       <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
-            <div className="lg:max-w-lg">
+            <div className="lg:max-w-lg mt-8 sm:mt-12">
               <p className="text-base font-semibold leading-7 text-indigo-600">Celebrating Sports</p>
               <h1 className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Sports in Kenya</h1>
-              <p className="mt-6 text-xl leading-8 text-gray-400">
+              <p className="mt-6 text-xl leading-8 text-gray-400 text-justify">
                 Sports in Kenya are deeply rooted in culture and history, with a rich tradition of indigenous sports and a strong influence from British colonialism. Kenya has become a powerhouse in various sports, particularly athletics.
               </p>
             </div>
@@ -63,30 +63,30 @@ const Sports = () => {
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
             <div className="max-w-xl text-base leading-7 text-gray-400 lg:max-w-lg">
-              <p>
+              <p className='text-justify'>
                 Kenya is globally recognized for its dominance in middle-distance and long-distance races. Recently, Kenyan athletes have excelled in marathons, with Eliud Kipchoge being a standout figure, famously breaking the marathon world record.
               </p>
               <ul role="list" className="mt-[20px] space-y-[10px]">
                 <li className="flex gap-x-[10px]">
                   <ArrowRightIcon aria-hidden="true" className="mt-[6px] h-[20px] w-[20px] flex-none text-indigo-600" />
-                  <span>
+                  <span className='text-justify'>
                     <strong className="font-semibold text-white">Recent Achievements.</strong> Kipchoge's recent performance at the Berlin Marathon showcased his incredible talent and determination, further solidifying Kenya's reputation in athletics.
                   </span>
                 </li>
                 <li className="flex gap-x-[10px]">
                   <ArrowRightIcon aria-hidden="true" className="mt-[6px] h-[20px] w-[20px] flex-none text-indigo-600" />
-                  <span>
+                  <span className='text-justify'>
                     <strong className="font-semibold text-white">Rugby Success.</strong> The Kenyan Rugby Sevens team has made significant strides on the international stage, competing fiercely in tournaments like the World Rugby Sevens Series.
                   </span>
                 </li>
                 <li className="flex gap-x-[10px]">
                   <ArrowRightIcon aria-hidden="true" className="mt-[6px] h-[20px] w-[20px] flex-none text-indigo-600" />
-                  <span>
+                  <span className='text-justify'>
                     <strong className="font-semibold text-white">Diverse Sports.</strong> Beyond athletics, Kenya has a vibrant sports culture that includes rugby, cricket, football, and volleyball.
                   </span>
                 </li>
               </ul>
-              <p className="mt-[20px]">
+              <p className="mt-[20px] text-justify">
                 The rich sporting heritage of Kenya continues to inspire future generations of athletes to strive for excellence on both local and international stages.
               </p>
 

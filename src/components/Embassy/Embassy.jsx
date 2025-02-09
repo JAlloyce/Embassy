@@ -8,7 +8,7 @@ return (
     <div className="absolute inset-0 -z-10 overflow-hidden">
     <svg
         aria-hidden="true"
-        className="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-700 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
+        className="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-black [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
     >
         <defs>
         <pattern
@@ -22,7 +22,7 @@ return (
             <path d="M100 200V.5M.5 .5H200" fill="none" />
         </pattern>
         </defs>
-        <svg x="50%" y={-1} className="overflow-visible fill-gray-700">
+        <svg x="50%" y={-1} className="overflow-visible fill-black">
         <path
             d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z"
             strokeWidth={0}
@@ -74,22 +74,22 @@ return (
                 
             </div>
             </motion.div>
-            <p className="mt-2 text-gray-400">
+            <p className="mt-2 text-gray-400 text-justify">
             Amb. (Dr). Peter Mutuku Mathuki arrived in Moscow on 22nd August 2024 to commence his tour of duty as the Ambassador Extraordinary and Plenipotentiary of the Republic of Kenya to the Russian Federation with accreditation to Belarus and Kazakhstan.<br/>
             </p>
-            <p className="mt-2 text-gray-400">
+            <p className="mt-2 text-gray-400 text-justify">
             Amb. (Dr). Peter Mutuku Mathuki is an accomplished Diplomat having served in Regional Economic Blocs, UN system and in the African region. His expertise is in Private Sector Development, Resource Mobilization, Public Policy and Economic Development.<br />
             </p>
-            <p className="mt-2 text-gray-400">
+            <p className="mt-2 text-gray-400 text-justify">
             Dr. Mathuki served as the Secretary General of the East African Community (EAC) from April 2021 to June 2024. He was the Principal Executive Officer of the Community and the Secretary to the Summit of the EAC Heads of State. Dr. Mathuki is an ardent champion in global diplomacy and has left an indelible mark in his previous roles.<br />
             </p>
-            <p className="mt-2 text-gray-400">
+            <p className="mt-2 text-gray-400 text-justify">
             He served as the Chief Executive Officer (CEO) of the East African Business Council (EABC), (2018-2021). He was instrumental in driving and articulating the Private Sector priorities in EAC decision-making process. Dr. Mathuki served as a Member of Parliament of the East African Legislative Assembly (EALA) - (2012-2017), where he chaired the EALA Committee responsible for good governance and served in the Committees of Accounts and Trade & Investment.<br />
             </p>
-            <p className="mt-2 text-gray-400">
+            <p className="mt-2 text-gray-400 text-justify">
             He worked for the European Union (EU) programs for Africa touching several African countries. Dr. Mathuki has actively played a pivotal role in overseeing the coming into effect of the African Continental Free Trade Area (AfCFTA) and championed the formation of the African Business Council. He served in several boards across the region. Prior to this he worked both in Academia and several other private sector organizations.<br />
             </p>
-            <p className="mt-2 text-gray-400">
+            <p className="mt-2 text-gray-400 text-justify">
             Dr. Mathuki holds an MBA and PhD in Strategic Management & Regional Integration from the University of Nairobi, Kenya. <br />
             </p>
         </div>
@@ -112,16 +112,16 @@ return (
                 
             </div>
             </motion.div>
-            <p className="mt-2 text-gray-400">
+            <p className="mt-2 text-gray-400 text-justify">
                 Ambassador Irene Maswan arrived in Moscow on 26th April 2024. She assumed her position as the Deputy Head of Mission of the Republic of Kenya to the Russian Federation with accreditation to Belarus and Kazakhstan.
                 </p>
-                <p className="mt-2 text-gray-400">
+                <p className="mt-2 text-gray-400 text-justify">
                 Ambassador Maswan, with a Master’s degree in Administration and Planning from the University of Nairobi, Kenya, is a career diplomat with a wealth of experience spanning over 23 years in Government. Before assuming her current position, Ambassador Maswan worked in various Ministries and Departments of the Government of Kenya. She worked as an Assistant Director in the Ministry of Interior and National Coordination, Department of Training and Research. She was Head of the East Africa and Great Lakes region Directorate in the Office of the President. While in this capacity, she coordinated the development of the Directorate’s strategic plan and the training curriculum. Ambassador Maswan has also served as Counselor at the Kenya High Commission in Bujumbura, Burundi. Before that, she worked as a consulting trainer at the BABI GROW LTD and the Electoral Commission of Kenya.
                 </p>
-                <p className="mt-2 text-gray-400">
+                <p className="mt-2 text-gray-400 text-justify">
                 During her stint at the mission in Bujumbura, Amb. Maswan participated in the inter-parties peace initiatives for Burundi after 2015 elections. She also served as the liaison for the ICGLR Secretariat headquartered in Burundi. Maswan has continued to offer consultancy services in the field of training and development.
                 </p>
-                <p className="mt-2 text-gray-400">
+                <p className="mt-2 text-gray-400 text-justify">
                 Ambassador Maswan has been awarded the national honors, the Order of the Golden Warrior (OGW) in recognition of her distinguished service to the nation. In addition to the official languages of Kenya, English and Swahili, she is proficient in French.
                 </p>
         </div>

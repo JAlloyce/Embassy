@@ -7,7 +7,7 @@ const GettingAround = () => {
     <div className="absolute inset-0 -z-10 overflow-hidden">
     <svg
         aria-hidden="true"
-        className="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-700 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
+        className="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-black [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
     >
         <defs>
         <pattern
@@ -21,7 +21,7 @@ const GettingAround = () => {
             <path d="M100 200V.5M.5 .5H200" fill="none" />
         </pattern>
         </defs>
-        <svg x="50%" y={-1} className="overflow-visible fill-gray-700">
+        <svg x="50%" y={-1} className="overflow-visible fill-black">
         <path
             d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z"
             strokeWidth={0}
@@ -66,13 +66,13 @@ const GettingAround = () => {
                 className="h-auto w-auto rounded-lg"
             />
             </motion.div>
-            <p className="mt-2 text-gray-400">
+            <p className="mt-2 text-gray-400 text-justify">
             The Nairobi Light Rail is a super convenient way to zip around the city! <br/>
             </p>
-            <p className="mt-2 text-gray-400">
+            <p className="mt-2 text-gray-400 text-justify">
             With its modern vibe and comfy ride, it links key areas in the city making it perfect for avoiding traffic..<br />
             </p>
-            <p className="mt-2 text-gray-400">
+            <p className="mt-2 text-gray-400 text-justify">
             Just hop on, and you’ll be zooming past those busy streets in no time!<br />
             </p>
         </div>
@@ -89,13 +89,13 @@ const GettingAround = () => {
                 className="h-auto w-auto rounded-lg"
             />
             </motion.div>
-            <p className="mt-2 text-gray-400">
+            <p className="mt-2 text-gray-400 text-justify">
             If you want the true Kenyan experience, you HAVE to hop on a matatu! It is the heartbeat of the city’s public transport.<br/>
             </p>
-            <p className="mt-2 text-gray-400">
+            <p className="mt-2 text-gray-400 text-justify">
             They’re always full with awesome music, and you can find routes all over Nairobi.<br />
             </p>
-            <p className="mt-2 text-gray-400">
+            <p className="mt-2 text-gray-400 text-justify">
             Just remember to bring your best mood, take care of your personal belongings , and stay part of the adventure!<br />
             </p>
         </div>
@@ -116,13 +116,13 @@ const GettingAround = () => {
                 className="h-auto w-auto rounded-lg"
             />
             </motion.div>
-            <p className="mt-2 text-gray-400">
+            <p className="mt-2 text-gray-400 text-justify">
             Kenya’s highways will take you on some epic road trips <br/>
             </p>
-            <p className="mt-2 text-gray-400">
+            <p className="mt-2 text-gray-400 text-justify">
             The major highways like the Mombasa Road and the Nyeri-Nairobi Highway connect you to stunning destinations like the coast and the Rift Valley.<br />
             </p>
-            <p className="mt-2 text-gray-400">
+            <p className="mt-2 text-gray-400 text-justify">
             Just buckle up and enjoy the ride through Kenya’s gorgeous landscapes!<br />
             </p>
         </div>
@@ -139,13 +139,13 @@ const GettingAround = () => {
                 className="h-auto w-auto rounded-lg"
             />
             </motion.div>
-            <p className="mt-2 text-gray-400">
+            <p className="mt-2 text-gray-400 text-justify">
             Traveling by air? Kenya has a great mix of local and international airports.<br/>
             </p>
-            <p className="mt-2 text-gray-400">
+            <p className="mt-2 text-gray-400 text-justify">
             Jomo Kenyatta International Airport (JKIA) in Nairobi is your main hub for international flights, while places like Wilson Airport cater to domestic flights.<br />
             </p>
-            <p className="mt-2 text-gray-400">
+            <p className="mt-2 text-gray-400 text-justify">
             Super handy for reaching places like Maasai Mara or Lake Nakuru quickly!<br />
             </p>
         </div>
@@ -162,13 +162,13 @@ const GettingAround = () => {
                 className="h-auto w-auto rounded-lg"
             />
             </motion.div>
-            <p className="mt-2 text-gray-400">
+            <p className="mt-2 text-gray-400 text-justify">
             For a chill ride across the country, check out the intercity trains!<br/>
             </p>
-            <p className="mt-2 text-gray-400">
+            <p className="mt-2 text-gray-400 text-justify">
             The Madaraka Express connects Nairobi to Mombasa in a snap.<br />
             </p>
-            <p className="mt-2 text-gray-400">
+            <p className="mt-2 text-gray-400 text-justify">
             With comfy seats and beautiful views, it’s a fab way to travel and experience the scenic beauty of Kenya.<br />
             </p>
         </div>

@@ -21,7 +21,7 @@ export default function Culture() {
             </header>
         <svg
           aria-hidden="true"
-          className="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-700 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
+          className="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-black [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
         >
           <defs>
             <pattern
@@ -35,7 +35,7 @@ export default function Culture() {
               <path d="M100 200V.5M.5 .5H200" fill="none" />
             </pattern>
           </defs>
-          <svg x="50%" y={-1} className="overflow-visible fill-gray-700">
+          <svg x="50%" y={-1} className="overflow-visible fill-black">
             
           </svg>
           <rect fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)" width="100%" height="100%" strokeWidth={0} />
@@ -44,10 +44,10 @@ export default function Culture() {
       <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
-            <div className="lg:max-w-lg">
+            <div className="lg:max-w-lg mt-8 sm:mt-12">
               <p className="text-base font-semibold leading-7 text-indigo-600">Celebrate Culture</p>
               <h1 className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Cultural Heritage of Kenya</h1>
-              <p className="mt-6 text-xl leading-8 text-gray-400">
+              <p className="mt-6 text-xl leading-8 text-gray-400 text-justify">
                 Kenya is a multiethnic and multiracial society rich in cultural and natural heritage. The Government of Kenya is aware of the interactions between culture and development and pays great attention to promoting cultural activities in the country.
               </p>
             </div>
@@ -63,30 +63,30 @@ export default function Culture() {
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
             <div className="max-w-xl text-base leading-7 text-gray-400 lg:max-w-lg">
-              <p>
+              <p className='text-justify'>
                 The cultural heritage is promoted through educational and social activities that are deliberately organized. There are annual events such as music, art exhibitions, and dance and drama festivals.
               </p>
               <ul role="list" className="mt-8 space-y-[10px]">
                 <li className="flex gap-x-[10px]">
                   <ArrowRightIcon aria-hidden="true" className="mt-[6px] h-[20px] w-[20px] flex-none text-indigo-600" />
-                  <span>
+                  <span className='text-justify'>
                     <strong className="font-semibold text-white">Cultural Festivals.</strong> The Ministry of Culture and Sports runs a Cultural Centre, the Bomas of Kenya, where traditional dances are performed.
                   </span>
                 </li>
                 <li className="flex gap-x-[10px]">
                   <ArrowRightIcon aria-hidden="true" className="mt-[6px] h-[20px] w-[20px] flex-none text-indigo-600" />
-                  <span>
+                  <span className='text-justify'>
                     <strong className="font-semibold text-white">National Museums of Kenya.</strong> Established in 1910, NMK collects, documents, and studies cultural heritage.
                   </span>
                 </li>
                 <li className="flex gap-x-[10px]">
                   <ArrowRightIcon aria-hidden="true" className="mt-[6px] h-[20px] w-[20px] flex-none text-indigo-600" />
-                  <span>
+                  <span className='text-justify'>
                     <strong className="font-semibold text-white">Kenya Wildlife Services.</strong> Responsible for the conservation of wildlife and natural heritage.
                   </span>
                 </li>
               </ul>
-              <p className="mt-[20px]">
+              <p className="mt-[20px] text-justify">
                 The Kenyan Government has established institutions to identify and conserve its cultural and natural heritage. Such institutions include the National Museums of Kenya (NMK) and Kenya Wildlife Services (KWS).
               </p>
               {/* Links to relevant websites */}

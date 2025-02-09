@@ -21,7 +21,7 @@ export default function Example() {
             </header>
         <svg
           aria-hidden="true"
-          className="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-700 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
+          className="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-black [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
         >
           <defs>
             <pattern
@@ -35,19 +35,19 @@ export default function Example() {
               <path d="M100 200V.5M.5 .5H200" fill="none" />
             </pattern>
           </defs>
-          <svg x="50%" y={-1} className="overflow-visible fill-gray-700">
+          <svg x="50%" y={-1} className="overflow-visible fill-black">
             
           </svg>
           <rect fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)" width="100%" height="100%" strokeWidth={0} />
         </svg>
       </div>
-      <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
+      <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
-            <div className="lg:max-w-lg">
+            <div className="lg:max-w-lg mt-8 sm:mt-12">
               <p className="text-base font-semibold leading-7 text-indigo-600">Grow with Kenya</p>
               <h1 className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Agricultural Opportunities</h1>
-              <p className="mt-6 text-xl leading-8 text-gray-400">
+              <p className="mt-6 text-xl leading-8 text-gray-400 text-justify">
                 Kenya offers a wide range of agricultural opportunities, from growing cash crops like tea and coffee to
                 producing fresh fruits and vegetables for export. The country's diverse climate and fertile soil make it
                 an ideal location for agricultural development.
@@ -65,14 +65,14 @@ export default function Example() {
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
             <div className="max-w-xl text-base leading-7 text-gray-400 lg:max-w-lg">
-              <p>
+              <p className='text-justify'>
                 Kenya and Russia have been working together to strengthen their agricultural cooperation. The two
                 countries have signed several agreements to promote trade and investment in the agricultural sector.
               </p>
               <ul role="list" className="mt-8 space-y-8">
                 <li className="flex gap-x-3">
                   <ArrowUpIcon aria-hidden="true" className="mt-1 h-5 w-5 flex-none text-indigo-600" />
-                  <span>
+                  <span className='text-justify'>
                     <strong className="font-semibold text-white">Increased Productivity.</strong> Kenyan farmers can
                     learn from Russian agricultural technologies and best practices to improve their yields and
                     efficiency.
@@ -80,14 +80,14 @@ export default function Example() {
                 </li>
                 <li className="flex gap-x-3">
                   <ArrowDownIcon aria-hidden="true" className="mt-1 h-5 w-5 flex-none text-indigo-600" />
-                  <span>
+                  <span className='text-justify'>
                     <strong className="font-semibold text-white">Market Access.</strong> Russia can provide a large
                     market for Kenyan agricultural products, particularly tea, coffee, and fresh produce.
                   </span>
                 </li>
                 <li className="flex gap-x-3">
                   <ArrowLeftIcon aria-hidden="true" className="mt-1 h-5 w-5 flex-none text-indigo-600" />
-                  <span>
+                  <span className='text-justify'>
                     <strong className="font-semibold text-white">Knowledge Sharing.</strong> Kenyan and Russian
                     agricultural experts can exchange knowledge and best practices to improve farming techniques and
                     technologies.
@@ -95,14 +95,14 @@ export default function Example() {
                 </li>
                 <li className="flex gap-x-3">
                   <ArrowRightIcon aria-hidden="true" className="mt-1 h-5 w-5 flex-none text-indigo-600" />
-                  <span>
+                  <span className='text-justify'>
                     <strong className="font-semibold text-white">Investment Opportunities.</strong> Russia can invest in
                     Kenyan agriculture, particularly in areas like irrigation, storage facilities, and processing
                     plants.
                   </span>
                 </li>
               </ul>
-              <p className="mt-8">
+              <p className="mt-8 text-justify">
                 By working together, Kenya and Russia can create new opportunities for growth and development in the
                 agricultural sector, benefiting both countries and their people.
               </p>

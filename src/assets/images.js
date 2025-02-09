@@ -78,6 +78,8 @@ import Cul from '../assets/Cul.jpg'
 import Agric from '../assets/Agric.jpg'
 import Tour from '../assets/Tour.jpg'
 import Foreign from '../assets/Foreign.jpg'
+import Trade from '../assets/Trade.jpg'
+import Diaspora from '../assets/Diaspora.jpg'
 
 
 //import Edu4 from '../assets/Edu4.'
@@ -162,7 +164,9 @@ const images = {
     Cul,
     Agric,
     Tour,
-    Foreign
+    Foreign,
+    Trade,
+    Diaspora,
     //Edu4
 };
 

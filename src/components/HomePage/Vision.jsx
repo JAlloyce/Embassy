@@ -12,19 +12,19 @@ const Vision = () => {
           <div className="flex flex-col sm:flex-row justify-between items-start">
             <div className="flex-1 mx-2">
               <h2 className="text-2xl font-bold text-white">Vision</h2>
-              <p className="mt-1 text-md text-gray-300">
+              <p className="mt-1 text-md text-gray-300 text-justify">
                 To be a modern diplomatic mission committed to efficient and effective diplomatic representation.
               </p>
             </div>
             <div className="flex-1 mx-2">
               <h2 className="text-2xl font-bold text-white">Mission</h2>
-              <p className="mt-1 text-md text-gray-300">
+              <p className="mt-1 text-md text-gray-300 text-justify">
                 To provide quality diplomatic representation and to embody the aspirations of the Kenyan people and international community through diplomatic contacts, integration, transmission, and utilization of diplomatic knowledge for the development and prosperity of Kenyan people in particular and mankind in general.
               </p>
             </div>
             <div className="flex-1 mx-2">
               <h2 className="text-2xl font-bold text-white">Core Values</h2>
-              <p className="mt-1 text-md text-gray-300">
+              <p className="mt-1 text-md text-gray-300 text-justify">
                 Patriotism, teamwork, collective responsibility, professionalism, discipline, dignity, integrity, and equity.
               </p>
             </div>

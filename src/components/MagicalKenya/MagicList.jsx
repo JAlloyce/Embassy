@@ -40,7 +40,7 @@
                 className="lg:max-w-lg">
                 <p className="text-base font-semibold leading-7 text-indigo-600">Explore Magical Kenya</p>
                 <h1 className="mt-2 text-5xl font-bold tracking-tight text-white sm:text-6xl">Discover the Wonders of Kenya</h1>
-                <p className="mt-6 text-2xl leading-8 text-gray-400">
+                <p className="mt-6 text-2xl leading-8 text-gray-400 text-justify">
                     Kenya is a land of diverse landscapes, rich culture, and endless possibilities. From the bustling city of Nairobi to the stunning beaches of the coast, there is something for everyone to explore.
                 </p>
                 </motion.div>

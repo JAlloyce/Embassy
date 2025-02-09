@@ -22,7 +22,7 @@ const Tourism = () => {
             </header>
         <svg
           aria-hidden="true"
-          className="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-700 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
+          className="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-black [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
         >
           <defs>
             <pattern
@@ -36,7 +36,7 @@ const Tourism = () => {
               <path d="M100 200V.5M.5 .5H200" fill="none" />
             </pattern>
           </defs>
-          <svg x="50%" y={-1} className="overflow-visible fill-gray-700">
+          <svg x="50%" y={-1} className="overflow-visible fill-black">
             
           </svg>
           <rect fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)" width="100%" height="100%" strokeWidth={0} />
@@ -45,10 +45,10 @@ const Tourism = () => {
       <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
-            <div className="lg:max-w-lg">
+            <div className="lg:max-w-lg mt-8 sm:mt-12">
               <p className="text-base font-semibold leading-7 text-indigo-600">Discover Kenya</p>
               <h1 className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Tourism in Kenya</h1>
-              <p className="mt-6 text-xl leading-8 text-gray-400">
+              <p className="mt-6 text-xl leading-8 text-gray-400 text-justify">
                 Welcome to Kenya, a land of breathtaking landscapes and rich cultural heritage. Kenya offers some of the finest natural attractions in the world, complemented by a network of outstanding hotels and game lodges.
               </p>
             </div>
@@ -65,30 +65,30 @@ const Tourism = () => {
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
             <div className="max-w-xl text-base leading-7 text-gray-400 lg:max-w-lg">
-              <p>
+              <p className='text-justify'>
                 Kenya is renowned for its well-managed national parks, game reserves, marine parks, and archaeological sites. The country boasts pearly white sandy beaches along coral reef-sheltered waters, providing a perfect getaway for relaxation and adventure.
               </p>
               <ul role="list" className="mt-[20px] space-y-[10px]">
                 <li className="flex gap-x-[10px]">
                   <ArrowRightIcon aria-hidden="true" className="mt-[6px] h-[20px] w-[20px] flex-none text-indigo-600" />
-                  <span>
+                  <span className='text-justify'>
                     <strong className="font-semibold text-white">Wildlife Safaris.</strong> Experience the Great Migration in Maasai Mara, where millions of wildebeest migrate annually.
                   </span>
                 </li>
                 <li className="flex gap-x-[10px]">
                   <ArrowRightIcon aria-hidden="true" className="mt-[6px] h-[20px] w-[20px] flex-none text-indigo-600" />
-                  <span>
+                  <span className='text-justify'>
                     <strong className="font-semibold text-white">Culinary Delights.</strong> Enjoy traditional dishes like Nyama Choma (roasted meat) and Ugali (stiff porridge), alongside diverse international cuisines available in Nairobi's vibrant restaurant scene.
                   </span>
                 </li>
                 <li className="flex gap-x-[10px]">
                   <ArrowRightIcon aria-hidden="true" className="mt-[6px] h-[20px] w-[20px] flex-none text-indigo-600" />
-                  <span>
+                  <span className='text-justify'>
                     <strong className="font-semibold text-white">Cultural Experiences.</strong> Engage with local communities through cultural festivals and events that showcase Kenya's diverse heritage.
                   </span>
                 </li>
               </ul>
-              <p className="mt-[20px]">
+              <p className="mt-[20px] text-justify">
                 The Kenyan government is actively promoting tourism by improving infrastructure and marketing unique attractions across different regions. With its stunning landscapes and rich culture, Kenya is indeed the ultimate destination for travelers.
               </p>
 

@@ -29,12 +29,12 @@ const ExploreKenya = () => {
                             },
                             {
                                 name: 'Agriculture',
-                                image: images.Tea,
+                                image: images.Agric,
                                 href: '/explore/agriculture' 
                             },
                             {
                                 name: 'Trade',
-                                image: images.Agric,
+                                image: images.Trade,
                                 href: '/explore/trade' 
                             },
                             {
