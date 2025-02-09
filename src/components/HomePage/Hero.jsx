@@ -6,25 +6,25 @@
     import {motion} from 'framer-motion'
 
     const navigation = [
-    { name: 'Magical Kenya', href: '/magical-kenya', dropdown: true },
-    { name: 'Embassy', href: '/embassy' },
-    { name: 'Consular Services', href: '#consular-services', dropdown: true },
-    { name: 'News', href: '/news' },
-    ];
+        { name: 'Tourism in Kenya', href: '/magical-kenya', dropdown: true },
+        { name: 'Embassy', href: '/embassy' },
+        { name: 'Consular Services', href: '#consular-services', dropdown: true },
+        { name: 'News', href: '/news' },
+    ] || [];
 
     const dropdownItems = {
-    'Magical Kenya': [
-        { name: 'General Information', href: '/magical-kenya' },
-        { name: 'Tourism Opportunities', href: '/magical-kenya/things-to-do' },
-    ],
-    'Consular Services': [
-        { name: 'Consular Services', href: '/consular' },
-        { name: 'Apply for eTA / Visa', href: '/consular/visa' },
-        { name: 'Passport Replacement', href: '/consular/passports' },
-        { name: 'Emergency Travel Certificate', href: '/consular/passports' },
-        { name: 'Police Clearance Certificate', href: '/consular/good-conduct' },
-    ],
-    };
+        'Tourism in Kenya': [
+            { name: 'Magical Kenya', href: '/magical-kenya' },
+            { name: 'Tourism Opportunities', href: '/magical-kenya/things-to-do' },
+        ],
+        'Consular Services': [
+            { name: 'Consular Services', href: '/consular' },
+            { name: 'Apply for eTA / Visa', href: '/consular/visa' },
+            { name: 'Passport Replacement', href: '/consular/passports' },
+            { name: 'Emergency Travel Certificate', href: '/consular/passports' },
+            { name: 'Police Clearance Certificate', href: '/consular/good-conduct' },
+        ],
+    } || {};
 
     export default function EmbassyLandingPage() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -161,12 +161,7 @@
             )}
         </div>
     ))}
-    <button
-        onClick={scrollToBottom} 
-        className="rounded-md bg-indigo-500 px-3.5 py-2.5 text-lg font-bold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-    >
-        Contact Us
-    </button>
+    
 </div>
             </nav>
 
@@ -236,18 +231,7 @@
                         </div>
                     ))}
                     </div>
-                    {/* Contact Us link */}
-                    <div className="">
-                    <button 
-                        onClick={() => {
-                            scrollToBottom();
-                            setMobileMenuOpen(false);
-                        }} // Close menu on click
-                        className="-mx-[12px] block rounded-lg px-[12px] py-[8px] text-base font-bold leading-[22px] text-gray-400 hover:bg-gray-800 hover:text-white"
-                    >
-                        Contact Us
-                    </button>
-                    </div>
+                    
                 </div>
                 </div>
             </DialogPanel>

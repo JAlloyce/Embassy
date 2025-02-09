@@ -134,6 +134,7 @@ return (
             <ul role="list" className="mt-[20px] space-y-[10px]">
             {[
                 { name: 'Mrs. Gaudenzia C. Ayisi', role: 'Minister-Counsel General' },
+                { name: 'Mr. Raphael Musyoka', role: 'Counsellor' },
                 { name: 'Mrs. Rose Nkirote Kiriinya', role: 'Second Secretary' },
                 { name: 'Mrs. Anne Wanjiru', role: 'Financial Attaché' },
                 { name: 'Ms. Jacqueline Abillah', role: 'Administrative Attaché' },

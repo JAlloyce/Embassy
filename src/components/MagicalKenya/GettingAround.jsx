@@ -117,7 +117,7 @@ const GettingAround = () => {
             />
             </motion.div>
             <p className="mt-2 text-gray-400 text-justify">
-            Kenya’s highways will take you on some epic road trips <br/>
+            Kenya’s highways offer smooth travel between major destinations. The Nairobi-Mombasa Highway (A109) connects the capital to the coast, while the Nairobi-Nakuru-Eldoret Highway (A104) passes through the stunning Great Rift Valley. For scenic drives, the Mai Mahiu-Narok Road offers breathtaking valley views, while the Mombasa-Malindi Road showcases Kenya’s coastline. Routes to Mount Kenya, Amboseli, and Maasai Mara provide stunning landscapes and wildlife sightings. Whether crossing the savannah or driving along the Indian Ocean, Kenya’s roads promise a memorable journey. <br/>
             </p>
             <p className="mt-2 text-gray-400 text-justify">
             The major highways like the Mombasa Road and the Nyeri-Nairobi Highway connect you to stunning destinations like the coast and the Rift Valley.<br />

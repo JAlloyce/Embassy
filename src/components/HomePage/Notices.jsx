@@ -26,6 +26,7 @@ const noticesData = [
     type: 'link',
     link: '/consular/doc-leg',
 },
+
 ];
 
 const Notices = () => {
