@@ -21,6 +21,24 @@ const newsData = [
         date: "November 5, 2024",
         link: "#"
     },
+    {
+        title: "Courtesy visit from Kyrgyzstan Embassy",
+        category: "Diplomacy",
+        date: "January 30, 2025",
+        link: "#"
+    },
+    {
+        title: "RUDN University celebrates 65th Anniversary",
+        category: "Diplomacy",
+        date: "February 5, 2025",
+        link: "#"
+    },
+    {
+        title: "Ambassador of Somalia pays courtesy call",
+        category: "Diplomacy",
+        date: "February 7, 2025",
+        link: "#"
+    },
 ];
 
 const News = () => {

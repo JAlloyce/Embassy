@@ -31,9 +31,43 @@ const News = () => {
             date: "November 5, 2024",
             link: "#"
         },
+        {
+            title: "Ambassador meets with Deputy Minister for Labour",
+            category: "Diplomacy",
+            description: "On 28th January 2025, H.E. Amb. Dr. Peter Mathuki, PhD, met with the Deputy Minister of of Labour, Mr. Dmitriy Platygin to discuss issues of labour mobility underscoring the long standing bonds of friendship between Kenya and the Russian Federation.",
+            images: [news.MoLabour],
+            date: "January 28, 2025",
+            link: "#"
+        },
+        {
+            title: "Courtesy visit from Kyrgyzstan Embassy",
+            category: "Diplomacy",
+            description: "On 30th January 2025, Amb. Irene Maswan, OGW Deputy Head of Mission met with the Deputy Head of Mission of Kyrgyzstan Embassy in the Russian Federation. She paid a courtesy and to deliver a Note Verbale on a proposed Bilateral visit of Kyrgyzstan Deputy Prime Minister to Kenya. She also submitted a request of support for Kyrgyzstan bid to the UN - Security Council as a Non - Permanent Member for the term 2027 - 2028.",
+            images: [news.Kyrgyzstan],
+            date: "January 30, 2025",
+            link: "#"
+        },
+        {
+            title: "RUDN University celebrates 65th Anniversary",
+            category: "Diplomacy",
+            description: "On 5th February 2025, RUDN University celebrated its 65th Anniversary as an institution of higher learning and invited members of the Diplomatic Corps to join in the celebrations.",
+            images: [news.RUDN1, news.RUDN2, news.RUDN3, news.RUDN4],
+            date: "February 5, 2025",
+            link: "#"
+        },
+        {
+            title: "Ambassador of Somalia pays courtesy call",
+            category: "Diplomacy",
+            description: "The Ambassador of the Federal Republic of Somalia, H.E. Ambassador Mohamed A. Zubeyr paid a courtesy call on H.E. Dr. Peter Mathuki on 7th February, 2025. The discussion focused on the warm bonds of friendship between Kenya and Somalia.",
+            images: [news.AmbSomali1, news.AmbSomali2],
+            date: "February 7, 2025",
+            link: "#"
+        },
     ];
 
-    const [displayedArticles, setDisplayedArticles] = useState(articles.slice(0, 20)); // Initial load of 20 articles
+    const reversedArticles = [...articles].reverse(); // Reverse the articles array
+
+    const [displayedArticles, setDisplayedArticles] = useState(reversedArticles.slice(0, 20)); // Initial load of 20 articles
     const [loading, setLoading] = useState(false);
     const [hasMore, setHasMore] = useState(true);
     const [showGallery, setShowGallery] = useState(false);
@@ -46,11 +80,11 @@ const News = () => {
         setTimeout(() => {
             setDisplayedArticles((prev) => [
                 ...prev,
-                ...articles.slice(prev.length, prev.length + 20)
+                ...reversedArticles.slice(prev.length, prev.length + 20)
             ]); // this Loads 20 articles at time
             setLoading(false);
             
-            if (displayedArticles.length >= articles.length) {
+            if (displayedArticles.length >= reversedArticles.length) {
                 setHasMore(false);
             }
         }, 1000); // This will Simulate network delay, more like a fetch funnctionality
