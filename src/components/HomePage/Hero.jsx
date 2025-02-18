@@ -124,45 +124,45 @@
                 </button>
             </div>
             <div className="hidden lg:flex lg:gap-x-12">
-    {navigation.map((item) => (
-        <div key={item.name} className="relative group">
-            {item.dropdown ? (
-                <button
-                    onMouseEnter={() => setDropdownOpen((prev) => ({ ...prev, [item.name]: true }))}
-                    className="text-lg font-bold leading-6 text-gray-400 group-hover:text-white"
-                >
-                    {item.name}
-                </button>
-            ) : (
-                <Link
-                    to={item.href}
-                    className="text-lg font-bold leading-6 text-slate-400 hover:text-white"
-                >
-                    {item.name}
-                </Link>
-            )}
-            {item.dropdown && dropdownOpen[item.name] && (
-                <div
-                    className="absolute left-0 mt-2 w-48 bg-gray-900 border border-gray-700 rounded-md shadow-lg z-50"
-                    onMouseEnter={() => setDropdownOpen((prev) => ({ ...prev, [item.name]: true }))}
-                    onMouseLeave={() => setDropdownOpen((prev) => ({ ...prev, [item.name]: false }))}
-                >
-                    {dropdownItems[item.name].map((subItem) => (
-                        <Link
-                            key={subItem.name}
-                            to={subItem.href}
-                            onClick={() => setDropdownOpen({})} // Close dropdown when click
-                            className="block px-4 py-2 text-sm font-bold text-slate-400 hover:bg-gray-500 hover:text-white"
-                        >
-                            {subItem.name}
-                        </Link>
-                    ))}
-                </div>
-            )}
-        </div>
-    ))}
-    
-</div>
+                {navigation.map((item) => (
+                    <div key={item.name} className="relative group">
+                        {item.dropdown ? (
+                            <button
+                                onMouseEnter={() => setDropdownOpen((prev) => ({ ...prev, [item.name]: true }))}
+                                className="text-lg font-bold leading-6 text-gray-400 group-hover:text-white"
+                            >
+                                {item.name}
+                            </button>
+                        ) : (
+                            <Link
+                                to={item.href}
+                                className="text-lg font-bold leading-6 text-slate-400 hover:text-white"
+                            >
+                                {item.name}
+                            </Link>
+                        )}
+                        {item.dropdown && dropdownOpen[item.name] && (
+                            <div
+                                className="absolute left-0 mt-2 w-48 bg-gray-900 border border-gray-700 rounded-md shadow-lg z-50"
+                                onMouseEnter={() => setDropdownOpen((prev) => ({ ...prev, [item.name]: true }))}
+                                onMouseLeave={() => setDropdownOpen((prev) => ({ ...prev, [item.name]: false }))}
+                            >
+                                {dropdownItems[item.name].map((subItem) => (
+                                    <Link
+                                        key={subItem.name}
+                                        to={subItem.href}
+                                        onClick={() => setDropdownOpen({})} // Close dropdown when click
+                                        className="block px-4 py-2 text-sm font-bold text-slate-400 hover:bg-gray-500 hover:text-white"
+                                    >
+                                        {subItem.name}
+                                    </Link>
+                                ))}
+                            </div>
+                        )}
+                    </div>
+                ))}
+                
+            </div>
             </nav>
 
             {/* Mobile Menu */}

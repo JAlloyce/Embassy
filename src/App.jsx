@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import HomePage from './components/HomePage/HomePage';
 import News from './components/News/News'; 
 import Embassy from './components/Embassy/Embassy'; 
@@ -91,6 +91,9 @@ function App() {
           {/*Other*/}
           <Route path="/news" element={<News />} />
           <Route path="/embassy" element={<Embassy />} />
+
+          {/* Catch-all route to redirect to homepage */}
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </div>
     </Router>
