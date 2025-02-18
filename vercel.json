@@ -1,5 +1,22 @@
-{
+
+  {
+    "redirects": [
+      {
+        "source": "/:path*",
+        "has": [
+          {
+            "type": "host",
+            "value": "www.kenemb.ru"
+          }
+        ],
+        "destination": "https://kenemb.ru/:path*",
+        "permanent": true
+      }
+    ],
     "rewrites": [
-      { "source": "/(.*)", "destination": "/" }
+      {
+        "source": "/:path*",
+        "destination": "/"
+      }
     ]
   }
