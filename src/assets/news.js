@@ -18,6 +18,11 @@ import RUDN4 from '../assets/RUDN 4.jpg'
 import Kyrgyzstan from '../assets/Kyrgyzstan.jpg'
 import MSIS from '../assets/MSIS.jpg'
 import MoLabour from '../assets/MoLabour.jpg'
+import Biz1 from '../assets/Biz1.jpg'
+import Biz2 from '../assets/Biz2.jpg'
+import Biz3 from '../assets/Biz3.jpg'
+import Envoy from '../assets/Envoy.jpg'
+import Envoy2 from '../assets/Envoy2.jpg'
 
 
 const news = {
@@ -40,7 +45,12 @@ const news = {
     RUDN4,
     Kyrgyzstan,
     MSIS,
-    MoLabour
+    MoLabour,
+    Biz1,
+    Biz2,
+    Biz3,
+    Envoy,
+    Envoy
 };
 
 export default news;

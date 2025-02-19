@@ -63,6 +63,23 @@ const News = () => {
             date: "February 7, 2025",
             link: "#"
         },
+        {
+            title: "Kenya Special Envoy for Climate Change, paid a courtesy call on H.E. Dr. Peter Mathuki, Ambassador of the Republic of Kenya in the Russian Federation.",
+            category: "Diplomacy",
+            description: "On 18th February, 2025, Mr. Ali Mohamed, the Kenya Special Envoy for Climate Change, paid a courtesy call on H.E. Dr. Peter Mathuki, Ambassador of the Republic of Kenya in the Russian Federation. Discussions centred on the leading role that Kenya has undertaken in the climate change space and that there is huge potential for collaboration with the Russian Federal, especially in the field of technology and how it can be used in energy efficiency. Additionally, the Embassy plays a huge role to champion Kenya as a country that is Climate conscious, especially in renewable energy.",
+            images: [news.Envoy, news.Envoy2],
+            date: " 18th February, 2025",
+            link: "#"
+        },
+        {
+            title: " H.E. the Ambassador of the Republic of Kenya in the Russian Federation met with Mr. Omar Abramov, Director General of ATT Group which owns the Food City Centre, the largest food trading hub in Moscow.",
+            category: "Business",
+            description: "On 18th February, 2025 H.E. the Ambassador of the Republic of Kenya in the Russian Federation met with Mr. Omar Abramov, Director General of ATT Group which owns the Food City Centre, the largest food trading hub in Moscow. Discussions revolved around potential partnerships to have more Kenyan goods in Moscow and the possibility of holding and exhibition to showcase Kenyan products at the Food City premises.",
+            images: [news.Biz3, , news.Biz1,news.Biz2],
+            date: " 18th February, 2025",
+            link: "#"
+        },
+        
     ];
 
     const reversedArticles = [...articles].reverse(); // Reverse the articles array
