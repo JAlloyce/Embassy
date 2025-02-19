@@ -50,7 +50,7 @@ const news = {
     Biz2,
     Biz3,
     Envoy,
-    Envoy
+    Envoy2
 };
 
 export default news;

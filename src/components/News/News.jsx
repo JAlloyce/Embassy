@@ -72,7 +72,7 @@ const News = () => {
             link: "#"
         },
         {
-            title: " H.E. the Ambassador of the Republic of Kenya in the Russian Federation met with Mr. Omar Abramov, Director General of ATT Group which owns the Food City Centre, the largest food trading hub in Moscow.",
+            title: " H.E. the Ambassador of the Republic of Kenya in the Russian Federation met with Mr. Omar Abramov, Director General of ATT Group.",
             category: "Business",
             description: "On 18th February, 2025 H.E. the Ambassador of the Republic of Kenya in the Russian Federation met with Mr. Omar Abramov, Director General of ATT Group which owns the Food City Centre, the largest food trading hub in Moscow. Discussions revolved around potential partnerships to have more Kenyan goods in Moscow and the possibility of holding and exhibition to showcase Kenyan products at the Food City premises.",
             images: [news.Biz3, , news.Biz1,news.Biz2],
