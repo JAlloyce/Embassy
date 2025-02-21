@@ -618,5 +618,30 @@
     "title": "Kenyans in Diaspora Registration",
     "description": "Registration for Kenyan citizens residing in the Russian Federation.",
     "registerButton": "➔"
+  },
+  "home": {
+    "newsTitle": "Latest News",
+    "news": {
+      "items": [
+        {
+          "category": "Diplomacy",
+          "title": "Kenya and Russia Strengthen Bilateral Relations",
+          "date": "February 21, 2024",
+          "link": "/news/kenya-russia-relations"
+        },
+        {
+          "category": "Culture",
+          "title": "Kenyan Cultural Week in Moscow",
+          "date": "February 20, 2024",
+          "link": "/news/cultural-week"
+        },
+        {
+          "category": "Trade",
+          "title": "New Trade Opportunities Between Kenya and Russia",
+          "date": "February 19, 2024",
+          "link": "/news/trade-opportunities"
+        }
+      ]
+    }
   }
 } 

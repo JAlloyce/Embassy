@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-d
 import { useTranslation } from 'react-i18next';
 import { I18nextProvider } from 'react-i18next';
 import i18n from './i18n/i18n';
-import LanguageSwitcher from './components/LanguageSwitcher';
+import LanguageSwitcher from './components/LanguageSwitcher.jsx';
 import HomePage from './components/HomePage/HomePage';
 import News from './components/News/News'; 
 import Embassy from './components/Embassy/Embassy'; 

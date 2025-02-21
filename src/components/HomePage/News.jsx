@@ -1,58 +1,30 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import images from '../../assets/images';
 import { useTranslation } from 'react-i18next';
 
-const newsData = [
-    {
-        title: "Ambassador pays courtesy call to Embassy of Belarus",
-        category: "Diplomacy",
-        date: "November 18, 2024",
-        link: "#"
-    },
-    {
-        title: "1ST Ministerial Conference OF THE Russia–Africa Partnership Forum",
-        category: "Diplomacy",
-        date: "November 9-10, 2024",
-        link: "#"
-    },
-    {
-        title: "Presentation of Letters of Credence",
-        category: "Diplomacy",
-        date: "November 5, 2024",
-        link: "#"
-    },
-    {
-        title: "Courtesy visit from Kyrgyzstan Embassy",
-        category: "Diplomacy",
-        date: "January 30, 2025",
-        link: "#"
-    },
-    {
-        title: "RUDN University celebrates 65th Anniversary",
-        category: "Diplomacy",
-        date: "February 5, 2025",
-        link: "#"
-    },
-    {
-        title: "Ambassador of Somalia pays courtesy call",
-        category: "Diplomacy",
-        date: "February 7, 2025",
-        link: "#"
-    },
-];
-
 const News = () => {
     const { t } = useTranslation();
     const [currentIndex, setCurrentIndex] = useState(0);
+    
+    // Get translated news items with proper type checking
+    const newsData = t('home.news.items', { returnObjects: true });
+    const newsItems = Array.isArray(newsData) ? newsData : [];
 
     useEffect(() => {
+        if (newsItems.length === 0) return;
+        
         const interval = setInterval(() => {
-            setCurrentIndex((prev) => (prev + 1) % newsData.length);
+            setCurrentIndex((prev) => (prev + 1) % newsItems.length);
         }, 3000); // Change every 3 seconds
 
         return () => clearInterval(interval);
-    }, []);
+    }, [newsItems.length]);
+
+    if (newsItems.length === 0) {
+        return null; // Or return a placeholder/loading state
+    }
 
     return (
         <div className="relative bg-cover bg-center h-80 sm:h-96 lg:h-[400px]" 
@@ -64,7 +36,7 @@ const News = () => {
                 </h1>
                 
                 <div className="overflow-hidden relative h-32">
-                    {newsData.map((news, index) => (
+                    {newsItems.map((news, index) => (
                         <div
                             key={index}
                             className={`absolute w-full transition-opacity duration-500 ${
@@ -85,8 +57,6 @@ const News = () => {
                         </div>
                     ))}
                 </div>
-
-                
             </div>
 
             <Link to="/news" className="absolute right-6 bottom-6 flex items-center">
