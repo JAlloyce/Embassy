@@ -1,8 +1,36 @@
 'use client'
 
 import images from '../../assets/images'; // Adjust the path as necessary
+import { useTranslation } from 'react-i18next';
 
 const GoodConduct = () => {
+  const { t, i18n } = useTranslation();
+
+  // Add more detailed debugging logs
+  console.log('Current language:', i18n.language);
+  console.log('Full translation resources:', i18n.getResourceBundle(i18n.language, 'translation'));
+  console.log('Testing goodConduct translations:', {
+    consularSection: t('consular', { returnObjects: true }),
+    fullPath: t('consular.goodConduct', { returnObjects: true }),
+    title: t('consular.goodConduct.title'),
+    applyOnEcitizen: t('consular.goodConduct.applyOnEcitizen'),
+    platform: t('consular.goodConduct.platform'),
+    requirementsTitle: t('consular.goodConduct.requirements.title'),
+    requirements: t('consular.goodConduct.requirements.list', { returnObjects: true })
+  });
+
+  // Add error boundary for translation rendering
+  const renderTranslatedList = () => {
+    try {
+      return t('consular.goodConduct.requirements.list', { returnObjects: true }).map((requirement, index) => (
+        <li key={index} className="ml-4">{requirement}</li>
+      ));
+    } catch (error) {
+      console.error('Error rendering requirements list:', error);
+      return null;
+    }
+  };
+
   return (
     <div className="bg-white">
       <div className="relative isolate overflow-hidden bg-black px-6 py-8 sm:py-8 lg:overflow-visible lg:px-4 lg:py-8">
@@ -51,39 +79,28 @@ const GoodConduct = () => {
 
         <div className="mx-auto max-w-2xl py-8 sm:py-8 lg:py-8 text-left">
           <h1 className="text-4xl font-bold tracking-tight text-indigo-600 sm:text-6xl">
-            Certificate of Good Conduct
+            {t('consular.goodConduct.title')}
           </h1>
 
           <p className="mt-6 text-lg leading-8 text-gray-300">
-            Подайте заявку на получение этого документа на платформе{' '}
-            <a href="https://accounts.ecitizen.go.ke/en" target="_blank" rel="noopener noreferrer" className="text-indigo-400 underline">
-              ecitizen
-            </a>.
+            {t('consular.goodConduct.applyOnEcitizen')}{' '}
+            <a href="https://accounts.ecitizen.go.ke/en" target="_blank" rel="noopener noreferrer" className="text-indigo-400 hover:text-indigo-300 underline">
+              {t('consular.goodConduct.platform')}
+            </a>
           </p>
 
-          <p className="mt-2 text-lg leading-8 text-gray-300">
-            Apply for this document on the ecitizen platform{' '}
-            <a href="https://accounts.ecitizen.go.ke/en" target="_blank" rel="noopener noreferrer" className="text-indigo-400 underline">
-              here
-            </a>.
-          </p>
+          <h2 className="mt-8 text-2xl font-semibold text-indigo-600">
+            {t('consular.goodConduct.requirements.title')}
+          </h2>
 
-          <h2 className="mt-8 text-xl font-semibold text-indigo-600">POLICE CLEARANCE CERTIFICATE REQUIREMENTS</h2>
-
-          {/* Requirements List */}
-          <ul className="mt-4 list-disc list-inside text-gray-300">
-            <li>An Introductory letter by the applicant</li>
-            <li>Original second-generation national identification card and a clear photocopy (Kenyan passports not accepted).</li>
-            <li>Pay USD 20 as a processing fee</li>
-            <li>Fingerprints and palm prints recorded on a prescribed form at the nearest Police Station in Russia. This document should have a police endorsement seal or stamp and a translation of the same into English.</li>
-            <li>If not registered and issued with a Kenyan ID Card as per Cap. 107 Laws of Kenya, must prove that he/she attained the age of 18 years while outside the country and is yet to return. A letter from the mission, certified copy of birth certificate, and passport are relevant in this case.</li>
-            <li>If the applicant is a foreigner, then documentary proof that the applicant resided in Kenya and a certified photocopy of the applicant's passport will also be required in addition to the above listed requirements.</li>
+          {/* Requirements List with error boundary */}
+          <ul className="mt-4 list-disc list-inside text-gray-300 space-y-2">
+            {renderTranslatedList()}
           </ul>
-
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default GoodConduct;

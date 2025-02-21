@@ -1,7 +1,10 @@
 import { ArrowRightIcon } from '@heroicons/react/20/solid';
 import images from '../../assets/images'; 
+import { useTranslation } from 'react-i18next';
 
 const ForeignAffairs = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="relative isolate overflow-hidden bg-black px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
       <div className="absolute inset-0 -z-10 overflow-hidden">
@@ -45,10 +48,10 @@ const ForeignAffairs = () => {
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
             <div className="lg:max-w-lg mt-8 sm:mt-12">
-              <p className="text-base font-semibold leading-7 text-indigo-600">Empowering Diplomacy</p>
-              <h1 className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Ministry of Foreign and Diaspora Affairs</h1>
+              <p className="text-base font-semibold leading-7 text-indigo-600">{t('foreignAffairs.empowering')}</p>
+              <h1 className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">{t('foreignAffairs.ministry')}</h1>
               <p className="mt-6 text-xl leading-8 text-gray-400 text-justify">
-                The Ministry of Foreign Affairs of Kenya plays a crucial role in managing Kenya's international relations and promoting the country's interests abroad.
+                {t('foreignAffairs.description')}
               </p>
             </div>
           </div>
@@ -64,36 +67,35 @@ const ForeignAffairs = () => {
           <div className="lg:pr-4">
             <div className="max-w-xl text-base leading-7 text-gray-400 lg:max-w-lg">
               <p className='text-justify'>
-                The Ministry actively engages in diplomatic efforts to enhance cooperation with other nations, focusing on areas such as trade, security, and cultural exchange.
+                {t('foreignAffairs.engagement')}
               </p>
               <ul role="list" className="mt-[20px] space-y-[10px]">
                 <li className="flex gap-x-[10px]">
                   <ArrowRightIcon aria-hidden="true" className="mt-[6px] h-[20px] w-[20px] flex-none text-indigo-600" />
                   <span className='text-justify'>
-                    <strong className="font-semibold text-white ">Scholarship Opportunities.</strong> The government offers scholarships for Kenyan students to study abroad, fostering educational ties with other countries.
+                    <strong className="font-semibold text-white">{t('foreignAffairs.scholarship.title')}</strong> {t('foreignAffairs.scholarship.description')}
                   </span>
                 </li>
                 <li className="flex gap-x-[10px]">
                   <ArrowRightIcon aria-hidden="true" className="mt-[6px] h-[20px] w-[20px] flex-none text-indigo-600" />
                   <span className='text-justify'>
-                    <strong className="font-semibold text-white">Cultural Exchange Programs.</strong> The Ministry promotes cultural exchanges to enhance mutual understanding and respect among nations.
+                    <strong className="font-semibold text-white">{t('foreignAffairs.cultural.title')}</strong> {t('foreignAffairs.cultural.description')}
                   </span>
                 </li>
                 <li className="flex gap-x-[10px]">
                   <ArrowRightIcon aria-hidden="true" className="mt-[6px] h-[20px] w-[20px] flex-none text-indigo-600" />
                   <span className='text-justify'>
-                    <strong className="font-semibold text-white">International Cooperation.</strong> Engaging in partnerships with various countries to address global challenges such as climate change and security.
+                    <strong className="font-semibold text-white">{t('foreignAffairs.cooperation.title')}</strong> {t('foreignAffairs.cooperation.description')}
                   </span>
                 </li>
               </ul>
               <p className="mt-[20px] text-justify">
-                The Ministry also provides essential services to Kenyans living abroad and facilitates their engagement with the Kenyan government.
+                {t('foreignAffairs.services')}
               </p>
 
-              {/* Link to the Ministry of Foreign Affairs */}
               <div className='mt-[30px]'>
                 <a href='https://www.mfa.go.ke/' target="_blank" rel="noopener noreferrer" className='text-indigo-600 hover:text-indigo-500'>
-                  Visit the Ministry of Foreign Affairs
+                  {t('foreignAffairs.visitLink')}
                 </a>
               </div>
             </div>

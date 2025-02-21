@@ -1,8 +1,11 @@
 'use client'
 
+import { useTranslation } from 'react-i18next';
 import images from '../../assets/images'; // Adjust the path as necessary
 
 const Visa = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="bg-black">
       <div className="relative isolate overflow-hidden bg-black px-6 py-8 sm:py-8 lg:overflow-visible lg:px-4 lg:py-8">
@@ -51,19 +54,19 @@ const Visa = () => {
 
         <div className="mx-auto max-w-2xl py-8 sm:py-8 lg:py-8 text-left">
           <h1 className="text-4xl font-bold tracking-tight text-indigo-600 sm:text-6xl">
-            Visa Information
+            {t('consular.visa.title')}
           </h1>
           <h2 className="mt-4 text-xl font-semibold text-gray-200">
-            Electronic Travel Authorisation (eTA)
+            {t('consular.visa.subtitle')}
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-300">
-            The Ministry of Interior and National Administration, State Department for Immigration and Citizen Services, Directorate of Immigration Services has developed and is operating the Republic of Kenya Electronic Travel Authorisation (eTA).
+            {t('consular.visa.description')}
           </p>
           <p className="mt-4 text-lg leading-8 text-gray-300">
-            Kenya eTA is a semi-automated system that determines the eligibility of visitors to travel to Kenya. An eTA offers permission to travel and is authorised by the Government of the Republic of Kenya. The possession of an eTA is not the final authority to enter the Republic of Kenya. Admissibility will be determined at the point of entry.
+            {t('consular.visa.details')}
           </p>
           <p className="mt-4 text-lg leading-8 text-gray-300">
-            The eTA application collects biographic information and answers to eligibility questions from the traveller. eTA applications for Kenya should be submitted at least 2 weeks prior to travel to ensure adequate time for processing. Travellers can submit their applications up to 3 months prior to travel. It is highly recommended that travellers apply as soon as they have booked their accommodations and transport tickets.
+            {t('consular.visa.applicationTime')}
           </p>
           <div className="mt-10 flex items-center justify-start gap-x-6">
             <a

@@ -1,7 +1,10 @@
 import images from '../../assets/images';
 import {motion} from 'framer-motion'
+import { useTranslation } from 'react-i18next';
 
 const GettingAround = () => {
+  const { t } = useTranslation();
+  
   return (
     <div className="relative isolate overflow-hidden bg-black px-6 py-12 sm:py-12 lg:overflow-visible lg:px-0">
     <div className="absolute inset-0 -z-10 overflow-hidden">
@@ -36,7 +39,7 @@ const GettingAround = () => {
         <nav aria-label="Global" className="flex items-center justify-center">
         <div className="flex lg:flex-1">
             <a href="/" className="-m-1.5 p-1.5">
-            <span className="sr-only">Home</span>
+            <span className="sr-only">{t('navigation.home')}</span>
             <img
                 alt="Kenya Embassy Logo"
                 src={images.Logo} 
@@ -48,128 +51,100 @@ const GettingAround = () => {
     </header>
 
     
-    <h1 className="text-3xl font-bold tracking-tight text-indigo-600 sm:text-4xl">Getting Around</h1>
+    <h1 className="text-3xl font-bold tracking-tight text-indigo-600 sm:text-4xl">
+      {t('explore.gettingAround.title')}
+    </h1>
     
     <div className="mt-10">
-        {/* Getting Around */}
+        {/* Getting Around Nairobi */}
         <div className="mt-6">
-            <h1 className="text-2xl font-semibold text-indigo-600">Getting Around Nairobi</h1>
-            <h4 className="text-lg font-semibold text-indigo-600">The Nairobi Light Rail</h4>
+            <h1 className="text-2xl font-semibold text-indigo-600">{t('explore.gettingAround.nairobi.title')}</h1>
+            <h4 className="text-lg font-semibold text-indigo-600">{t('explore.gettingAround.nairobi.lightRail')}</h4>
             <motion.div
             initial={{x:-100, opacity:0}}
             animate={{x:0, opacity:1}}
             transition={{duration:1, delay:0.5}}
             className="flex items-center gap-x-4 mt-4">
             <img
-                alt=""
+                alt={t('explore.gettingAround.nairobi.lightRail')}
                 src={images.Get1} 
                 className="h-auto w-auto rounded-lg"
             />
             </motion.div>
             <p className="mt-2 text-gray-400 text-justify">
-            The Nairobi Light Rail is a super convenient way to zip around the city! <br/>
-            </p>
-            <p className="mt-2 text-gray-400 text-justify">
-            With its modern vibe and comfy ride, it links key areas in the city making it perfect for avoiding traffic..<br />
-            </p>
-            <p className="mt-2 text-gray-400 text-justify">
-            Just hop on, and you’ll be zooming past those busy streets in no time!<br />
+            {t('explore.gettingAround.nairobi.lightRailDesc')}
             </p>
         </div>
         <div className="mt-6">
-            <h4 className="text-lg font-semibold text-indigo-600">The PSV Service (Matatus)</h4>
+            <h4 className="text-lg font-semibold text-indigo-600">{t('explore.gettingAround.nairobi.matatu')}</h4>
             <motion.div
             initial={{x:-100, opacity:0}}
             animate={{x:0, opacity:1}}
             transition={{duration:1, delay:0.5}}
             className="flex items-center gap-x-4 mt-4">
             <img
-                alt=""
+                alt={t('explore.gettingAround.nairobi.matatu')}
                 src={images.Get2} 
                 className="h-auto w-auto rounded-lg"
             />
             </motion.div>
             <p className="mt-2 text-gray-400 text-justify">
-            If you want the true Kenyan experience, you HAVE to hop on a matatu! It is the heartbeat of the city’s public transport.<br/>
-            </p>
-            <p className="mt-2 text-gray-400 text-justify">
-            They’re always full with awesome music, and you can find routes all over Nairobi.<br />
-            </p>
-            <p className="mt-2 text-gray-400 text-justify">
-            Just remember to bring your best mood, take care of your personal belongings , and stay part of the adventure!<br />
+            {t('explore.gettingAround.nairobi.matatuDesc')}
             </p>
         </div>
         </div>
     <div className="mt-10">
-        {/* Getting Around */}
+        {/* Getting Around Kenya */}
         <div className="mt-6">
-            <h1 className="text-2xl font-semibold text-indigo-600">Getting Around Kenya</h1>
-            <h4 className="text-lg font-semibold text-indigo-600">Various Highways</h4>
+            <h1 className="text-2xl font-semibold text-indigo-600">{t('explore.gettingAround.kenya.title')}</h1>
+            <h4 className="text-lg font-semibold text-indigo-600">{t('explore.gettingAround.kenya.highways')}</h4>
             <motion.div
             initial={{x:-100, opacity:0}}
             animate={{x:0, opacity:1}}
             transition={{duration:1, delay:0.5}}
             className="flex items-center gap-x-4 mt-4">
             <img
-                alt=""
+                alt={t('explore.gettingAround.kenya.highways')}
                 src={images.Get3} 
                 className="h-auto w-auto rounded-lg"
             />
             </motion.div>
             <p className="mt-2 text-gray-400 text-justify">
-            Kenya’s highways offer smooth travel between major destinations. The Nairobi-Mombasa Highway (A109) connects the capital to the coast, while the Nairobi-Nakuru-Eldoret Highway (A104) passes through the stunning Great Rift Valley. For scenic drives, the Mai Mahiu-Narok Road offers breathtaking valley views, while the Mombasa-Malindi Road showcases Kenya’s coastline. Routes to Mount Kenya, Amboseli, and Maasai Mara provide stunning landscapes and wildlife sightings. Whether crossing the savannah or driving along the Indian Ocean, Kenya’s roads promise a memorable journey. <br/>
-            </p>
-            <p className="mt-2 text-gray-400 text-justify">
-            The major highways like the Mombasa Road and the Nyeri-Nairobi Highway connect you to stunning destinations like the coast and the Rift Valley.<br />
-            </p>
-            <p className="mt-2 text-gray-400 text-justify">
-            Just buckle up and enjoy the ride through Kenya’s gorgeous landscapes!<br />
+            {t('explore.gettingAround.kenya.highwaysDesc')}
             </p>
         </div>
         <div className="mt-6">
-            <h4 className="text-lg font-semibold text-indigo-600">The Airports</h4>
+            <h4 className="text-lg font-semibold text-indigo-600">{t('explore.gettingAround.kenya.airports')}</h4>
             <motion.div
             initial={{x:-100, opacity:0}}
             animate={{x:0, opacity:1}}
             transition={{duration:1, delay:0.5}}
             className="flex items-center gap-x-4 mt-4">
             <img
-                alt=""
+                alt={t('explore.gettingAround.kenya.airports')}
                 src={images.Get4} 
                 className="h-auto w-auto rounded-lg"
             />
             </motion.div>
             <p className="mt-2 text-gray-400 text-justify">
-            Traveling by air? Kenya has a great mix of local and international airports.<br/>
-            </p>
-            <p className="mt-2 text-gray-400 text-justify">
-            Jomo Kenyatta International Airport (JKIA) in Nairobi is your main hub for international flights, while places like Wilson Airport cater to domestic flights.<br />
-            </p>
-            <p className="mt-2 text-gray-400 text-justify">
-            Super handy for reaching places like Maasai Mara or Lake Nakuru quickly!<br />
+            {t('explore.gettingAround.kenya.airportsDesc')}
             </p>
         </div>
         <div className="mt-6">
-            <h4 className="text-lg font-semibold text-indigo-600">The Inter City Railway</h4>
+            <h4 className="text-lg font-semibold text-indigo-600">{t('explore.gettingAround.kenya.railway')}</h4>
             <motion.div
             initial={{x:-100, opacity:0}}
             animate={{x:0, opacity:1}}
             transition={{duration:1, delay:0.5}}
             className="flex items-center gap-x-4 mt-4">
             <img
-                alt=""
+                alt={t('explore.gettingAround.kenya.railway')}
                 src={images.Get5} 
                 className="h-auto w-auto rounded-lg"
             />
             </motion.div>
             <p className="mt-2 text-gray-400 text-justify">
-            For a chill ride across the country, check out the intercity trains!<br/>
-            </p>
-            <p className="mt-2 text-gray-400 text-justify">
-            The Madaraka Express connects Nairobi to Mombasa in a snap.<br />
-            </p>
-            <p className="mt-2 text-gray-400 text-justify">
-            With comfy seats and beautiful views, it’s a fab way to travel and experience the scenic beauty of Kenya.<br />
+            {t('explore.gettingAround.kenya.railwayDesc')}
             </p>
         </div>
         </div>

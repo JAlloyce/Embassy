@@ -1,4 +1,8 @@
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import { I18nextProvider } from 'react-i18next';
+import i18n from './i18n/i18n';
+import LanguageSwitcher from './components/LanguageSwitcher';
 import HomePage from './components/HomePage/HomePage';
 import News from './components/News/News'; 
 import Embassy from './components/Embassy/Embassy'; 
@@ -43,60 +47,69 @@ import ThingsToDo from './components/MagicalKenya/ThingsToDo'
 import GettingAround from './components/MagicalKenya/GettingAround';
 
 function App() {
+  const { t } = useTranslation();
+
   return (
-    <Router>
-      <div>
-        {/* Set the favicon using the imported logo */}
-        <link rel="icon" type="image/png" href={images.Logo} />
-        
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-
-          {/*Consular Services*/}
-          <Route path="/consular" element={<ConsularList />} />
-          <Route path="/consular/visa" element={<Visa />} />
-          <Route path="/consular/passports" element={<Passports />} />
-          <Route path="/consular/good-conduct" element={<GoodConduct />} />
-          <Route path="/consular/marriage" element={<Marriage />} />
-          <Route path="/consular/pets" element={<Pets />} />
-          <Route path="/consular/birth" element={<Birth />} />
-          <Route path="/consular/doc-auth" element={<DocAuth />} />
-          <Route path="/consular/doc-leg" element={<DocLeg />} />
-          <Route path="/consular/downloads" element={<Downloads />} />
-
-          {/*Explore*/}
-          <Route path="/explore/agriculture" element={<Agriculture />} />
-          <Route path="/explore/culture" element={<Culture />} />
-          <Route path="/explore/nairobi" element={<Nairobi />} />
-          <Route path="/explore/education" element={<Education />} />
-          <Route path="/explore/foreign-affairs" element={<ForeignAffairs />} />
-          <Route path="/explore/sports" element={<Sports />} />
-          <Route path="/explore/tourism" element={<Tourism />} />
-          <Route path="/explore/trade" element={<Trade />} />
-
-          {/*Magical Kenya*/}
-          <Route path="/magical-kenya" element={<MagicList />} />
-          <Route path="/magical-kenya/getting-around" element={<GettingAround />} />
-          <Route path="/magical-kenya/intro" element={<Intro />} />
-          <Route path="/magical-kenya/nairobi" element={<NairobiKenya />} />
-          <Route path="/magical-kenya/coast" element={<CoastKenya />} />
-          <Route path="/magical-kenya/central-rift" element={<CentralKenya />} />
-          <Route path="/magical-kenya/mount-kenya" element={<MountKenya />} />
-          <Route path="/magical-kenya/northern-kenya" element={<NorthernKenya />} />
-          <Route path="/magical-kenya/north-rift" element={<NorthRiftKenya />} />
-          <Route path="/magical-kenya/southern-kenya" element={<SouthernKenya />} />
-          <Route path="/magical-kenya/western-kenya" element={<WesternKenya />} />
-          <Route path="/magical-kenya/things-to-do" element={<ThingsToDo />} />
+    <I18nextProvider i18n={i18n}>
+      <Router>
+        <div>
+          {/* Set the favicon using the imported logo */}
+          <link rel="icon" type="image/png" href={images.Logo} />
           
-          {/*Other*/}
-          <Route path="/news" element={<News />} />
-          <Route path="/embassy" element={<Embassy />} />
+          {/* Language Switcher */}
+          <div className="fixed top-4 right-4 z-50">
+            <LanguageSwitcher />
+          </div>
 
-          {/* Catch-all route to redirect to homepage */}
-          <Route path="*" element={<Navigate to="/" />} />
-        </Routes>
-      </div>
-    </Router>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+
+            {/*Consular Services*/}
+            <Route path="/consular" element={<ConsularList />} />
+            <Route path="/consular/visa" element={<Visa />} />
+            <Route path="/consular/passports" element={<Passports />} />
+            <Route path="/consular/good-conduct" element={<GoodConduct />} />
+            <Route path="/consular/marriage" element={<Marriage />} />
+            <Route path="/consular/pets" element={<Pets />} />
+            <Route path="/consular/birth" element={<Birth />} />
+            <Route path="/consular/doc-auth" element={<DocAuth />} />
+            <Route path="/consular/doc-leg" element={<DocLeg />} />
+            <Route path="/consular/downloads" element={<Downloads />} />
+
+            {/*Explore*/}
+            <Route path="/explore/agriculture" element={<Agriculture />} />
+            <Route path="/explore/culture" element={<Culture />} />
+            <Route path="/explore/nairobi" element={<Nairobi />} />
+            <Route path="/explore/education" element={<Education />} />
+            <Route path="/explore/foreign-affairs" element={<ForeignAffairs />} />
+            <Route path="/explore/sports" element={<Sports />} />
+            <Route path="/explore/tourism" element={<Tourism />} />
+            <Route path="/explore/trade" element={<Trade />} />
+
+            {/*Magical Kenya*/}
+            <Route path="/magical-kenya" element={<MagicList />} />
+            <Route path="/magical-kenya/getting-around" element={<GettingAround />} />
+            <Route path="/magical-kenya/intro" element={<Intro />} />
+            <Route path="/magical-kenya/nairobi" element={<NairobiKenya />} />
+            <Route path="/magical-kenya/coast" element={<CoastKenya />} />
+            <Route path="/magical-kenya/central-rift" element={<CentralKenya />} />
+            <Route path="/magical-kenya/mount-kenya" element={<MountKenya />} />
+            <Route path="/magical-kenya/northern-kenya" element={<NorthernKenya />} />
+            <Route path="/magical-kenya/north-rift" element={<NorthRiftKenya />} />
+            <Route path="/magical-kenya/southern-kenya" element={<SouthernKenya />} />
+            <Route path="/magical-kenya/western-kenya" element={<WesternKenya />} />
+            <Route path="/magical-kenya/things-to-do" element={<ThingsToDo />} />
+            
+            {/*Other*/}
+            <Route path="/news" element={<News />} />
+            <Route path="/embassy" element={<Embassy />} />
+
+            {/* Catch-all route to redirect to homepage */}
+            <Route path="*" element={<Navigate to="/" />} />
+          </Routes>
+        </div>
+      </Router>
+    </I18nextProvider>
   );
 }
 

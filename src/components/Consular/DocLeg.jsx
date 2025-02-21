@@ -1,8 +1,11 @@
-    'use client'
+'use client'
 
-    import images from '../../assets/images'; // Adjust the path as necessary
+import images from '../../assets/images'; // Adjust the path as necessary
+import { useTranslation } from 'react-i18next';
 
-    const DocLeg = () => {
+const DocLeg = () => {
+    const { t } = useTranslation();
+
     return (
         <div className="bg-white">
         <div className="relative isolate overflow-hidden bg-black px-6 py-8 sm:py-8 lg:overflow-visible lg:px-4 lg:py-8">
@@ -11,9 +14,9 @@
             <nav aria-label="Global" className="flex items-center justify-center">
                 <div className="flex lg:flex-1">
                 <a href="/" className="-m-1.5 p-1.5">
-                    <span className="sr-only">Home</span>
+                    <span className="sr-only">{t('navigation.home')}</span>
                     <img
-                    alt="Your Company Logo"
+                    alt={t('common.welcome')}
                     src={images.Logo}
                     className="h-28 w-auto" // Logo size
                     />
@@ -51,71 +54,93 @@
 
             <div className="mx-auto max-w-2xl py-8 sm:py-8 lg:py-8 text-left">
             <h1 className="text-4xl font-bold tracking-tight text-indigo-600 sm:text-6xl">
-                Legalization & Apostillation of Degrees and Certificates
+                {t('consular.docLeg.title')}
             </h1>
 
-            <h2 className="mt-8 text-xl font-semibold text-indigo-600">Legalization of Original Degree Certificates</h2>
-            <p className="mt-4 text-lg leading-8 text-gray-300">Required for use of documents in Kenya</p>
+            {/* Original Degree Section */}
+            <section className="mt-8">
+                <h2 className="text-xl font-semibold text-indigo-600">
+                    {t('consular.docLeg.originalDegree.title')}
+                </h2>
+                <p className="mt-4 text-lg leading-8 text-gray-300">
+                    {t('consular.docLeg.originalDegree.subtitle')}
+                </p>
+                <ol className="mt-4 list-decimal list-inside text-gray-300">
+                    {t('consular.docLeg.originalDegree.steps', { returnObjects: true }).map((step, index) => (
+                        <li key={index} className="mb-4">
+                            <div className="font-semibold">{step.title}</div>
+                            <div className="ml-4">
+                                <p>{step.contacts}</p>
+                                <p>{step.hours}</p>
+                                <p>{step.fee}</p>
+                                <p>{step.time}</p>
+                            </div>
+                        </li>
+                    ))}
+                </ol>
+            </section>
 
-            {/* Requirements for Legalization */}
-            <ol className="mt-4 list-decimal list-inside text-gray-300">
-                <li>
-                Original documents submitted through university to MFA, RF (consular legalization department):
-                <p>Contacts: Moscow, 1 Neopalimovskyi pereulok, 12 (Smolenskaya / Park Kultury metro stations)</p>
-                <p>Working hours: 9.30 -12.30, 14.30 -17.00</p>
-                <p>Fee: 350 RUR per document</p>
-                <p>Time of legalization: 5 working days</p>
-                </li>
-                <li>
-                Original documents stamped at Kenya Embassy, Moscow:
-                <p>Contacts: Lopukhinskyi pereulok, 5</p>
-                <p>Working hours: 9.00 -13.00, 14.00 -17.00 (Friday 16.00)</p>
-                <p>Fee: free of charge for Kenyan citizens. For other nationalities, USD 20 per document</p>
-                <p>Time of certification: 1 day</p>
-                </li>
-            </ol>
+            {/* Notarized Copies Section */}
+            <section className="mt-8">
+                <h2 className="text-xl font-semibold text-indigo-600">
+                    {t('consular.docLeg.notarizedCopies.title')}
+                </h2>
+                <ol className="mt-4 list-decimal list-inside text-gray-300">
+                    {t('consular.docLeg.notarizedCopies.steps', { returnObjects: true }).map((step, index) => (
+                        <li key={index} className="mb-4">
+                            <div className="font-semibold">{step.title}</div>
+                            <div className="ml-4">
+                                <p>{step.contacts}</p>
+                                {step.mfcContacts && <p>{step.mfcContacts}</p>}
+                                <p>{step.hours}</p>
+                                <p>{step.fee}</p>
+                                <p>{step.time}</p>
+                            </div>
+                        </li>
+                    ))}
+                </ol>
+            </section>
 
-            <h2 className="mt-8 text-xl font-semibold text-indigo-600">Legalization of Notarized & Translated Copies of Degree Certificates</h2>
-            {/* Requirements for Notarized & Translated Copies */}
-            <ol className="mt-4 list-decimal list-inside text-gray-300">
-                <li>
-                Submitted through Multifunctional Center for provision of public services in Moscow (MFC/ МФЦ) to MFA, RF (consular legalization department):
-                <p>Contacts: Moscow, Ryzanskiy Prospect, 2 building 3 (shopping mall Gorod), Nizhegorodskaya metro station</p>
-                <p>MFC contacts are: www.md.mos.ru and 495 777 77 77.</p>
-                <p>Working hours: 9.30 -12.30, 14.30 -17.00</p>
-                <p>Fee: 500 RUR per document</p>
-                <p>Time of legalization: 7 working days</p>
-                </li>
-                <li>
-                Stamped at Kenya Embassy, Moscow:
-                <p>Address: Lopukhinskyi pereulok, 5</p>
-                <p>Fee: free of charge for Kenyan citizens; Time of certification: 1 day</p>
-                </li>
-            </ol>
+            {/* Apostille Section */}
+            <section className="mt-8">
+                <h2 className="text-xl font-semibold text-indigo-600">
+                    {t('consular.docLeg.apostille.title')}
+                </h2>
+                <p className="mt-4 text-lg leading-8 text-gray-300">
+                    {t('consular.docLeg.apostille.description')}
+                </p>
+                
+                <div className="mt-4">
+                    <h3 className="text-lg font-semibold text-indigo-600">
+                        {t('consular.docLeg.apostille.requirementsTitle')}
+                    </h3>
+                    <ol className="list-decimal list-inside text-gray-300">
+                        {t('consular.docLeg.apostille.requirements', { returnObjects: true }).map((item, index) => (
+                            <li key={index} className="mb-2">{item}</li>
+                        ))}
+                    </ol>
+                </div>
 
-            <h2 className="mt-8 text-xl font-semibold text-indigo-600">Apostille</h2>
-            {/* Apostille Information */}
-            <p className="mt-4 text-lg leading=8 text-gray-300">Required in countries of Hague convention (100 countries). Not valid in Kenya.</p>
+                <div className="mt-6">
+                    <h3 className="text-lg font-semibold text-indigo-600">
+                        {t('consular.docLeg.apostille.address.title')}
+                    </h3>
+                    <p className="mt-2 text-gray-300">
+                        {t('consular.docLeg.apostille.address.text')}
+                    </p>
+                </div>
 
-            {/* Requirements for Apostille */}
-            <ol className="mt=4 list-decimal list-inside text-gray-300">
-                <li>Original degree certificates</li>
-                <li>Notarized translation of passport</li>
-                <li>Power of attorney (if not submitted personally)</li>
-            </ol>
-
-            {/* Address for Apostille */}
-            <h3 className="mt-6 text-lg font-semibold text-indigo-600">Address:</h3>
-            <p className="mt-4 text-lg leading-8 text-gray=300">Educational Department of Moscow: 2 Baltyiskyi pereulok, 3 (Sokol metro station)</p>
-
-            {/* Processing Time and Fee */}
-            <h3 className="mt-6 text-lg font-semibold text-indigo-600">Processing Time and Fee:</h3>
-            <ul className="mt-4 list-disc list-inside text-gray-300">
-                <li>The apostille service takes up to 45 days from the date of submission.</li>
-                <li>The fee is 2500 RUR per document (degree certificate with transcript).</li>
-                <li>In case the documents require both legalization and apostillation, the original documents should be stamped by MFA of Russia BEFORE apostillation.</li>
-            </ul>
-
+                <div className="mt-6">
+                    <h3 className="text-lg font-semibold text-indigo-600">
+                        {t('consular.docLeg.apostille.processingInfo.title')}
+                    </h3>
+                    <ul className="list-disc list-inside text-gray-300">
+                        {t('consular.docLeg.apostille.processingInfo.details', { returnObjects: true }).map((detail, index) => (
+                            <li key={index} className="mb-2">{detail}</li>
+                        ))}
+                    </ul>
+                </div>
+            </section>
             </div>
         </div>
         </div >

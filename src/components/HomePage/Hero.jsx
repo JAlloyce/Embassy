@@ -4,33 +4,35 @@
     import { Link } from 'react-router-dom';
     import images from '../../assets/images';
     import {motion} from 'framer-motion'
+    import { useTranslation } from 'react-i18next';
 
     const navigation = [
-        { name: 'Tourism in Kenya', href: '/magical-kenya', dropdown: true },
-        { name: 'Embassy', href: '/embassy' },
-        { name: 'Consular Services', href: '#consular-services', dropdown: true },
-        { name: 'News', href: '/news' },
-    ] || [];
+        { name: 'tourismInKenya', href: '/magical-kenya', dropdown: true },
+        { name: 'embassy', href: '/embassy' },
+        { name: 'consularServices', href: '#consular-services', dropdown: true },
+        { name: 'news', href: '/news' },
+    ];
 
     const dropdownItems = {
-        'Tourism in Kenya': [
-            { name: 'Magical Kenya', href: '/magical-kenya' },
-            { name: 'Tourism Opportunities', href: '/magical-kenya/things-to-do' },
+        'tourismInKenya': [
+            { name: 'magicalKenya', href: '/magical-kenya' },
+            { name: 'tourismOpportunities', href: '/magical-kenya/things-to-do' },
         ],
-        'Consular Services': [
-            { name: 'Consular Services', href: '/consular' },
-            { name: 'Apply for eTA / Visa', href: '/consular/visa' },
-            { name: 'Passport Replacement', href: '/consular/passports' },
-            { name: 'Emergency Travel Certificate', href: '/consular/passports' },
-            { name: 'Police Clearance Certificate', href: '/consular/good-conduct' },
+        'consularServices': [
+            { name: 'consularServices', href: '/consular' },
+            { name: 'applyVisa', href: '/consular/visa' },
+            { name: 'passportReplacement', href: '/consular/passports' },
+            { name: 'emergencyTravel', href: '/consular/passports' },
+            { name: 'policeClearance', href: '/consular/good-conduct' },
         ],
-    } || {};
+    };
 
     export default function EmbassyLandingPage() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const [dropdownOpen, setDropdownOpen] = useState({});
     const [language, setLanguage] = useState('en');
+    const { t } = useTranslation();
 
     // Background images for hero section
     const imageOrder = [
@@ -131,14 +133,14 @@
                                 onMouseEnter={() => setDropdownOpen((prev) => ({ ...prev, [item.name]: true }))}
                                 className="text-lg font-bold leading-6 text-gray-400 group-hover:text-white"
                             >
-                                {item.name}
+                                {t(`navigation.mainMenu.${item.name}`)}
                             </button>
                         ) : (
                             <Link
                                 to={item.href}
                                 className="text-lg font-bold leading-6 text-slate-400 hover:text-white"
                             >
-                                {item.name}
+                                {t(`navigation.mainMenu.${item.name}`)}
                             </Link>
                         )}
                         {item.dropdown && dropdownOpen[item.name] && (
@@ -151,10 +153,10 @@
                                     <Link
                                         key={subItem.name}
                                         to={subItem.href}
-                                        onClick={() => setDropdownOpen({})} // Close dropdown when click
+                                        onClick={() => setDropdownOpen({})}
                                         className="block px-4 py-2 text-sm font-bold text-slate-400 hover:bg-gray-500 hover:text-white"
                                     >
-                                        {subItem.name}
+                                        {t(`navigation.dropdowns.${item.name}.${subItem.name}`)}
                                     </Link>
                                 ))}
                             </div>
@@ -188,7 +190,7 @@
                 </button>
                 </div>
 
-                {/* Mobile Navigation // Very complex please minimize alterations  */}
+                {/* Mobile Navigation */}
                 <div className="mt-[10px] flow-root">
                 <div className="-my-[10px] divide-y divide-gray-10/10">
                     <div className="space-y-[10px] py-[12px]">
@@ -201,7 +203,7 @@
                                 onClick={() => toggleDropdown(item.name)} 
                                 className="-mx-[12px] block rounded-lg px-[12px] py-[8px] text-base font-bold leading-[22px] text-gray-400 hover:bg-gray-800 hover:text-white"
                             >
-                                {item.name}
+                                {t(`navigation.mainMenu.${item.name}`)}
                             </button>
                             {/* Show dropdown items if open */}
                             {dropdownOpen[item.name] && (
@@ -213,7 +215,7 @@
                                     onClick={() => setMobileMenuOpen(false)}
                                     className="-mx-[12px] block rounded-lg px-[12px] py-[8px] text-base font-bold leading-[22px] text-gray-400 hover:bg-gray-800 hover:text-white"
                                     >
-                                    {subItem.name}
+                                    {t(`navigation.dropdowns.${item.name}.${subItem.name}`)}
                                     </Link>
                                 ))}
                                 </div>
@@ -222,10 +224,10 @@
                         ) : (
                             <Link 
                             to={item.href} 
-                            onClick={() => setMobileMenuOpen(false)} // Close menu when clicked
+                            onClick={() => setMobileMenuOpen(false)}
                             className="-mx-[12px] block rounded-lg px-[12px] py-[8px] text-base font-bold leading-[22px] text-gray-400 hover:bg-gray-800 hover:text-white"
                             >
-                            {item.name}
+                            {t(`navigation.mainMenu.${item.name}`)}
                             </Link>
                         )}
                         </div>

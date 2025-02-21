@@ -1,8 +1,13 @@
 'use client'
 
+import { useTranslation } from 'react-i18next';
 import images from '../../assets/images'; // Adjust the path as necessary
 
 const Marriage = () => {
+  const { t, i18n } = useTranslation();
+
+  
+
   return (
     <div className="bg-white">
       <div className="relative isolate overflow-hidden bg-black px-6 py-8 sm:py-8 lg:overflow-visible lg:px-4 lg:py-8">
@@ -51,49 +56,44 @@ const Marriage = () => {
 
         <div className="mx-auto max-w-2xl py-8 sm:py-8 lg:py-8 text-left">
           <h1 className="text-4xl font-bold tracking-tight text-indigo-600 sm:text-6xl">
-            Marriage Certificate
+            {t('consular.marriage.title')}
           </h1>
 
           <p className="mt-6 text-lg leading-8 text-gray-300">
-            Подайте заявку на получение этого документа на платформе{' '}
+            {t('consular.marriage.applyOnEcitizen')}{' '}
             <a href="https://accounts.ecitizen.go.ke/en" target="_blank" rel="noopener noreferrer" className="text-indigo-400 underline">
-              ecitizen
-            </a>.
+              {t('consular.marriage.platform')}
+            </a>
           </p>
 
-          <p className="mt-2 text-lg leading-8 text-gray-300">
-            Apply for this document on the ecitizen platform{' '}
-            <a href="https://accounts.ecitizen.go.ke/en" target="_blank" rel="noopener noreferrer" className="text-indigo-400 underline">
-              here
-            </a>.
-          </p>
-
-          <h2 className="mt-8 text-xl font-semibold text-indigo-600">CERTIFICATE OF NO IMPEDIMENT TO MARRIAGE</h2>
+          <h2 className="mt-8 text-2xl font-semibold text-indigo-600">
+            {t('consular.marriage.noImpediment.title')}
+          </h2>
 
           <p className="mt-4 text-lg leading-8 text-gray-300">
-            Every Kenyan wishing to marry abroad has to apply for a Certificate of No Impediment to Marriage from the nearest Kenyan Mission. Marriages conducted without issuance of this Certificate will neither be recognized by the Mission nor the Authorities in Kenya.
+            {t('consular.marriage.noImpediment.description')}
           </p>
 
           <p className="mt-4 text-lg leading-8 text-gray-300">
-            Issuance of this certificate involves a search by the Registrar of Marriages to establish the civil status of the applicant. For this reason, it takes time, and it is therefore advisable to apply well before the planned date of marriage, preferably 3 months in advance.
+            {t('consular.marriage.noImpediment.processingTime')}
           </p>
 
           <p className="mt-4 text-lg leading-8 text-gray-300">
-            Note: Do not indicate your marital status on the application form as Single. Enter either Spinster, Bachelor, Widowed, or Divorced.
+            {t('consular.marriage.noImpediment.statusNote')}
           </p>
 
           <p className="mt-4 text-lg leading-8 text-gray-300">
-            The Kenya Government neither acknowledges nor endorses same-sex marriages. Please note that Certification can only be done at the Embassy in which case the applicant comes with the original and a copy or before a notary public. The Mission does not accept scanned certified copies or photocopies of certified copies.
+            {t('consular.marriage.noImpediment.sameGenderNote')}
           </p>
 
-          <h3 className="mt-6 text-lg font-semibold text-indigo-600">The applicant requires the following:</h3>
+          <h2 className="mt-8 text-2xl font-semibold text-indigo-600">
+            {t('consular.marriage.requirements.title')}
+          </h2>
           {/* Requirements List */}
           <ul className="mt-4 list-disc list-inside text-gray-300">
-            <li>A completed application form for certificate of no impediment</li>
-            <li>Certified copy of your passport</li>
-            <li>Certified copy of your birth certificate</li>
-            <li>Certified copy of your fiancée’s passport</li>
-            <li>Fee of USD 70</li>
+            {t('consular.marriage.requirements.list', { returnObjects: true }).map((req, index) => (
+              <li key={index} className="mb-2">{req}</li>
+            ))}
           </ul>
 
         </div>

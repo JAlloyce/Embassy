@@ -1,25 +1,28 @@
 import { ArrowRightIcon } from '@heroicons/react/20/solid';
-import images from '../../assets/images'; 
+import images from '../../assets/images';
+import { useTranslation } from 'react-i18next';
 
 const Tourism = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="relative isolate overflow-hidden bg-black px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
       <div className="absolute inset-0 -z-10 overflow-hidden">
         {/* Header Section */}
         <header className="relative z-50 mb-2">
-                <nav aria-label="Global" className="flex items-center justify-center">
-                    <div className="flex lg:flex-1">
-                        <a href="/" className="m-1.5 p-1.5">
-                            <span className="sr-only">Home</span>
-                            <img
-                                alt="Your Company Logo"
-                                src={images.Logo}
-                                className="h-28 w-auto"
-                            />
-                        </a>
-                    </div>
-                </nav>
-            </header>
+          <nav aria-label="Global" className="flex items-center justify-center">
+            <div className="flex lg:flex-1">
+              <a href="/" className="m-1.5 p-1.5">
+                <span className="sr-only">{t('navigation.home')}</span>
+                <img
+                  alt="Kenya Embassy Logo"
+                  src={images.Logo}
+                  className="h-28 w-auto"
+                />
+              </a>
+            </div>
+          </nav>
+        </header>
         <svg
           aria-hidden="true"
           className="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-black [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
@@ -46,17 +49,17 @@ const Tourism = () => {
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
             <div className="lg:max-w-lg mt-8 sm:mt-12">
-              <p className="text-base font-semibold leading-7 text-indigo-600">Discover Kenya</p>
-              <h1 className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Tourism in Kenya</h1>
+              <p className="text-base font-semibold leading-7 text-indigo-600">{t('explore.tourism.title')}</p>
+              <h1 className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">{t('explore.tourism.title')}</h1>
               <p className="mt-6 text-xl leading-8 text-gray-400 text-justify">
-                Welcome to Kenya, a land of breathtaking landscapes and rich cultural heritage. Kenya offers some of the finest natural attractions in the world, complemented by a network of outstanding hotels and game lodges.
+                {t('explore.tourism.description')}
               </p>
             </div>
           </div>
         </div>
         <div className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
           <img
-            alt="Tourism in Kenya"
+            alt={t('explore.tourism.title')}
             src={images.Tour} 
             className="w-full max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
           />
@@ -72,19 +75,22 @@ const Tourism = () => {
                 <li className="flex gap-x-[10px]">
                   <ArrowRightIcon aria-hidden="true" className="mt-[6px] h-[20px] w-[20px] flex-none text-indigo-600" />
                   <span className='text-justify'>
-                    <strong className="font-semibold text-white">Wildlife Safaris.</strong> Experience the Great Migration in Maasai Mara, where millions of wildebeest migrate annually.
+                    <strong className="font-semibold text-white">{t('explore.tourism.safaris')}</strong>
+                    {t('explore.tourism.safarisDesc')}
                   </span>
                 </li>
                 <li className="flex gap-x-[10px]">
                   <ArrowRightIcon aria-hidden="true" className="mt-[6px] h-[20px] w-[20px] flex-none text-indigo-600" />
                   <span className='text-justify'>
-                    <strong className="font-semibold text-white">Culinary Delights.</strong> Enjoy traditional dishes like Nyama Choma (roasted meat) and Ugali (stiff porridge), alongside diverse international cuisines available in Nairobi's vibrant restaurant scene.
+                    <strong className="font-semibold text-white">{t('explore.tourism.cuisine')}</strong>
+                    {t('explore.tourism.cuisineDesc')}
                   </span>
                 </li>
                 <li className="flex gap-x-[10px]">
                   <ArrowRightIcon aria-hidden="true" className="mt-[6px] h-[20px] w-[20px] flex-none text-indigo-600" />
                   <span className='text-justify'>
-                    <strong className="font-semibold text-white">Cultural Experiences.</strong> Engage with local communities through cultural festivals and events that showcase Kenya's diverse heritage.
+                    <strong className="font-semibold text-white">{t('explore.tourism.experiences')}</strong>
+                    {t('explore.tourism.experiencesDesc')}
                   </span>
                 </li>
               </ul>

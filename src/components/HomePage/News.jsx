@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import images from '../../assets/images';
+import { useTranslation } from 'react-i18next';
 
 const newsData = [
     {
@@ -42,6 +43,7 @@ const newsData = [
 ];
 
 const News = () => {
+    const { t } = useTranslation();
     const [currentIndex, setCurrentIndex] = useState(0);
 
     useEffect(() => {
@@ -58,7 +60,7 @@ const News = () => {
             
             <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center p-6">
                 <h1 className="text-4xl font-extrabold text-white sm:text-5xl mb-4">
-                    Latest News
+                    {t('home.newsTitle')}
                 </h1>
                 
                 <div className="overflow-hidden relative h-32">

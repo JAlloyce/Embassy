@@ -1,8 +1,15 @@
 'use client'
 
+import { useTranslation } from 'react-i18next';
 import images from '../../assets/images'; // Adjust the path as necessary
 
 const Pets = () => {
+  const { t, i18n } = useTranslation();
+
+  // Add debugging logs
+  console.log('Current language:', i18n.language);
+  
+
   return (
     <div className="bg-white">
       <div className="relative isolate overflow-hidden bg-black px-6 py-8 sm:py-8 lg:overflow-visible lg:px-4 lg:py-8">
@@ -51,44 +58,61 @@ const Pets = () => {
 
         <div className="mx-auto max-w-2xl py-8 sm:py-8 lg:py-8 text-left">
           <h1 className="text-4xl font-bold tracking-tight text-indigo-600 sm:text-6xl">
-            Requirements to Import Cats/Dogs as Pets
+            {t('consular.pets.title')}
           </h1>
 
-          <p className="mt-6 text-lg leading-8 text-gray-300">
-            Document to be obtained at Embassy Prior to Departure:
+          <h2 className="mt-6 text-2xl font-semibold text-indigo-600">
+            {t('consular.pets.preArrival.title')}
+          </h2>
+
+          <p className="mt-4 text-lg leading-8 text-gray-300">
+            {t('consular.pets.preArrival.description')}
           </p>
 
           <p className="mt-4 text-lg leading-8 text-gray-300">
-            In accordance with the Animal Disease Act, visitors to Kenya are required to obtain an import permit for their cat or dog before they can bring the animal into the country.
+            {t('consular.pets.preArrival.permitDetails')}
           </p>
 
-          <p className="mt-4 text-lg leading-8 text-gray-300">
-            This permit can be obtained at the Embassy, upon presentation of a valid vaccination booklet (check with veterinarian) and payment of USD 50 per animal. The permit is valid for thirty (30) days from the date of issue and is only valid for one consignment. The Import permit must accompany the animal during importation.
-          </p>
+          <h2 className="mt-8 text-2xl font-semibold text-indigo-600">
+            {t('consular.pets.otherDocuments.title')}
+          </h2>
 
-          <h2 className="mt-8 text-xl font-semibold text-indigo-600">OTHER DOCUMENTS REQUIRED:</h2>
-
-          {/* Requirements List */}
-          <ul className="mt-4 list-disc list-inside text-gray-300">
-            <li>Veterinary certificate signed no more than five days prior to departure, stating that the animal is free of infectious diseases.</li>
-            <li>Valid rabies certificate. If the animal was vaccinated less than 6 months before departure, also a certificate from a government veterinary officer of the country of origin, stating that no rabies cases have occurred within 50 km of the animal’s place of origin within the preceding 6 months.</li>
-            <li>Certificate from the captain of the plane/ship carrying the animal, stating that the animal has not left the craft between embarkation and arrival, and was isolated from all other cats/dogs.</li>
-            <li>Animals in transit for less than 48 hours do not need these certificates but will be kept in isolation at the owner’s expense and can only leave Kenya by air or sea.</li>
-            <li>Cats/dogs entering Kenya by land must be reported within three days of arrival.</li>
+          <ul className="mt-4 list-disc list-inside text-gray-300 space-y-2">
+            {t('consular.pets.otherDocuments.list', { returnObjects: true }).map((requirement, index) => (
+              <li key={index} className="ml-4">{requirement}</li>
+            ))}
           </ul>
 
-          <h2 className="mt-8 text-xl font-semibold text-indigo-600">MORE INFORMATION:</h2>
+          <h2 className="mt-8 text-2xl font-semibold text-indigo-600">
+            {t('consular.pets.moreInfo.title')}
+          </h2>
 
-          {/* More Information Section */}
           <p className="mt-4 text-lg leading-8 text-gray-300">
-            More information about importation of animals into Kenya can be obtained from the following:
+            {t('consular.pets.moreInfo.description')}
           </p>
           
-          <ul className="mt=4 list-disc list-inside text-gray-300">
-            <li><a href="http://www.livestock.go.ke" target="_blank" rel="noopener noreferrer" className="text-indigo-400 underline">Ministry of Livestock Development (Veterinary Services & Disease Control)</a></li>
-            <li><a href="http://www.apsea.or.ke" target="_blank" rel="noopener noreferrer" className="text-indigo-400 underline">Kenya Veterinary Association</a></li>
+          <ul className="mt-4 list-disc list-inside text-gray-300 space-y-2">
+            <li className="ml-4">
+              <a 
+                href={t('consular.pets.moreInfo.links.ministry.url')} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-indigo-400 hover:text-indigo-300 underline"
+              >
+                {t('consular.pets.moreInfo.links.ministry.text')}
+              </a>
+            </li>
+            <li className="ml-4">
+              <a 
+                href={t('consular.pets.moreInfo.links.association.url')} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-indigo-400 hover:text-indigo-300 underline"
+              >
+                {t('consular.pets.moreInfo.links.association.text')}
+              </a>
+            </li>
           </ul>
-
         </div>
       </div>
     </div>

@@ -2,8 +2,11 @@
     import images from '../../assets/images'; 
     import { Link } from 'react-router-dom'; 
     import {motion} from 'framer-motion'
+    import { useTranslation } from 'react-i18next';
 
     const MagicList = () => {
+    const { t } = useTranslation();
+
     return (
         <div className="relative isolate overflow-hidden bg-black px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
         <div className="absolute inset-0 -z-10 overflow-hidden">
@@ -38,10 +41,10 @@
                 animate={{x:0, opacity:1}}
                 transition={{duration:1, delay:0.5}}
                 className="lg:max-w-lg">
-                <p className="text-base font-semibold leading-7 text-indigo-600">Explore Magical Kenya</p>
-                <h1 className="mt-2 text-5xl font-bold tracking-tight text-white sm:text-6xl">Discover the Wonders of Kenya</h1>
+                <p className="text-base font-semibold leading-7 text-indigo-600">{t('magicalKenya.explore')}</p>
+                <h1 className="mt-2 text-5xl font-bold tracking-tight text-white sm:text-6xl">{t('magicalKenya.discover')}</h1>
                 <p className="mt-6 text-2xl leading-8 text-gray-400 text-justify">
-                    Kenya is a land of diverse landscapes, rich culture, and endless possibilities. From the bustling city of Nairobi to the stunning beaches of the coast, there is something for everyone to explore.
+                    {t('magicalKenya.description')}
                 </p>
                 </motion.div>
             </div>
@@ -54,7 +57,7 @@
                     <div className="flex min-w-0 gap-x-4">
                         <div className="min-w-0 flex-auto">
                         <Link to="/magical-kenya/getting-around" className="text-4xl font-bold leading-6 text-gray-400 hover:text-white">
-                            <span className="rounded-full bg-indigo-600 px-3 py-2 text-2xl font-bold text-white">1.</span> Getting Around Kenya
+                            <span className="rounded-full bg-indigo-600 px-3 py-2 text-2xl font-bold text-white">1.</span> {t('magicalKenya.gettingAround')}
                         </Link>
                         </div>
                     </div>
@@ -68,7 +71,7 @@
                     <div className="flex min-w-0 gap-x-4">
                         <div className="min-w-0 flex-auto">
                         <Link to="/magical-kenya/intro" className="text-4xl font-bold leading-6 text-gray-400 hover:text-white">
-                            <span className="rounded-full bg-indigo-600 px-3 py-2 text-2xl font-bold text-white">2.</span> Why Kenya ?
+                            <span className="rounded-full bg-indigo-600 px-3 py-2 text-2xl font-bold text-white">2.</span> {t('magicalKenya.whyKenya')}
                         </Link>
                         </div>
                     </div>
@@ -83,7 +86,7 @@
                     <div className="flex min-w-0 gap-x-4">
                         <div className="min-w-0 flex-auto">
                         <Link to="/magical-kenya/nairobi" className="text-4xl font-bold leading-6 text-gray-400 hover:text-white">
-                            <span className="rounded-full bg-indigo-600 px-3 py-2 text-2xl font-bold text-white">3.</span> Capital City
+                            <span className="rounded-full bg-indigo-600 px-3 py-2 text-2xl font-bold text-white">3.</span> {t('magicalKenya.capitalCity')}
                         </Link>
                         </div>
                     </div>
@@ -98,7 +101,7 @@
                     <div className="flex min-w-0 gap-x-4">
                         <div className="min-w-0 flex-auto">
                         <Link to="/magical-kenya/coast" className="text-4xl font-bold leading-6 text-gray-400 hover:text-white">
-                            <span className="rounded-full bg-indigo-600 px-3 py-2 text-2xl font-bold text-white">4.</span> Coast Region
+                            <span className="rounded-full bg-indigo-600 px-3 py-2 text-2xl font-bold text-white">4.</span> {t('magicalKenya.coastRegion')}
                         </Link>
                         </div>
                     </div>
@@ -113,7 +116,7 @@
                     <div className="flex min-w-0 gap-x-4">
                         <div className="min-w-0 flex-auto">
                         <Link to="/magical-kenya/central-rift" className="text-4xl font-bold leading-6 text-gray-400 hover:text-white">
-                            <span className="rounded-full bg-indigo-600 px-3 py-2 text-2xl font-bold text-white">5.</span> Central Rift Region
+                            <span className="rounded-full bg-indigo-600 px-3 py-2 text-2xl font-bold text-white">5.</span> {t('magicalKenya.centralRiftRegion')}
                         </Link>
                         </div>
                     </div>
@@ -128,7 +131,7 @@
                     <div className="flex min-w-0 gap-x-4">
                         <div className="min-w-0 flex-auto">
                         <Link to="/magical-kenya/mount-kenya" className="text-4xl font-bold leading-6 text-gray-400 hover:text-white">
-                            <span className="rounded-full bg-indigo-600 px-3 py-2 text-2xl font-bold text-white">6.</span> Mount Kenya
+                            <span className="rounded-full bg-indigo-600 px-3 py-2 text-2xl font-bold text-white">6.</span> {t('magicalKenya.mountKenya')}
                         </Link>
                         </div>
                     </div>
@@ -143,7 +146,7 @@
                     <div className="flex min-w-0 gap-x-4">
                         <div className="min-w-0 flex-auto">
                         <Link to="/magical-kenya/northern-kenya" className="text-4xl font-bold leading-6 text-gray-400 hover:text-white">
-                            <span className="rounded-full bg-indigo-600 px-3 py-2 text-2xl font-bold text-white">7.</span> Northern Region
+                            <span className="rounded-full bg-indigo-600 px-3 py-2 text-2xl font-bold text-white">7.</span> {t('magicalKenya.northernRegion')}
                         </Link>
                         </div>
                     </div>
@@ -158,7 +161,7 @@
                     <div className="flex min-w-0 gap-x-4">
                         <div className="min-w-0 flex-auto">
                         <Link to="/magical-kenya/north-rift" className="text-4xl font-bold leading-6 text-gray-400 hover:text-white">
-                            <span className="rounded-full bg-indigo-600 px-3 py-2 text-2xl font-bold text-white">8.</span> North Rift Region
+                            <span className="rounded-full bg-indigo-600 px-3 py-2 text-2xl font-bold text-white">8.</span> {t('magicalKenya.northRiftRegion')}
                         </Link>
                         </div>
                     </div>
@@ -173,7 +176,7 @@
                     <div className="flex min-w-0 gap-x-4">
                         <div className="min-w-0 flex-auto">
                         <Link to="/magical-kenya/southern-kenya" className="text-4xl font-bold leading-6 text-gray-400 hover:text-white">
-                            <span className="rounded-full bg-indigo-600 px-3 py-2 text-2xl font-bold text-white">9.</span> Southern Region
+                            <span className="rounded-full bg-indigo-600 px-3 py-2 text-2xl font-bold text-white">9.</span> {t('magicalKenya.southernRegion')}
                         </Link>
                         </div>
                     </div>
@@ -188,7 +191,7 @@
                     <div className="flex min-w-0 gap-x-4">
                         <div className="min-w-0 flex-auto">
                         <Link to="/magical-kenya/western-kenya" className="text-4xl font-bold leading-6 text-gray-400 hover:text-white">
-                            <span className="rounded-full bg-indigo-600 px-3 py-2 text-2xl font-bold text-white">10.</span> Western Region
+                            <span className="rounded-full bg-indigo-600 px-3 py-2 text-2xl font-bold text-white">10.</span> {t('magicalKenya.westernRegion')}
                         </Link>
                         </div>
                     </div>
@@ -203,7 +206,7 @@
                     <div className="flex min-w-0 gap-x-4">
                         <div className="min-w-0 flex-auto">
                         <Link to="/magical-kenya/things-to-do" className="text-4xl font-bold leading-6 text-gray-400 hover:text-white">
-                            <span className="rounded-full bg-indigo-600 px-3 py-2 text-2xl font-bold text-white">11.</span> Things To Do
+                            <span className="rounded-full bg-indigo-600 px-3 py-2 text-2xl font-bold text-white">11.</span> {t('magicalKenya.thingsToDo')}
                         </Link>
                         </div>
                     </div>

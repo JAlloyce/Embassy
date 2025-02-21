@@ -1,5 +1,8 @@
- 
-    const Contact = () => {
+import { useTranslation } from 'react-i18next';
+
+const Contact = () => {
+    const { t } = useTranslation();
+    
     const handleEmailClick = () => {
         window.location.href = 'mailto:kenyaembassymoscow@gmail.com';
     };
@@ -12,45 +15,45 @@
         <div className="bg-black text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
             {/* Centered Header */}
-            <h2 className="text-3xl font-extrabold tracking-tight text-center">Contact Us</h2>
+            <h2 className="text-3xl font-extrabold tracking-tight text-center">{t('contact.title')}</h2>
             
             {/* Left Side: Contact Info */}
             <div className="flex flex-col mt-8 w-full">
             <div className="mt-4">
-                <h3 className="text-xl font-bold">Email</h3>
+                <h3 className="text-xl font-bold">{t('contact.email.title')}</h3>
                 <button
                 onClick={handleEmailClick}
                 className="text-blue-500 hover:text-blue-400 focus:outline-none focus:underline"
                 >
-                kenyaembassymoscow@gmail.com
+                {t('contact.email.primary')}
                 </button>
             </div>
             <div className="mt-4">
-                <h3 className="text-xl font-bold">Email</h3>
+                <h3 className="text-xl font-bold">{t('contact.email.title')}</h3>
                 <button
                 onClick={handleEmailClick}
                 className="text-blue-500 hover:text-blue-400 focus:outline-none focus:underline"
                 >
-                moscow@mfa.go.ke
+                {t('contact.email.secondary')}
                 </button>
             </div>
             <div className="mt-4">
-                <h3 className="text-xl font-bold">Phone</h3>
+                <h3 className="text-xl font-bold">{t('contact.phone.title')}</h3>
                 <button
                 onClick={handlePhoneClick}
                 className="text-blue-500 hover:text-blue-400 focus:outline-none focus:underline"
                 >
-                +7 (495) 637 21 86
+                {t('contact.phone.number')}
                 </button>
-                <p>Fax: +7 (495) 637 54 63</p>
+                <p>{t('contact.phone.fax')}</p>
             </div>
             </div>
 
             {/* Right Side: Address */}
             <div className="flex flex-col items-end mt-8 w-full">
-            <h3 className="text-xl font-bold">Address</h3>
+            <h3 className="text-xl font-bold">{t('contact.address.title')}</h3>
             <p className="mt-2 text-right">
-                Lopukhinsky Pereulok 5, Moscow, Russia, 119034
+                {t('contact.address.text')}
             </p>
             </div>
         </div>
@@ -70,7 +73,7 @@
 
         {/* Copyright Notice */}
         <div className="mt-8 text-center text-sm">
-            © 2005-2024 Embassy of the Republic of Kenya in the Russian Federation
+            {t('contact.copyright')}
         </div>
         </div>
     );

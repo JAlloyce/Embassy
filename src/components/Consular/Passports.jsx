@@ -1,8 +1,18 @@
 'use client'
 
 import images from '../../assets/images'; // Adjust the path as necessary
+import { useTranslation } from 'react-i18next';
 
 const Passports = () => {
+  const { t } = useTranslation();
+
+  // Add debugging to check translations
+  console.log('Translation test:', {
+    title: t('consular.passport.title'),
+    newPassportTitle: t('consular.passport.newPassport.title'),
+    requirements: t('consular.passport.newPassport.requirements', { returnObjects: true })
+  });
+
   return (
     <div className="bg-white">
       <div className="relative isolate overflow-hidden bg-black px-6 py-8 sm:py-8 lg:overflow-visible lg:px-4 lg:py-8">
@@ -50,122 +60,91 @@ const Passports = () => {
 
         <div className="mx-auto max-w-2xl py-8 sm:py-8 lg:py-8 text-left">
           <h1 className="text-4xl font-bold tracking-tight text-indigo-600 sm:text-6xl">
-            Passports
+            {t('consular.passport.title')}
           </h1>
 
           <p className="mt-6 text-lg leading-8 text-gray-300">
-            Подайте заявку на получение этого документа на платформе{' '}
+            {t('consular.passport.applyOnEcitizen')}{' '}
             <a href="https://accounts.ecitizen.go.ke/en" target="_blank" rel="noopener noreferrer" className="text-indigo-400 underline">
-              ecitizen
-            </a>.
+              {t('consular.passport.platform')}
+            </a>
           </p>
 
-          <p className="mt-2 text-lg leading-8 text-gray-300">
-            Apply for this document on the ecitizen platform{' '}
-            <a href="https://accounts.ecitizen.go.ke/en" target="_blank" rel="noopener noreferrer" className="text-indigo-400 underline">
-              here
-            </a>.
-          </p>
-
-          <h2 className="mt-8 text-xl font-semibold text-indigo-600">PASSPORT REQUIREMENTS</h2>
+          <h2 className="mt-8 text-xl font-semibold text-indigo-600">{t('consular.passport.requirements')}</h2>
 
           {/* New Passport Section */}
-          <h3 className="mt-6 text-lg font-semibold text-indigo-600">1. New Passport</h3>
-          <p className="mt-4 text-lg leading-8 text-gray-300">All applicants must fill three application Forms 19A.</p>
+          <h3 className="mt-6 text-lg font-semibold text-indigo-600">{t('consular.passport.newPassport.title')}</h3>
+          <p className="mt-4 text-lg leading-8 text-gray-300">{t('consular.passport.newPassport.forms')}</p>
           <ul className="mt-4 list-disc list-inside text-gray-300">
-            <li>Be a Kenyan Citizen</li>
-            <li>Three duly completed Passport application Forms 19A</li>
-            <li>Applicant's Birth, Adoption or Registration (original and photocopy) Certificate. In some instances, an applicant's parent(s) birth certificate may be required.</li>
-            <li>New generation National Identity Card (original and copy)</li>
-            <li>Three coloured Passport size (3.4 x 4.5 cm) photographs of the applicant with one photo duly certified as true likeness of the applicant by the recommender. Applicant's ears must be visible on the photo.</li>
-            <li>Certified copy of the recommender's National Identity Card</li>
+            {t('consular.passport.newPassport.requirements', { returnObjects: true }).map((req, index) => (
+              <li key={index} className="mb-2">{req}</li>
+            ))}
           </ul>
 
           {/* Child Requirements */}
-          <p className="mt-4 text-lg leading-8 text-gray-300">If the applicant is a child, additional requirements include:</p>
-          <ul className="list-disc list-inside mt-2 text-gray-300">
-            <li>Two photocopies of the parent(s) current Kenyan passport pages 30,31,32 for type 'A' passports and pages 45,46,47 for type 'B' passports.</li>
-            <li>Two copies of the parents' National identity card(s).</li>
-            <li>Two copies of the child's international and/or Kenyan birth certificate.</li>
-            <li>Two copies of the parents' birth certificates.</li>
-            <li>Completed parental consent form (obtained at the Embassy).</li>
+          <h3 className="mt-6 text-lg font-semibold text-indigo-600">{t('consular.passport.childRequirements.title')}</h3>
+          <ul className="mt-4 list-disc list-inside text-gray-300">
+            {t('consular.passport.childRequirements.list', { returnObjects: true }).map((req, index) => (
+              <li key={index} className="mb-2">{req}</li>
+            ))}
           </ul>
 
           {/* Replacement Passport Section */}
-          <h3 className="mt-6 text-lg font-semibold text-indigo-600">2. Replacement of Passport after 5/10 years (Expired / Filled up)</h3>
+          <h3 className="mt-6 text-lg font-semibold text-indigo-600">{t('consular.passport.replacement.title')}</h3>
           <ul className="mt-4 list-disc list-inside text-gray-300">
-            <li>Three duly completed Passport application Forms 19A</li>
-            <li>An introductory letter addressed to the Ambassador explaining why you need another passport</li>
-            <li>Copy of the Bio-data page of your current passport</li>
-            <li>Three coloured Passport size (3.4 x 4.5 cm) photographs of the applicant with one photo duly certified as true likeness of the applicant by the recommender. Applicant's ears must be visible on the photo.</li>
-            <li>Certified copy of the recommender's National Identity Card</li>
-            <li>Copy of birth certificate or the National ID of the applicant</li>
-            <li>Original passport being replaced</li>
+            {t('consular.passport.replacement.requirements', { returnObjects: true }).map((req, index) => (
+              <li key={index} className="mb-2">{req}</li>
+            ))}
           </ul>
 
-          {/* Replacement of Mutilated Passport Section */}
-          <h3 className="mt-6 text-lg font-semibold text-indigo-600">3. Replacement of Mutilated Passport</h3>
+          {/* Mutilated Passport Section */}
+          <h3 className="mt-6 text-lg font-semibold text-indigo-600">{t('consular.passport.mutilated.title')}</h3>
           <ul className="mt-4 list-disc list-inside text-gray-300">
-            <li>Three duly completed Passport application forms 19A</li>
-            <li>Mutilated Passport to be replaced</li>
-            <li>Copy of the Bio-data page of your current passport</li>
-            <li>An affidavit detailing the circumstances under which the mutilation occurred</li>
-            <li>Three coloured Passport size (3.4 x 4.5 cm) photographs of the applicant with one photo duly certified as true likeness of the applicant by the recommender. Applicant's ears must be visible on the photo.</li>
-            <li>Certified copy of the recommender's National Identity Card</li>
-            <li>Mutilated Passport application form (obtained at the Embassy)</li>
+            {t('consular.passport.mutilated.requirements', { returnObjects: true }).map((req, index) => (
+              <li key={index} className="mb-2">{req}</li>
+            ))}
           </ul>
 
-          {/* Replacement of Lost Passport Section */}
-          <h3 className="mt-6 text-lg font-semibold text-indigo-600">4. Replacement of Lost Passport</h3>
+          {/* Lost Passport Section */}
+          <h3 className="mt-6 text-lg font-semibold text-indigo-600">{t('consular.passport.lost.title')}</h3>
           <ul className="mt-4 list-disc list-inside text-gray-300">
-            <li>Original Birth Certificate</li>
-            <li>A copy of the birth certificate (both sides) that was used to issue the lost passport</li>
-            <li>Three duly completed Passport application forms 19A</li>
-            <li>Three coloured Passport size (3.4 x 4.5 cm) photographs of the applicant with one photo duly certified as true likeness of the applicant by the recommender. Applicant's ears must be visible on the photo.</li>
-            <li>An affidavit detailing the circumstances under which the loss occurred</li>
-            <li>Police abstract original (in Russian) and a translation in English showing when and where the loss was reported</li>
-            <li>Certified copy of the recommender's National Identity Card</li>
-            <li>Cover letter addressed to the Ambassador explaining circumstances of loss by the applicant</li>
-            <li>Lost passport application form (obtained at the Embassy)</li>
+            {t('consular.passport.lost.requirements', { returnObjects: true }).map((req, index) => (
+              <li key={index} className="mb-2">{req}</li>
+            ))}
           </ul>
 
           {/* Diplomatic Passport Section */}
-          <h3 className="mt-6 text-lg font-semibold text-indigo-600">5. Diplomatic Passport</h3>
+          <h3 className="mt-6 text-lg font-semibold text-indigo-600">{t('consular.passport.diplomatic.title')}</h3>
           <ul className="mt-4 list-disc list-inside text-gray-300">
-            <li>Three duly completed Passport application form 19A</li>
-            <li>Letter showing that the person meets the criteria set out in the third schedule of Kenya citizenship and immigration regulations, 2012 legal notice No.64.</li>
-            <li>Old Passport or original Birth Certificate and National Identity Card together with their respective photocopies</li>
-            <li>Certified copy of the recommender's National Identity Card</li>
-            <li>Three coloured Passport size photographs of the applicant with one photo duly certified as true likeness of the applicant by the recommender.</li>
+            {t('consular.passport.diplomatic.requirements', { returnObjects: true }).map((req, index) => (
+              <li key={index} className="mb-2">{req}</li>
+            ))}
           </ul>
 
           {/* Emergency Travel Document Section */}
-          <h3 className="mt-6 text-lg font-semibold text-indigo-600">6. Emergency Travel Document</h3>
+          <h3 className="mt-6 text-lg font-semibold text-indigo-600">{t('consular.passport.emergency.title')}</h3>
           <ul className="mt-4 list-disc list-inside text-gray-300">
-            <li>One-way Emergency Travel document is issued at the Embassy free of charge for repatriation to Kenya</li>
-            <li>Requirements include: An interview at the Embassy; to be scheduled at the earliest, three days before the confirmed date of flight.</li>
-            <li>Two (2) passport size photos</li>
-            <li>Proof of Kenyan citizenship i.e. Kenyan Passport or National Identity Card.</li>
-            <li>Police Report if passport is lost.</li>
-            <li>Confirmed flight booking/ ticket</li>
+            {t('consular.passport.emergency.requirements', { returnObjects: true }).map((req, index) => (
+              <li key={index} className="mb-2">{req}</li>
+            ))}
           </ul>
           
           
-          {/* Application to Regain Citizenship Section */}
-          <h3 className="mt-6 text-lg font-semibold text-indigo-600">APPLICATION TO REGAIN CITIZENSHIP</h3>
+          {/* Regain Citizenship Section */}
+          <h3 className="mt-6 text-lg font-semibold text-indigo-600">{t('consular.passport.regainCitizenship.title')}</h3>
+          <p className="mt-4 text-lg leading-8 text-gray-300">{t('consular.passport.regainCitizenship.intro')}</p>
           <ul className="mt-4 list-disc list-inside text-gray-300">
-            <li>For the application to regain Kenyan citizenship for those who may have lost it through denounciation or acquisition of citizenship of another country the requirements are:</li>
-            <li>1. Proof of Kenyan Citizenship (birth certificate, passport or National ID)</li>
-            <li>2. Proof of citizenship of the other country (Notarized passport).</li>
-            <li>3. Two passport size photographs</li>
-            <li>4. Completed application for regaining citizenship form 5</li>
+            {t('consular.passport.regainCitizenship.requirements', { returnObjects: true }).map((req, index) => (
+              <li key={index} className="mb-2">{req}</li>
+            ))}
           </ul>
 
           {/* Notes Section */}
-          <h3 className="mt-6 text-lg font-semibold text-indigo-600">Notes:</h3>
+          <h3 className="mt-6 text-lg font-semibold text-indigo-600">{t('consular.passport.notes.title')}</h3>
           <ul className="mt-4 list-disc list-inside text-gray-300">
-            <li>Applicant's copy of National Identity Card is MANDATORY for every application.</li>
-            <li>These requirements are not exhaustive, if need be, more information may be required.</li>
+            {t('consular.passport.notes.list', { returnObjects: true }).map((req, index) => (
+              <li key={index} className="mb-2">{req}</li>
+            ))}
           </ul>
           
         </div>

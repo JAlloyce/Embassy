@@ -1,8 +1,19 @@
 'use client'
 
+import { useTranslation } from 'react-i18next';
 import images from '../../assets/images'; // Adjust the path as necessary
 
 const Birth = () => {
+  const { t, i18n } = useTranslation();
+
+  // Add debugging logs
+  console.log('Current language:', i18n.language);
+  console.log('Testing birth translations:', {
+    title: t('consular.birth.title'),
+    kenyansAbroadTitle: t('consular.birth.kenyansAbroad.title'),
+    requirements: t('consular.birth.kenyansAbroad.requirements', { returnObjects: true })
+  });
+
   return (
     <div className="bg-white">
       <div className="relative isolate overflow-hidden bg-black px-6 py-8 sm:py-8 lg:overflow-visible lg:px-4 lg:py-8">
@@ -51,53 +62,46 @@ const Birth = () => {
 
         <div className="mx-auto max-w-2xl py-8 sm:py-8 lg:py-8 text-left">
           <h1 className="text-4xl font-bold tracking-tight text-indigo-600 sm:text-6xl">
-            Application for Birth Certificate
+            {t('consular.birth.title')}
           </h1>
 
           <p className="mt-6 text-lg leading-8 text-gray-300">
-            Подайте заявку на получение этого документа на платформе{' '}
-            <a href="https://accounts.ecitizen.go.ke/en" target="_blank" rel="noopener noreferrer" className="text-indigo-400 underline">
-              ecitizen
-            </a>.
+            {t('consular.birth.applyOnEcitizen')}{' '}
+            <a href="https://accounts.ecitizen.go.ke/en" target="_blank" rel="noopener noreferrer" className="text-indigo-400 hover:text-indigo-300 underline">
+              {t('consular.birth.platform')}
+            </a>
           </p>
 
-          <p className="mt-2 text-lg leading-8 text-gray-300">
-            Apply for this document on the ecitizen platform{' '}
-            <a href="https://accounts.ecitizen.go.ke/en" target="_blank" rel="noopener noreferrer" className="text-indigo-400 underline">
-              here
-            </a>.
-          </p>
-
-          <h2 className="mt-8 text-xl font-semibold text-indigo-600">APPLICATION FOR KENYAN BIRTH CERTIFICATE FOR KENYANS BORN ABROAD</h2>
+          <h2 className="mt-8 text-2xl font-semibold text-indigo-600">
+            {t('consular.birth.kenyansAbroad.title')}
+          </h2>
 
           <p className="mt-4 text-lg leading-8 text-gray-300">
-            The following documents are required for processing Birth Certificates for Kenyans born abroad:
+            {t('consular.birth.kenyansAbroad.description')}
           </p>
 
           {/* Requirements List */}
-          <ul className="mt=4 list-disc list-inside text-gray-300">
-            <li>Two (2) application forms (BDA1) duly filled and signed</li>
-            <li>Copy of father’s passport (translated into English if it’s not in English) duly certified by the Embassy</li>
-            <li>Copy of mother’s passport (translated into English if it’s not in English)</li>
-            <li>Notification of birth/birth certificate issued by the civil authorities or the hospital (translated, certified by relevant Government agency)</li>
-            <li>Two copies of marriage certificate translated into English or international marriage certificate (if legally married)</li>
-            <li>Processing fee USD 5</li>
+          <ul className="mt-4 list-disc list-inside text-gray-300 space-y-2">
+            {t('consular.birth.kenyansAbroad.requirements', { returnObjects: true }).map((requirement, index) => (
+              <li key={index} className="ml-4">{requirement}</li>
+            ))}
           </ul>
 
-          <h2 className="mt-8 text-xl font-semibold text-indigo-600">FURTHER DETAILS MAY BE OBTAINED FROM:</h2>
+          <h2 className="mt-8 text-2xl font-semibold text-indigo-600">
+            {t('consular.birth.contact.title')}
+          </h2>
 
           {/* Contact Information Section */}
-          <p className="mt=4 text-lg leading=8 text-gray-300">
-            The Director,<br />
-            Department of Civil Registration<br />
-            P. O. Box 49179 - 00100, Tel: 2714987/8<br />
-            Nairobi, Kenya
-          </p>
+          <div className="mt-4 text-lg leading-8 text-gray-300 space-y-2">
+            {t('consular.birth.contact.details', { returnObjects: true }).map((line, index) => (
+              <p key={index}>{line}</p>
+            ))}
+          </div>
 
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Birth;

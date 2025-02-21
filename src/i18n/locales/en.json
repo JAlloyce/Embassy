@@ -1,0 +1,622 @@
+{
+  "common": {
+    "welcome": "Welcome to the Embassy of Kenya in Moscow",
+    "login": "Login",
+    "signup": "Sign Up",
+    "logout": "Logout",
+    "search": "Search",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "welcomeMessage": "Welcome to the Embassy of the Republic of Kenya in Moscow. We are dedicated to serving and strengthening the diplomatic ties between Kenya and Russia.",
+    "contact": "Contact Information",
+    "workingHours": "Working Hours: Monday to Friday, 9:00 AM - 5:00 PM",
+    "email": "Email: info@embassy-kenya.ru",
+    "telephone": "Telephone Numbers:",
+    "fax": "Fax: +7-495-637-2535",
+    "address": "Address: 5 Lopukhinsky Lane, 119034 Moscow, Russian Federation"
+  },
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact",
+    "profile": "Profile",
+    "mainMenu": {
+      "tourismInKenya": "Tourism in Kenya",
+      "embassy": "Embassy",
+      "consularServices": "Consular Services",
+      "news": "News"
+    },
+    "dropdowns": {
+      "tourismInKenya": {
+        "magicalKenya": "Magical Kenya",
+        "tourismOpportunities": "Tourism Opportunities"
+      },
+      "consularServices": {
+        "consularServices": "Consular Services",
+        "applyVisa": "Apply for eTA / Visa",
+        "passportReplacement": "Passport Replacement",
+        "emergencyTravel": "Emergency Travel Certificate",
+        "policeClearance": "Police Clearance Certificate"
+      }
+    }
+  },
+  "languages": {
+    "english": "English",
+    "russian": "Russian"
+  },
+  "ambassador": {
+    "name": "H.E. Dr. Peter Mutuku Mathuki",
+    "arrival": "Arrived in Moscow: September 2023",
+    "introduction": "Dr. Peter Mutuku Mathuki is a distinguished diplomat and trade expert with over 25 years of experience in regional integration and private sector development.",
+    "expertise": "He brings extensive expertise in regional trade, customs, and private sector development, having worked across various sectors in East Africa and beyond.",
+    "eac": "Prior to his appointment, he served as the Secretary General of the East African Community (EAC), where he played a pivotal role in strengthening regional integration and trade relations.",
+    "eabc": "He previously held the position of Executive Director of the East African Business Council (EABC), where he championed private sector interests in the EAC integration process.",
+    "eu": "His experience includes working with various international organizations and serving as a key advisor on EU-EAC Economic Partnership Agreement negotiations.",
+    "education": "Dr. Mathuki holds a PhD in Strategic Management and Regional Integration from the University of Nairobi."
+  },
+  "deputy": {
+    "name": "H.E. Mrs. Irene Achieng Oloo",
+    "arrival": "Arrived in Moscow: October 2023",
+    "introduction": "Mrs. Irene Achieng Oloo is a career diplomat with extensive experience in international relations and diplomacy.",
+    "education": "She holds a Master's degree in International Relations from the University of Nairobi and has completed various diplomatic training programs.",
+    "experience": "With over 15 years in foreign service, she has served in various diplomatic missions and played key roles in strengthening bilateral relations.",
+    "peace": "She has been instrumental in peace and security initiatives, particularly in regional cooperation and conflict resolution.",
+    "awards": "Her distinguished service has been recognized with several awards for excellence in diplomacy and international relations."
+  },
+  "consular": {
+    "title": "Consular Services",
+    "description": "Kenyan consular services provide essential support to Kenyan citizens living abroad and foreigners visiting Kenya. These services include:",
+    "visa": {
+      "title": "Electronic Travel Authorization (eTA) / Visa",
+      "subtitle": "Kenya eTA Information",
+      "description": "The Ministry of Interior and National Administration has developed an Electronic Travel Authorization (eTA) system for entry into the Republic of Kenya.",
+      "details": "The Kenya eTA is a semi-automated system that determines the eligibility of visitors to enter Kenya.",
+      "applicationTime": "eTA applications should be submitted at least 2 weeks prior to travel"
+    },
+    "passport": {
+      "title": "Passport Services",
+      "applyOnEcitizen": "Apply for this document on the ecitizen platform",
+      "platform": "here",
+      "requirements": "PASSPORT REQUIREMENTS",
+      "newPassport": {
+        "title": "1. New Passport",
+        "forms": "All applicants must complete three 19A application forms",
+        "requirements": [
+          "Be a Kenyan citizen",
+          "Three duly filled passport application forms 19A",
+          "Birth certificate, adoption or registration certificate of the applicant (original and copy)",
+          "Second generation national ID (original and copy)",
+          "Three passport size colored photos (3.4 x 4.5 cm)",
+          "Certified copy of recommender's ID"
+        ]
+      },
+      "childRequirements": {
+        "title": "If the applicant is a child, additional requirements include:",
+        "list": [
+          "Two photocopies of pages of parent(s) current Kenyan passport",
+          "Two copies of parents' national ID cards",
+          "Two copies of child's international and/or Kenyan birth certificate",
+          "Two copies of parents' birth certificates",
+          "Completed parents' consent form (obtained at the Embassy)"
+        ]
+      },
+      "replacement": {
+        "title": "2. Replacement of Passport after 5/10 years (expired / filled)",
+        "requirements": [
+          "Three duly filled passport application forms 19A",
+          "Cover letter addressed to the Ambassador",
+          "Copy of bio-data page of current passport",
+          "Three passport size colored photos",
+          "Certified copy of recommender's ID",
+          "Copy of birth certificate or national ID",
+          "Original passport to be replaced"
+        ]
+      },
+      "mutilated": {
+        "title": "3. Replacement of Mutilated Passport",
+        "requirements": [
+          "Three duly filled passport application forms 19A",
+          "Mutilated passport to be replaced",
+          "Copy of bio-data page of current passport",
+          "Affidavit describing circumstances under which mutilation occurred",
+          "Three passport size colored photos (3.4 x 4.5 cm) of the applicant, one of which must be certified by the recommender as a true likeness of the applicant. The applicant's ears must be visible in the photo.",
+          "Certified copy of recommender's ID",
+          "Application form for replacement of mutilated passport (obtained at the Embassy)"
+        ]
+      },
+      "lost": {
+        "title": "4. Replacement of Lost Passport",
+        "requirements": [
+          "Original birth certificate",
+          "Copy of birth certificate (both sides) used to issue the lost passport",
+          "Three duly filled passport application forms 19A",
+          "Three passport size colored photos (3.4 x 4.5 cm) of the applicant, one of which must be certified by the recommender as a true likeness of the applicant. The applicant's ears must be visible in the photo.",
+          "Affidavit describing circumstances of loss",
+          "Original police abstract (in Russian) and English translation indicating when and where the loss was reported",
+          "Certified copy of recommender's ID",
+          "Cover letter addressed to the Ambassador explaining circumstances of loss from the applicant",
+          "Application form for replacement of lost passport (obtained at the Embassy)"
+        ]
+      },
+      "diplomatic": {
+        "title": "5. Diplomatic Passport",
+        "requirements": [
+          "Three duly filled passport application forms 19A",
+          "Letter confirming that the person meets the criteria set out in the Third Schedule to the Kenya Citizenship and Immigration Regulations, 2012, Legal Notice No. 64.",
+          "Old passport or original birth certificate and national ID together with their respective photocopies",
+          "Certified copy of recommender's ID",
+          "Three passport size colored photos of the applicant, one of which must be certified by the recommender as a true likeness of the applicant."
+        ]
+      },
+      "emergency": {
+        "title": "6. Emergency Travel Document",
+        "requirements": [
+          "One-time emergency travel document issued at the Embassy free of charge for repatriation to Kenya",
+          "Requirements include: Interview at the Embassy; must be scheduled not later than three days before confirmed flight date.",
+          "Two (2) passport size photos",
+          "Proof of Kenyan citizenship i.e. Kenyan passport or national ID.",
+          "Police abstract in case of lost passport.",
+          "Confirmed booking/flight ticket"
+        ]
+      },
+      "regainCitizenship": {
+        "title": "APPLICATION TO REGAIN CITIZENSHIP",
+        "intro": "To apply to regain Kenyan citizenship for those who may have lost it through renunciation or acquisition of citizenship of another country, the following are required:",
+        "requirements": [
+          "Proof of Kenyan citizenship (birth certificate, passport or national ID)",
+          "Proof of citizenship of another country (notarized passport).",
+          "Two passport size photos",
+          "Completed Form 5 application to regain citizenship"
+        ]
+      },
+      "notes": {
+        "title": "Notes:",
+        "list": [
+          "Copy of applicant's national ID is MANDATORY for every application",
+          "These requirements are not exhaustive, additional information may be required if necessary"
+        ]
+      },
+      "goodConduct": {
+        "title": "Certificate of Good Conduct",
+        "applyOnEcitizen": "Apply for this document on the ecitizen platform",
+        "platform": "here",
+        "requirements": {
+          "title": "POLICE CLEARANCE CERTIFICATE REQUIREMENTS",
+          "list": [
+            "An Introductory letter by the applicant",
+            "Original second-generation national identification card and a clear photocopy (Kenyan passports not accepted).",
+            "Pay USD 20 as a processing fee",
+            "Fingerprints and palm prints recorded on a prescribed form at the nearest Police Station in Russia. This document should have a police endorsement seal or stamp and a translation of the same into English.",
+            "If not registered and issued with a Kenyan ID Card as per Cap. 107 Laws of Kenya, must prove that he/she attained the age of 18 years while outside the country and is yet to return. A letter from the mission, certified copy of birth certificate, and passport are relevant in this case.",
+            "If the applicant is a foreigner, in addition to the above requirements, documentary proof of residence in Kenya and a certified copy of the applicant's passport will also be required."
+          ]
+        }
+      }
+    },
+    "marriage": {
+      "title": "Marriage Certificate",
+      "applyOnEcitizen": "Apply for this document on the ecitizen platform",
+      "platform": "here",
+      "noImpediment": {
+        "title": "CERTIFICATE OF NO IMPEDIMENT TO MARRIAGE",
+        "description": "Every Kenyan wishing to marry abroad has to apply for a Certificate of No Impediment to Marriage from the nearest Kenyan Mission. Marriages conducted without issuance of this Certificate will neither be recognized by the Mission nor the Authorities in Kenya.",
+        "processingTime": "Issuance of this certificate involves a search by the Registrar of Marriages to establish the civil status of the applicant. For this reason, it takes time, and it is therefore advisable to apply well before the planned date of marriage, preferably 3 months in advance.",
+        "statusNote": "Note: Do not indicate your marital status on the application form as Single. Enter either Spinster, Bachelor, Widowed, or Divorced.",
+        "sameGenderNote": "The Kenya Government neither acknowledges nor endorses same-sex marriages. Please note that Certification can only be done at the Embassy in which case the applicant comes with the original and a copy or before a notary public. The Mission does not accept scanned certified copies or photocopies of certified copies."
+      },
+      "requirements": {
+        "title": "The applicant requires the following:",
+        "list": [
+          "A completed application form for certificate of no impediment",
+          "Certified copy of your passport",
+          "Certified copy of your birth certificate",
+          "Certified copy of your fiancée's passport",
+          "Fee of USD 70"
+        ]
+      }
+    },
+    "birth": {
+      "title": "Application for Birth Certificate",
+      "applyOnEcitizen": "Apply for this document on the ecitizen platform",
+      "platform": "here",
+      "kenyansAbroad": {
+        "title": "APPLICATION FOR KENYAN BIRTH CERTIFICATE FOR KENYANS BORN ABROAD",
+        "description": "The following documents are required for processing Birth Certificates for Kenyans born abroad:",
+        "requirements": [
+          "Two (2) application forms (BDA1) duly filled and signed",
+          "Copy of father's passport (translated into English if it's not in English) duly certified by the Embassy",
+          "Copy of mother's passport (translated into English if it's not in English)",
+          "Notification of birth/birth certificate issued by the civil authorities or the hospital (translated, certified by relevant Government agency)",
+          "Two copies of marriage certificate translated into English or international marriage certificate (if legally married)",
+          "Processing fee USD 5"
+        ]
+      },
+      "contact": {
+        "title": "FURTHER DETAILS MAY BE OBTAINED FROM:",
+        "details": [
+          "The Director,",
+          "Department of Civil Registration",
+          "P. O. Box 49179 - 00100, Tel: 2714987/8",
+          "Nairobi, Kenya"
+        ]
+      }
+    },
+    "pets": {
+      "title": "Requirements to Import Cats/Dogs as Pets",
+      "preArrival": {
+        "title": "Document to be obtained at Embassy Prior to Departure:",
+        "description": "In accordance with the Animal Disease Act, visitors to Kenya are required to obtain an import permit for their cat or dog before they can bring the animal into the country.",
+        "permitDetails": "This permit can be obtained at the Embassy, upon presentation of a valid vaccination booklet (check with veterinarian) and payment of USD 50 per animal. The permit is valid for thirty (30) days from the date of issue and is only valid for one consignment. The Import permit must accompany the animal during importation."
+      },
+      "otherDocuments": {
+        "title": "OTHER DOCUMENTS REQUIRED:",
+        "list": [
+          "Veterinary certificate signed no more than five days prior to departure, stating that the animal is free of infectious diseases.",
+          "Valid rabies certificate. If the animal was vaccinated less than 6 months before departure, also a certificate from a government veterinary officer of the country of origin, stating that no rabies cases have occurred within 50 km of the animal's place of origin within the preceding 6 months.",
+          "Certificate from the captain of the plane/ship carrying the animal, stating that the animal has not left the craft between embarkation and arrival, and was isolated from all other cats/dogs.",
+          "Animals in transit for less than 48 hours do not need these certificates but will be kept in isolation at the owner's expense and can only leave Kenya by air or sea.",
+          "Cats/dogs entering Kenya by land must be reported within three days of arrival."
+        ]
+      },
+      "moreInfo": {
+        "title": "MORE INFORMATION:",
+        "description": "More information about importation of animals into Kenya can be obtained from the following:",
+        "links": {
+          "ministry": {
+            "text": "Ministry of Livestock Development (Veterinary Services & Disease Control)",
+            "url": "http://www.livestock.go.ke"
+          },
+          "association": {
+            "text": "Kenya Veterinary Association",
+            "url": "http://www.apsea.or.ke"
+          }
+        }
+      }
+    },
+    "docAuth": {
+      "title": "Document Authentication / Legalization",
+      "kenyaNationals": {
+        "title": "KENYA NATIONALS",
+        "requirements": [
+          "Original document and copy (copy to be retained at the Embassy). If it is a copy of the original to be certified, then the applicant should bring two copies and the original document.",
+          "Academic certificates (Degrees, Diplomas, KCSE certificates, etc.) will be authenticated at no charge at the Embassy.",
+          "All other documents will be authenticated at USD 20 per document. Please avail the exact amount in cash."
+        ],
+        "note": "Kindly note that only Kenyan documents certified by the Ministry of Foreign Affairs and International Trade, Kenya, can be certified or legalized at the Embassy of Kenya Moscow."
+      },
+      "foreignNationals": {
+        "title": "FOREIGN NATIONALS",
+        "requirements": [
+          "Original document duly authenticated by the Ministry of Foreign Affairs of the Applicant. The document should bear proof of certification (seal and signature).",
+          "A fee of USD 20 per document payable in cash. Please avail the exact amount in cash."
+        ]
+      }
+    },
+    "downloads": {
+      "title": "Downloads"
+    },
+    "docLeg": {
+      "title": "Document Legalization",
+      "originalDegree": {
+        "title": "Legalization of Original Degree Certificates",
+        "subtitle": "Required for use of documents in Kenya",
+        "steps": [
+          {
+            "title": "Original documents submitted through university to MFA, RF (consular legalization department):",
+            "contacts": "Contacts: Moscow, 1 Neopalimovskyi pereulok, 12 (Smolenskaya / Park Kultury metro stations)",
+            "hours": "Working hours: 9.30 -12.30, 14.30 -17.00",
+            "fee": "Fee: 350 RUR per document",
+            "time": "Time of legalization: 5 working days"
+          },
+          {
+            "title": "Original documents stamped at Kenya Embassy, Moscow:",
+            "contacts": "Contacts: Lopukhinskyi pereulok, 5",
+            "hours": "Working hours: 9.00 -13.00, 14.00 -17.00 (Friday 16.00)",
+            "fee": "Fee: free of charge for Kenyan citizens. For other nationalities, USD 20 per document",
+            "time": "Time of certification: 1 day"
+          }
+        ]
+      },
+      "notarizedCopies": {
+        "title": "Legalization of Notarized & Translated Copies of Degree Certificates",
+        "steps": [
+          {
+            "title": "Submitted through Multifunctional Center for provision of public services in Moscow (MFC/ МФЦ) to MFA, RF (consular legalization department):",
+            "contacts": "Contacts: Moscow, Ryzanskiy Prospect, 2 building 3 (shopping mall Gorod), Nizhegorodskaya metro station",
+            "mfcContacts": "MFC contacts are: www.md.mos.ru and 495 777 77 77.",
+            "hours": "Working hours: 9.30 -12.30, 14.30 -17.00",
+            "fee": "Fee: 500 RUR per document",
+            "time": "Time of legalization: 7 working days"
+          },
+          {
+            "title": "Stamped at Kenya Embassy, Moscow:",
+            "contacts": "Address: Lopukhinskyi pereulok, 5",
+            "fee": "Fee: free of charge for Kenyan citizens; Time of certification: 1 day"
+          }
+        ]
+      },
+      "apostille": {
+        "title": "Apostille",
+        "description": "An apostille is a form of authentication issued to documents for use in countries that participate in the Hague Convention of 1961.",
+        "requirementsTitle": "Requirements for Apostille",
+        "requirements": [
+          "Original document",
+          "Copy of the document",
+          "Valid identification document"
+        ],
+        "address": {
+          "title": "Where to Get Apostille",
+          "text": "Apostilles can be obtained from the Ministry of Foreign Affairs in the country where the document was issued."
+        },
+        "processingInfo": {
+          "title": "Processing Information",
+          "details": [
+            "Processing time: 5-7 working days",
+            "Fee: USD 20 per document"
+          ]
+        }
+      }
+    }
+  },
+  "explore": {
+    "title": "Explore Kenya",
+    "learnMore": "Learn More",
+    "items": {
+      "foreignAffairs": "Foreign Affairs",
+      "education": "Education",
+      "tourism": "Tourism",
+      "agriculture": "Agriculture",
+      "trade": "Trade",
+      "cbd": "Nairobi CBD",
+      "sports": "Sports",
+      "culture": "Culture"
+    },
+    "gettingAround": {
+      "title": "Getting Around",
+      "nairobi": {
+        "title": "Getting Around Nairobi",
+        "lightRail": "The Nairobi Light Rail",
+        "lightRailDesc": "The Nairobi Light Rail is a super convenient way to zip around the city! With its modern vibe and comfy ride, it links key areas in the city making it perfect for avoiding traffic. Just hop on, and you'll be zooming past those busy streets in no time!",
+        "matatu": "The PSV Service (Matatus)",
+        "matatuDesc": "If you want the true Kenyan experience, you HAVE to hop on a matatu! It is the heartbeat of the city's public transport. They're always full with awesome music, and you can find routes all over Nairobi. Just remember to bring your best mood, take care of your personal belongings, and stay part of the adventure!"
+      },
+      "kenya": {
+        "title": "Getting Around Kenya",
+        "highways": "Various Highways",
+        "highwaysDesc": "Kenya's highways offer smooth travel between major destinations. The Nairobi-Mombasa Highway (A109) connects the capital to the coast, while the Nairobi-Nakuru-Eldoret Highway (A104) passes through the stunning Great Rift Valley. For scenic drives, the Mai Mahiu-Narok Road offers breathtaking valley views, while the Mombasa-Malindi Road showcases Kenya's coastline. Routes to Mount Kenya, Amboseli, and Maasai Mara provide stunning landscapes and wildlife sightings.",
+        "airports": "The Airports",
+        "airportsDesc": "Traveling by air? Kenya has a great mix of local and international airports. Jomo Kenyatta International Airport (JKIA) in Nairobi is your main hub for international flights, while places like Wilson Airport cater to domestic flights. Super handy for reaching places like Maasai Mara or Lake Nakuru quickly!",
+        "railway": "The Inter City Railway",
+        "railwayDesc": "For a chill ride across the country, check out the intercity trains! The Madaraka Express connects Nairobi to Mombasa in a snap. With comfy seats and beautiful views, it's a fab way to travel and experience the scenic beauty of Kenya."
+      }
+    },
+    "culture": {
+      "title": "Cultural Heritage of Kenya",
+      "description": "Kenya is a multiethnic and multiracial society rich in cultural and natural heritage. Our diverse traditions, customs, and wildlife make Kenya a unique destination for cultural exploration.",
+      "festivals": "Cultural Festivals",
+      "festivalsDesc": "Experience the vibrant cultural festivals of Kenya, from the Lamu Cultural Festival showcasing Swahili culture to the Lake Turkana Cultural Festival celebrating the traditions of northern Kenya's communities. These festivals feature traditional dances, music, crafts, and ceremonies that bring Kenya's rich cultural heritage to life.",
+      "museums": "National Museums of Kenya",
+      "museumsDesc": "The National Museums of Kenya preserve and showcase our country's rich cultural and natural heritage. Visit the Nairobi National Museum to explore Kenya's cultural evolution, or discover prehistoric findings at the Kariandusi Museum. Each museum offers unique insights into Kenya's history and culture.",
+      "wildlife": "Kenya Wildlife Services",
+      "wildlifeDesc": "Kenya Wildlife Services protects and manages our country's incredible wildlife heritage. From the majestic elephants of Amboseli to the flamingos of Lake Nakuru, our national parks and reserves offer unforgettable encounters with Africa's most iconic wildlife species."
+    },
+    "tourism": {
+      "title": "Tourism in Kenya",
+      "description": "Welcome to Kenya, a land of breathtaking landscapes and rich cultural heritage. From pristine beaches to majestic wildlife, Kenya offers unforgettable experiences for every traveler.",
+      "safaris": "Wildlife Safaris",
+      "safarisDesc": "Experience the thrill of African wildlife safaris in Kenya's world-renowned national parks and reserves. Watch the Great Migration in Masai Mara, spot the 'Big Five' in Amboseli against the backdrop of Mount Kilimanjaro, or explore the unique desert landscapes of Samburu. Our safaris offer unparalleled wildlife viewing opportunities in their natural habitat.",
+      "cuisine": "Culinary Delights",
+      "cuisineDesc": "Discover Kenya's rich culinary heritage, from traditional Swahili dishes along the coast to hearty upcountry fare. Sample local delicacies like nyama choma (grilled meat), sukuma wiki (collard greens), and fresh tropical fruits. Our diverse cuisine reflects the multicultural tapestry of Kenyan society.",
+      "experiences": "Cultural Experiences",
+      "experiencesDesc": "Immerse yourself in authentic Kenyan cultural experiences. Visit traditional Maasai villages, participate in local ceremonies, or explore the historic streets of Lamu Old Town, a UNESCO World Heritage site. Each region offers unique insights into Kenya's rich cultural traditions and warm hospitality."
+    }
+  },
+  "magicalKenya": {
+    "explore": "Explore Magical Kenya",
+    "discover": "Discover the Wonders of Kenya",
+    "description": "Kenya is a land of diverse landscapes, rich culture, and endless possibilities. From the bustling city of Nairobi to the stunning beaches of the coast, there is something for everyone to explore.",
+    "gettingAround": "Getting Around Kenya",
+    "whyKenya": "Why Kenya?",
+    "capitalCity": "Capital City",
+    "coastRegion": "Coast Region",
+    "centralRiftRegion": "Central Rift Region",
+    "mountKenya": "Mount Kenya",
+    "northernRegion": "Northern Region",
+    "northRiftRegion": "North Rift Region",
+    "southernRegion": "Southern Region",
+    "westernRegion": "Western Region",
+    "thingsToDo": "Things To Do"
+  },
+  "foreignAffairs": {
+    "empowering": "Empowering Diplomacy",
+    "ministry": "Ministry of Foreign and Diaspora Affairs",
+    "description": "The Ministry of Foreign Affairs of Kenya plays a crucial role in managing Kenya's international relations and promoting the country's interests abroad.",
+    "engagement": "The Ministry actively engages in diplomatic efforts to enhance cooperation with other nations, focusing on areas such as trade, security, and cultural exchange.",
+    "scholarship": {
+      "title": "Scholarship Opportunities.",
+      "description": "The government offers scholarships for Kenyan students to study abroad, fostering educational ties with other countries."
+    },
+    "cultural": {
+      "title": "Cultural Exchange Programs.",
+      "description": "The Ministry promotes cultural exchanges to enhance mutual understanding and respect among nations."
+    },
+    "cooperation": {
+      "title": "International Cooperation.",
+      "description": "Engaging in partnerships with various countries to address global challenges such as climate change and security."
+    },
+    "services": "The Ministry also provides essential services to Kenyans living abroad and facilitates their engagement with the Kenyan government.",
+    "visitLink": "Visit the Ministry of Foreign Affairs"
+  },
+  "sports": {
+    "tagline": "Celebrating Sports",
+    "title": "Sports in Kenya",
+    "description": "Sports in Kenya is deeply rooted in culture and history, with a rich tradition of indigenous sports and strong influence from British colonialism. Kenya has emerged as a powerhouse in various sports, particularly in athletics.",
+    "images": {
+      "stadium": "Eliud Kipchoge"
+    },
+    "athletics": "Kenya has gained worldwide recognition for its dominance in middle and long-distance running. In recent years, Kenyan athletes have particularly excelled in marathons, with Eliud Kipchoge being a standout figure, famous for breaking the world marathon record.",
+    "achievements": {
+      "title": "Recent Achievements.",
+      "description": "Kipchoge's recent performance at the Berlin Marathon showcased his incredible talent and determination, further cementing Kenya's reputation in athletics."
+    },
+    "rugby": {
+      "title": "Rugby Success.",
+      "description": "Kenya's Rugby Sevens team has achieved significant success on the international stage, actively competing in tournaments such as the World Rugby Sevens Series."
+    },
+    "diverse": {
+      "title": "Sports Diversity.",
+      "description": "Beyond athletics, Kenya has a vibrant sports culture that includes rugby, cricket, football, and volleyball."
+    },
+    "conclusion": "Kenya's rich sporting heritage continues to inspire future generations of athletes to strive for excellence both locally and internationally.",
+    "links": {
+      "athletics": "Visit Athletics Kenya",
+      "rugby": "Visit Kenya Rugby Union"
+    }
+  },
+  "nairobi": {
+    "tagline": "Explore Nairobi",
+    "title": "The Heart of Kenya",
+    "description": "Nairobi is a vibrant city that serves as the political, economic, and cultural hub of Kenya. Known for its rich history and diverse culture, Nairobi is home to various attractions that reflect the country's heritage and modernity.",
+    "images": {
+      "cbd": "Nairobi City CBD"
+    },
+    "wildlife": "Nairobi is not only known for its skyscrapers but also for its rich cultural heritage and wildlife. The city is home to the Nairobi National Park, where visitors can see lions, giraffes, and rhinos just a short drive from the city center.",
+    "culture": {
+      "title": "Cultural Diversity.",
+      "description": "Nairobi hosts numerous cultural festivals and events that celebrate its diverse communities."
+    },
+    "history": {
+      "title": "Historical Sites.",
+      "description": "The city features important historical landmarks such as the Kenyatta International Conference Centre (KICC) and the National Museum of Kenya."
+    },
+    "conservation": {
+      "title": "Wildlife Conservation.",
+      "description": "The Nairobi National Park is a unique wildlife reserve that offers a glimpse of Africa's wildlife amidst urban development."
+    },
+    "conclusion": "The Government of Kenya has made significant efforts to promote tourism in Nairobi by enhancing infrastructure and preserving cultural heritage sites. This makes Nairobi not just a gateway to Kenya but also a destination in its own right."
+  },
+  "trade": {
+    "tagline": "Empowering Trade",
+    "title": "Trade and Investment in Kenya",
+    "description": "Kenya is strategically positioned as a gateway to East Africa, offering numerous trade and investment opportunities across various sectors.",
+    "images": {
+      "teaProduction": "Tea Production in Kenya"
+    },
+    "initiatives": "The Kenyan government actively promotes trade and investment through various initiatives, including the Lamu Port South Sudan Ethiopia Transport Corridor (LAPSSET), which aims to enhance connectivity and facilitate trade across the region.",
+    "investment": {
+      "title": "Investment Opportunities.",
+      "description": "Kenya offers numerous incentives for foreign investors, including tax holidays and exemptions in various sectors."
+    },
+    "agreements": {
+      "title": "Trade Agreements.",
+      "description": "Kenya is a member of several regional trade agreements that facilitate access to markets within East Africa and beyond."
+    },
+    "policies": {
+      "title": "Supportive Government Policies.",
+      "description": "The government is committed to creating a conducive environment for business through regulatory reforms and infrastructure development."
+    },
+    "exports": {
+      "title": "Key Exports.",
+      "description": "Major exports include tea, coffee, horticultural products, and pyrethrum, contributing significantly to the economy."
+    },
+    "links": {
+      "investment": "Visit Kenya Investment Authority",
+      "standards": "Visit Kenya Bureau of Standards"
+    }
+  },
+  "agriculture": {
+    "tagline": "Empowering Agriculture",
+    "title": "Agriculture in Kenya",
+    "description": "Agriculture is the backbone of Kenya's economy, contributing significantly to the country's GDP and providing employment to millions of Kenyans. The sector is diverse, ranging from small-scale farming to large commercial operations.",
+    "cooperation": "The Ministry of Agriculture works closely with farmers, providing support through various programs and initiatives aimed at increasing agricultural productivity and ensuring food security.",
+    "productivity": {
+      "title": "Improving Productivity.",
+      "description": "Through modern farming techniques, improved seeds, and better irrigation systems, Kenya is working to enhance agricultural productivity across all regions."
+    },
+    "market": {
+      "title": "Market Access.",
+      "description": "The government is implementing strategies to improve market access for farmers, including development of storage facilities and transport infrastructure."
+    },
+    "knowledge": {
+      "title": "Knowledge Transfer.",
+      "description": "Agricultural extension services provide farmers with crucial information about modern farming methods, pest control, and climate-smart agriculture."
+    },
+    "investment": {
+      "title": "Investment Opportunities.",
+      "description": "The agricultural sector offers numerous investment opportunities in areas such as agro-processing, storage facilities, and agricultural technology."
+    },
+    "conclusion": "Kenya's agricultural sector continues to evolve, embracing modern technology and sustainable practices to meet the growing demands of both local and international markets.",
+    "links": {
+      "ministry": "Visit Ministry of Agriculture"
+    }
+  },
+  "education": {
+    "empowering": "Empowering Education",
+    "title": "Education in Kenya",
+    "description": "Kenya's education system is one of the most developed in East Africa, offering quality education from primary to tertiary levels. The system emphasizes both academic excellence and practical skills development.",
+    "curriculum": "The Competency Based Curriculum (CBC) is Kenya's current education system, designed to develop learners' skills, knowledge, and competencies for the 21st century.",
+    "cbcRating": {
+      "title": "CBC Assessment.",
+      "description": "The new curriculum emphasizes continuous assessment rather than just final examinations, allowing for a more comprehensive evaluation of learner abilities."
+    },
+    "cbcEmphasis": {
+      "title": "Skills Development.",
+      "description": "Focus on developing practical skills, critical thinking, and problem-solving abilities alongside traditional academic subjects."
+    },
+    "tvet": {
+      "title": "Technical Education.",
+      "description": "Strong emphasis on Technical and Vocational Education and Training (TVET) to provide practical skills needed in the job market."
+    },
+    "institutions": {
+      "title": "Educational Institutions.",
+      "description": "Kenya has numerous public and private universities, technical colleges, and vocational training centers across the country."
+    },
+    "financing": {
+      "title": "Education Financing.",
+      "description": "Various government initiatives and programs exist to support education financing, including scholarships and student loans."
+    },
+    "links": {
+      "ministry": "Visit Ministry of Education",
+      "wiki": "Learn More About Education in Kenya",
+      "scholarship": "Study in Russia Scholarship Program"
+    }
+  },
+  "vision": {
+    "title": "Our Vision",
+    "visionSection": {
+      "title": "Vision",
+      "description": "To be a modern diplomatic mission committed to efficient and effective diplomatic representation."
+    },
+    "missionSection": {
+      "title": "Mission",
+      "description": "To provide quality diplomatic representation and to embody the aspirations of the Kenyan people and international community through diplomatic contacts, integration, transmission, and utilization of diplomatic knowledge for the development and prosperity of Kenyan people in particular and mankind in general."
+    },
+    "valuesSection": {
+      "title": "Core Values",
+      "description": "Patriotism, teamwork, collective responsibility, professionalism, discipline, dignity, integrity, and equity."
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "email": {
+      "title": "Email",
+      "primary": "kenyaembassymoscow@gmail.com",
+      "secondary": "moscow@mfa.go.ke"
+    },
+    "phone": {
+      "title": "Phone",
+      "number": "+7 (495) 637 21 86",
+      "fax": "Fax: +7 (495) 637 54 63"
+    },
+    "address": {
+      "title": "Address",
+      "text": "Lopukhinsky Pereulok 5, Moscow, Russia, 119034"
+    },
+    "copyright": "© 2005-2024 Embassy of the Republic of Kenya in the Russian Federation"
+  },
+  "diaspora": {
+    "title": "Kenyans in Diaspora Registration",
+    "description": "Registration for Kenyan citizens residing in the Russian Federation.",
+    "registerButton": "➔"
+  }
+} 

@@ -1,7 +1,10 @@
 import { ArrowUpIcon, ArrowDownIcon, ArrowLeftIcon, ArrowRightIcon } from '@heroicons/react/20/solid'
 import images from '../../assets/images'
+import { useTranslation } from 'react-i18next';
 
-export default function Example() {
+export default function Agriculture() {
+  const { t } = useTranslation();
+
   return (
     <div className="relative isolate overflow-hidden bg-black px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
       <div className="absolute inset-0 -z-10 overflow-hidden">
@@ -45,12 +48,10 @@ export default function Example() {
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
             <div className="lg:max-w-lg mt-8 sm:mt-12">
-              <p className="text-base font-semibold leading-7 text-indigo-600">Grow with Kenya</p>
-              <h1 className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Agricultural Opportunities</h1>
+              <p className="text-base font-semibold leading-7 text-indigo-600">{t('agriculture.tagline')}</p>
+              <h1 className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">{t('agriculture.title')}</h1>
               <p className="mt-6 text-xl leading-8 text-gray-400 text-justify">
-                Kenya offers a wide range of agricultural opportunities, from growing cash crops like tea and coffee to
-                producing fresh fruits and vegetables for export. The country's diverse climate and fertile soil make it
-                an ideal location for agricultural development.
+                {t('agriculture.description')}
               </p>
             </div>
           </div>
@@ -66,52 +67,41 @@ export default function Example() {
           <div className="lg:pr-4">
             <div className="max-w-xl text-base leading-7 text-gray-400 lg:max-w-lg">
               <p className='text-justify'>
-                Kenya and Russia have been working together to strengthen their agricultural cooperation. The two
-                countries have signed several agreements to promote trade and investment in the agricultural sector.
+                {t('agriculture.cooperation')}
               </p>
               <ul role="list" className="mt-8 space-y-8">
                 <li className="flex gap-x-3">
                   <ArrowUpIcon aria-hidden="true" className="mt-1 h-5 w-5 flex-none text-indigo-600" />
                   <span className='text-justify'>
-                    <strong className="font-semibold text-white">Increased Productivity.</strong> Kenyan farmers can
-                    learn from Russian agricultural technologies and best practices to improve their yields and
-                    efficiency.
+                    <strong className="font-semibold text-white">{t('agriculture.productivity.title')}</strong> {t('agriculture.productivity.description')}
                   </span>
                 </li>
                 <li className="flex gap-x-3">
                   <ArrowDownIcon aria-hidden="true" className="mt-1 h-5 w-5 flex-none text-indigo-600" />
                   <span className='text-justify'>
-                    <strong className="font-semibold text-white">Market Access.</strong> Russia can provide a large
-                    market for Kenyan agricultural products, particularly tea, coffee, and fresh produce.
+                    <strong className="font-semibold text-white">{t('agriculture.market.title')}</strong> {t('agriculture.market.description')}
                   </span>
                 </li>
                 <li className="flex gap-x-3">
                   <ArrowLeftIcon aria-hidden="true" className="mt-1 h-5 w-5 flex-none text-indigo-600" />
                   <span className='text-justify'>
-                    <strong className="font-semibold text-white">Knowledge Sharing.</strong> Kenyan and Russian
-                    agricultural experts can exchange knowledge and best practices to improve farming techniques and
-                    technologies.
+                    <strong className="font-semibold text-white">{t('agriculture.knowledge.title')}</strong> {t('agriculture.knowledge.description')}
                   </span>
                 </li>
                 <li className="flex gap-x-3">
                   <ArrowRightIcon aria-hidden="true" className="mt-1 h-5 w-5 flex-none text-indigo-600" />
                   <span className='text-justify'>
-                    <strong className="font-semibold text-white">Investment Opportunities.</strong> Russia can invest in
-                    Kenyan agriculture, particularly in areas like irrigation, storage facilities, and processing
-                    plants.
+                    <strong className="font-semibold text-white">{t('agriculture.investment.title')}</strong> {t('agriculture.investment.description')}
                   </span>
                 </li>
               </ul>
               <p className="mt-8 text-justify">
-                By working together, Kenya and Russia can create new opportunities for growth and development in the
-                agricultural sector, benefiting both countries and their people.
+                {t('agriculture.conclusion')}
               </p>
-              {/* Link to relevant tourism */}
               <div className='mt-[30px]'>
                 <a href='https://www.kilimo.go.ke/' target="_blank" rel="noopener noreferrer" className='text-indigo-600 hover:text-indigo-500'>
-                  Visit the Ministry of Agriculture and Livestock Development
-                </a><br />
-              
+                  {t('agriculture.links.ministry')}
+                </a>
               </div>
             </div>
           </div>

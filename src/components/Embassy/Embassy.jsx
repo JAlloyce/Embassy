@@ -1,8 +1,10 @@
-
 import images from '../../assets/images';
 import {motion} from 'framer-motion'
+import { useTranslation } from 'react-i18next';
 
 const Embassy = () => {
+const { t } = useTranslation();
+
 return (
 <div className="relative isolate overflow-hidden bg-black px-6 py-12 sm:py-12 lg:overflow-visible lg:px-0">
     <div className="absolute inset-0 -z-10 overflow-hidden">
@@ -48,9 +50,9 @@ return (
         </nav>
     </header>
 
-    <h1 className="text-3xl font-bold tracking-tight text-indigo-600 sm:text-4xl">Embassy of the Republic of Kenya in the Russian Federation</h1>
+    <h1 className="text-3xl font-bold tracking-tight text-indigo-600 sm:text-4xl">{t('common.welcome')}</h1>
     <p className="mt-6 text-xl leading-8 text-gray-400">
-        Welcome to the Embassy of the Republic of Kenya in the Russian Federation.
+        {t('common.welcomeMessage')}
     </p>
 
 
@@ -69,28 +71,28 @@ return (
                 className="h-36 w-auto rounded-lg"
             />
             <div>
-                <p className="text-lg font-semibold text-white">Amb. (Dr). Peter Mutuku Mathuki, PhD</p>
-                <p className="text-gray-400">Arrived in Moscow on 22nd August 2024.</p>
+                <p className="text-lg font-semibold text-white">{t('ambassador.name')}</p>
+                <p className="text-gray-400">{t('ambassador.arrival')}</p>
                 
             </div>
             </motion.div>
             <p className="mt-2 text-gray-400 text-justify">
-            Amb. (Dr). Peter Mutuku Mathuki arrived in Moscow on 22nd August 2024 to commence his tour of duty as the Ambassador Extraordinary and Plenipotentiary of the Republic of Kenya to the Russian Federation with accreditation to Belarus and Kazakhstan.<br/>
+            {t('ambassador.introduction')}
             </p>
             <p className="mt-2 text-gray-400 text-justify">
-            Amb. (Dr). Peter Mutuku Mathuki is an accomplished Diplomat having served in Regional Economic Blocs, UN system and in the African region. His expertise is in Private Sector Development, Resource Mobilization, Public Policy and Economic Development.<br />
+            {t('ambassador.expertise')}
             </p>
             <p className="mt-2 text-gray-400 text-justify">
-            Dr. Mathuki served as the Secretary General of the East African Community (EAC) from April 2021 to June 2024. He was the Principal Executive Officer of the Community and the Secretary to the Summit of the EAC Heads of State. Dr. Mathuki is an ardent champion in global diplomacy and has left an indelible mark in his previous roles.<br />
+            {t('ambassador.eac')}
             </p>
             <p className="mt-2 text-gray-400 text-justify">
-            He served as the Chief Executive Officer (CEO) of the East African Business Council (EABC), (2018-2021). He was instrumental in driving and articulating the Private Sector priorities in EAC decision-making process. Dr. Mathuki served as a Member of Parliament of the East African Legislative Assembly (EALA) - (2012-2017), where he chaired the EALA Committee responsible for good governance and served in the Committees of Accounts and Trade & Investment.<br />
+            {t('ambassador.eabc')}
             </p>
             <p className="mt-2 text-gray-400 text-justify">
-            He worked for the European Union (EU) programs for Africa touching several African countries. Dr. Mathuki has actively played a pivotal role in overseeing the coming into effect of the African Continental Free Trade Area (AfCFTA) and championed the formation of the African Business Council. He served in several boards across the region. Prior to this he worked both in Academia and several other private sector organizations.<br />
+            {t('ambassador.eu')}
             </p>
             <p className="mt-2 text-gray-400 text-justify">
-            Dr. Mathuki holds an MBA and PhD in Strategic Management & Regional Integration from the University of Nairobi, Kenya. <br />
+            {t('ambassador.education')}
             </p>
         </div>
           {/* Deputy Ambassador Information */}
@@ -107,22 +109,25 @@ return (
                 className="h-36 w-auto rounded-lg"
             />
             <div>
-                <p className="text-lg font-semibold text-white">Amb. Irene K. Maswan, OGW</p>
-                <p className="text-gray-400">Arrived in Moscow on 26th April 2024.</p>
+                <p className="text-lg font-semibold text-white">{t('deputy.name')}</p>
+                <p className="text-gray-400">{t('deputy.arrival')}</p>
                 
             </div>
             </motion.div>
             <p className="mt-2 text-gray-400 text-justify">
-                Ambassador Irene Maswan arrived in Moscow on 26th April 2024. She assumed her position as the Deputy Head of Mission of the Republic of Kenya to the Russian Federation with accreditation to Belarus and Kazakhstan.
+                {t('deputy.introduction')}
                 </p>
                 <p className="mt-2 text-gray-400 text-justify">
-                Ambassador Maswan, with a Master’s degree in Administration and Planning from the University of Nairobi, Kenya, is a career diplomat with a wealth of experience spanning over 23 years in Government. Before assuming her current position, Ambassador Maswan worked in various Ministries and Departments of the Government of Kenya. She worked as an Assistant Director in the Ministry of Interior and National Coordination, Department of Training and Research. She was Head of the East Africa and Great Lakes region Directorate in the Office of the President. While in this capacity, she coordinated the development of the Directorate’s strategic plan and the training curriculum. Ambassador Maswan has also served as Counselor at the Kenya High Commission in Bujumbura, Burundi. Before that, she worked as a consulting trainer at the BABI GROW LTD and the Electoral Commission of Kenya.
+                {t('deputy.education')}
                 </p>
                 <p className="mt-2 text-gray-400 text-justify">
-                During her stint at the mission in Bujumbura, Amb. Maswan participated in the inter-parties peace initiatives for Burundi after 2015 elections. She also served as the liaison for the ICGLR Secretariat headquartered in Burundi. Maswan has continued to offer consultancy services in the field of training and development.
+                {t('deputy.experience')}
                 </p>
                 <p className="mt-2 text-gray-400 text-justify">
-                Ambassador Maswan has been awarded the national honors, the Order of the Golden Warrior (OGW) in recognition of her distinguished service to the nation. In addition to the official languages of Kenya, English and Swahili, she is proficient in French.
+                {t('deputy.peace')}
+                </p>
+                <p className="mt-2 text-gray-400 text-justify">
+                {t('deputy.awards')}
                 </p>
         </div>
 
@@ -177,17 +182,17 @@ return (
 
           {/* Contact Information */}
         <div className='mt-[30px]'>
-            <h3 className='text-lg font-semibold text-white'>Contact Information</h3>
-            <p className='text-gray-400'>Working Hours: Monday - Friday: 0900 - 1300 ; 1400 - 1600 Hrs</p>
-            <p className='text-indigo-300'>Email: kenyaembassymoscow@gmail.com</p>
-            <p className='text-gray-300'>Telephone:</p>
+            <h3 className='text-lg font-semibold text-white'>{t('common.contact')}</h3>
+            <p className='text-gray-400'>{t('common.workingHours')}</p>
+            <p className='text-indigo-300'>{t('common.email')}</p>
+            <p className='text-gray-300'>{t('common.telephone')}</p>
             <ul role='list' className='list-disc list-inside'>
             {['+7-495-637-4257', '+7-495-637-2186', '+7-495-637-3574'].map(number => (
                 <li key={number} className='text-gray-300'>{number}</li>
             ))}
             </ul>
-            <p>Fax: +7-495-637-2535</p>
-            <p>Address: 1st Build, 5 Lopukhinsky Per., Moscow, Russia, 119034</p>
+            <p>{t('common.fax')}</p>
+            <p>{t('common.address')}</p>
         </div>
 
         </div>

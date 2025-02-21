@@ -1,7 +1,10 @@
 import { ArrowRightIcon } from '@heroicons/react/20/solid'; 
 import images from '../../assets/images';
+import { useTranslation } from 'react-i18next';
 
 const Trade = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="relative isolate overflow-hidden bg-black px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
       <div className="absolute inset-0 -z-10 overflow-hidden">
@@ -45,17 +48,17 @@ const Trade = () => {
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
             <div className="lg:max-w-lg mt-8 sm:mt-12">
-              <p className="text-base font-semibold leading-7 text-indigo-600">Empowering Trade</p>
-              <h1 className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Trade and Investment in Kenya</h1>
+              <p className="text-base font-semibold leading-7 text-indigo-600">{t('trade.tagline')}</p>
+              <h1 className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">{t('trade.title')}</h1>
               <p className="mt-6 text-xl leading-8 text-gray-400 text-justify">
-                Kenya is strategically positioned as a gateway to East Africa, offering numerous trade and investment opportunities across various sectors.
+                {t('trade.description')}
               </p>
             </div>
           </div>
         </div>
         <div className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
           <img
-            alt="Tea Production in Kenya"
+            alt={t('trade.images.teaProduction')}
             src={images.Trade} 
             className="w-full max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
           />
@@ -63,50 +66,41 @@ const Trade = () => {
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
             <div className="max-w-xl text-base leading-7 text-gray-400 lg:max-w-lg">
-              <p className='text-justify'>
-                The Kenyan government actively promotes trade and investment through various initiatives, including the Lamu Port South Sudan Ethiopia Transport Corridor (LAPSSET), which aims to enhance connectivity and facilitate trade across the region.
-              </p>
+              <p className='text-justify'>{t('trade.initiatives')}</p>
               <ul role="list" className="mt-[20px] space-y-[10px]">
                 <li className="flex gap-x-[10px]">
                   <ArrowRightIcon aria-hidden="true" className="mt-[6px] h-[20px] w-[20px] flex-none text-indigo-600" />
                   <span className='text-justify'>
-                    <strong className="font-semibold text-white">Investment Opportunities.</strong> Kenya offers numerous incentives for foreign investors, including tax holidays and exemptions in various sectors.
+                    <strong className="font-semibold text-white">{t('trade.investment.title')}</strong> {t('trade.investment.description')}
                   </span>
                 </li>
                 <li className="flex gap-x-[10px]">
                   <ArrowRightIcon aria-hidden="true" className="mt-[6px] h-[20px] w-[20px] flex-none text-indigo-600" />
                   <span className='text-justify'>
-                    <strong className="font-semibold text-white">Trade Agreements.</strong> Kenya is a member of several regional trade agreements that facilitate access to markets within East Africa and beyond.
+                    <strong className="font-semibold text-white">{t('trade.agreements.title')}</strong> {t('trade.agreements.description')}
                   </span>
                 </li>
                 <li className="flex gap-x-[10px]">
                   <ArrowRightIcon aria-hidden="true" className="mt-[6px] h-[20px] w-[20px] flex-none text-indigo-600" />
                   <span className='text-justify'>
-                    <strong className="font-semibold text-white">Supportive Government Policies.</strong> The government is committed to creating a conducive environment for business through regulatory reforms and infrastructure development.
+                    <strong className="font-semibold text-white">{t('trade.policies.title')}</strong> {t('trade.policies.description')}
                   </span>
                 </li>
-                {/* New Export Information */}
                 <li className="flex gap-x-[10px]">
                   <ArrowRightIcon aria-hidden="true" className="mt-[6px] h-[20px] w-[20px] flex-none text-indigo-600" />
                   <span className='text-justify'>
-                    <strong className="font-semibold text-white">Key Exports.</strong> Major exports include tea, coffee, horticultural products, and pyrethrum, contributing significantly to the economy.
+                    <strong className="font-semibold text-white">{t('trade.exports.title')}</strong> {t('trade.exports.description')}
                   </span>
                 </li>
               </ul>
-
-              {/* Link to relevant trade information */}
               <div className='mt-[30px]'>
                 <a href='https://www.invest.go.ke/' target="_blank" rel="noopener noreferrer" className='text-indigo-600 hover:text-indigo-500'>
-                  Visit the Kenya Investment Authority
+                  {t('trade.links.investment')}
                 </a><br />
-                {/* You can add more links as necessary */}
                 <a href='https://www.kebs.org/' target="_blank" rel="noopener noreferrer" className='text-indigo-600 hover:text-indigo-500'>
-                  Visit the Kenya Bureau of Standards
+                  {t('trade.links.standards')}
                 </a>
               </div>
-
-              {/* Additional Information Section */}
-              {/* You can add more sections or information as needed */}
             </div>
           </div>
         </div>

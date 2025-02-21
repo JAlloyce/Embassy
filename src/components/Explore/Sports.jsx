@@ -1,7 +1,10 @@
 import { ArrowRightIcon } from '@heroicons/react/20/solid';
 import images from '../../assets/images'; 
+import { useTranslation } from 'react-i18next';
 
 const Sports = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="relative isolate overflow-hidden bg-black px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
       <div className="absolute inset-0 -z-10 overflow-hidden">
@@ -45,17 +48,17 @@ const Sports = () => {
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
             <div className="lg:max-w-lg mt-8 sm:mt-12">
-              <p className="text-base font-semibold leading-7 text-indigo-600">Celebrating Sports</p>
-              <h1 className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Sports in Kenya</h1>
+              <p className="text-base font-semibold leading-7 text-indigo-600">{t('sports.tagline')}</p>
+              <h1 className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">{t('sports.title')}</h1>
               <p className="mt-6 text-xl leading-8 text-gray-400 text-justify">
-                Sports in Kenya are deeply rooted in culture and history, with a rich tradition of indigenous sports and a strong influence from British colonialism. Kenya has become a powerhouse in various sports, particularly athletics.
+                {t('sports.description')}
               </p>
             </div>
           </div>
         </div>
         <div className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
           <img
-            alt="Eliud Kipchoge"
+            alt={t('sports.images.stadium')}
             src={images.Stadium} 
             className="w-full max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
           />
@@ -64,40 +67,37 @@ const Sports = () => {
           <div className="lg:pr-4">
             <div className="max-w-xl text-base leading-7 text-gray-400 lg:max-w-lg">
               <p className='text-justify'>
-                Kenya is globally recognized for its dominance in middle-distance and long-distance races. Recently, Kenyan athletes have excelled in marathons, with Eliud Kipchoge being a standout figure, famously breaking the marathon world record.
+                {t('sports.athletics')}
               </p>
               <ul role="list" className="mt-[20px] space-y-[10px]">
                 <li className="flex gap-x-[10px]">
                   <ArrowRightIcon aria-hidden="true" className="mt-[6px] h-[20px] w-[20px] flex-none text-indigo-600" />
                   <span className='text-justify'>
-                    <strong className="font-semibold text-white">Recent Achievements.</strong> Kipchoge's recent performance at the Berlin Marathon showcased his incredible talent and determination, further solidifying Kenya's reputation in athletics.
+                    <strong className="font-semibold text-white">{t('sports.achievements.title')}</strong> {t('sports.achievements.description')}
                   </span>
                 </li>
                 <li className="flex gap-x-[10px]">
                   <ArrowRightIcon aria-hidden="true" className="mt-[6px] h-[20px] w-[20px] flex-none text-indigo-600" />
                   <span className='text-justify'>
-                    <strong className="font-semibold text-white">Rugby Success.</strong> The Kenyan Rugby Sevens team has made significant strides on the international stage, competing fiercely in tournaments like the World Rugby Sevens Series.
+                    <strong className="font-semibold text-white">{t('sports.rugby.title')}</strong> {t('sports.rugby.description')}
                   </span>
                 </li>
                 <li className="flex gap-x-[10px]">
                   <ArrowRightIcon aria-hidden="true" className="mt-[6px] h-[20px] w-[20px] flex-none text-indigo-600" />
                   <span className='text-justify'>
-                    <strong className="font-semibold text-white">Diverse Sports.</strong> Beyond athletics, Kenya has a vibrant sports culture that includes rugby, cricket, football, and volleyball.
+                    <strong className="font-semibold text-white">{t('sports.diverse.title')}</strong> {t('sports.diverse.description')}
                   </span>
                 </li>
               </ul>
               <p className="mt-[20px] text-justify">
-                The rich sporting heritage of Kenya continues to inspire future generations of athletes to strive for excellence on both local and international stages.
+                {t('sports.conclusion')}
               </p>
-
-              {/* Link to relevant sports information */}
               <div className='mt-[30px]'>
                 <a href='https://www.athleticskenya.or.ke/' target="_blank" rel="noopener noreferrer" className='text-indigo-600 hover:text-indigo-500'>
-                  Visit Athletics Kenya
+                  {t('sports.links.athletics')}
                 </a><br />
-                {/* You can add more links as necessary */}
                 <a href='https://www.kru.co.ke/' target="_blank" rel="noopener noreferrer" className='text-indigo-600 hover:text-indigo-500'>
-                  Visit Kenya Rugby Union
+                  {t('sports.links.rugby')}
                 </a>
               </div>
             </div>

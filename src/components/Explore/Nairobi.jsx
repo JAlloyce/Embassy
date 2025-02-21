@@ -1,7 +1,10 @@
 import { ArrowRightIcon } from '@heroicons/react/20/solid';
 import images from '../../assets/images'; 
+import { useTranslation } from 'react-i18next';
 
 export default function Nairobi() {
+  const { t } = useTranslation();
+
   return (
     <div className="relative isolate overflow-hidden bg-black px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
       <div className="absolute inset-0 -z-10 overflow-hidden">
@@ -45,17 +48,17 @@ export default function Nairobi() {
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
             <div className="lg:max-w-lg mt-8 sm:mt-12">
-              <p className="text-base font-semibold leading-7 text-indigo-600">Explore Nairobi</p>
-              <h1 className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">The Heart of Kenya</h1>
+              <p className="text-base font-semibold leading-7 text-indigo-600">{t('nairobi.tagline')}</p>
+              <h1 className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">{t('nairobi.title')}</h1>
               <p className="mt-6 text-xl leading-8 text-gray-400 text-justify">
-                Nairobi is a vibrant city that serves as the political, economic, and cultural hub of Kenya. Known for its rich history and diverse culture, Nairobi is home to various attractions that reflect the country's heritage and modernity.
+                {t('nairobi.description')}
               </p>
             </div>
           </div>
         </div>
         <div className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
           <img
-            alt="Nairobi City CBD"
+            alt={t('nairobi.images.cbd')}
             src={images.CBD} 
             className="w-full max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
           />
@@ -63,31 +66,29 @@ export default function Nairobi() {
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
             <div className="max-w-xl text-base leading-7 text-gray-400 lg:max-w-lg">
-              <p className='text-justify'>
-                Nairobi is not only known for its skyscrapers but also for its rich cultural heritage and wildlife. The city is home to the Nairobi National Park, where visitors can see lions, giraffes, and rhinos just a short drive from the city center.
-              </p>
+              <p className='text-justify'>{t('nairobi.wildlife')}</p>
               <ul role="list" className="mt-[20px] space-y-[10px]">
                 <li className="flex gap-x-[10px]">
                   <ArrowRightIcon aria-hidden="true" className="mt-[6px] h-[20px] w-[20px] flex-none text-indigo-600" />
                   <span className='text-justify'>
-                    <strong className="font-semibold text-white">Cultural Diversity.</strong> Nairobi hosts numerous cultural festivals and events that celebrate its diverse communities.
+                    <strong className="font-semibold text-white">{t('nairobi.culture.title')}</strong> {t('nairobi.culture.description')}
                   </span>
                 </li>
                 <li className="flex gap-x-[10px]">
                   <ArrowRightIcon aria-hidden="true" className="mt-[6px] h-[20px] w-[20px] flex-none text-indigo-600" />
                   <span className='text-justify'>
-                    <strong className="font-semibold text-white">Historical Sites.</strong> The city features important historical landmarks such as the Kenyatta International Conference Centre (KICC) and the National Museum of Kenya.
+                    <strong className="font-semibold text-white">{t('nairobi.history.title')}</strong> {t('nairobi.history.description')}
                   </span>
                 </li>
                 <li className="flex gap-x-[10px]">
                   <ArrowRightIcon aria-hidden="true" className="mt-[6px] h-[20px] w-[20px] flex-none text-indigo-600" />
                   <span className='text-justify'>
-                    <strong className="font-semibold text-white">Wildlife Conservation.</strong> The Nairobi National Park is a unique wildlife reserve that offers a glimpse of Africa's wildlife amidst urban development.
+                    <strong className="font-semibold text-white">{t('nairobi.conservation.title')}</strong> {t('nairobi.conservation.description')}
                   </span>
                 </li>
               </ul>
               <p className="mt-[20px] text-justify">
-                The Government of Kenya has made significant efforts to promote tourism in Nairobi by enhancing infrastructure and preserving cultural heritage sites. This makes Nairobi not just a gateway to Kenya but also a destination in its own right.
+                {t('nairobi.conclusion')}
               </p>
             </div>
           </div>
